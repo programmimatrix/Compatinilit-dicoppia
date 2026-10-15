@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La vostra compatibilità sentimentale — La Chiave del Successo</title>
+<meta name="description" content="Scopri la compatibilità sentimentale tra due persone attraverso le date di nascita, con un antico metodo di numerologia giapponese. Mini analisi gratuita e fascicolo completo personalizzato.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="La Vostra Compatibilità Sentimentale — La Chiave del Successo">
+<meta property="og:description" content="Siete davvero compatibili in amore? Scoprilo dalle vostre date di nascita.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 56C14 43 6 33 6 22 6 13 13 7 21 7c5 0 9 3 11 7 2-4 6-7 11-7 8 0 15 6 15 15 0 11-8 21-26 34z' fill='%23D1007A'/%3E%3Ccircle cx='32' cy='27' r='6' fill='%23fff'/%3E%3Cpath d='M29.5 31h5l2 12h-9z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0d0d0d; --ink-soft:#3d3a3c; --fuchsia:#D1007A; --fuchsia-deep:#A0005D;
+  --blush:#FFF4F9; --line:#EFE4EA; --champagne:#C2A26B; --white:#ffffff;
+  --serif:"Times New Roman",Times,serif; --sans:Arial,Helvetica,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--white);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--fuchsia);color:#fff}
+a{color:var(--fuchsia)}
+.k{color:var(--fuchsia)}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px}
+.serif{font-family:var(--serif)}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:30px;height:30px}
+.brand span{font-family:var(--serif);font-size:15px;letter-spacing:.18em;text-transform:uppercase}
+.top small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* hero */
+.hero{position:relative;padding-top:34px;padding-bottom:26px;overflow:hidden}
+.hero-grid{position:absolute;right:-60px;top:10px;width:420px;height:420px;perspective:900px;pointer-events:none;z-index:0}
+.lo{width:100%;height:100%;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(194,162,107,.45);transform:rotateX(14deg) rotateY(-18deg);transition:transform .9s var(--ease);will-change:transform}
+.lo i{font-style:normal;display:flex;align-items:center;justify-content:center;border:1px solid rgba(194,162,107,.30);font-family:var(--serif);font-size:54px;color:rgba(194,162,107,.55)}
+.lo i.on{color:rgba(209,0,122,.55)}
+.hero-in{position:relative;z-index:1;max-width:820px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:22px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--champagne)}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(42px,9.5vw,96px);line-height:.98;letter-spacing:-.01em}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}
+.ln>span{display:inline-block;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards}
+.ln:nth-child(2)>span{animation-delay:.12s}.ln:nth-child(3)>span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.no-anim .ln>span{transform:none;animation:none}
+.sub{margin-top:24px;font-size:clamp(17px,2.2vw,20px);max-width:620px;color:var(--ink-soft);opacity:0;animation:fade .9s .55s var(--ease) forwards}
+.no-anim .sub{opacity:1;animation:none}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.method{margin-top:18px;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--champagne)}
+
+/* form */
+.calc{padding-top:16px;padding-bottom:56px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 18px;box-shadow:0 30px 60px -40px rgba(160,0,93,.35)}
+.persons{display:grid;grid-template-columns:1fr;gap:26px}
+.person h2{font-family:var(--serif);font-size:24px;font-weight:700;margin-bottom:4px}
+.person p.hint{font-size:14px;color:var(--ink-soft);margin-bottom:16px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fuchsia);margin-bottom:8px;font-weight:700}
+.field{margin-bottom:14px}
+.field label,.q label,.legend{display:block;font-size:14px;font-weight:700;margin-bottom:7px}
+.field input,.q textarea,.q select{width:100%;font-family:var(--sans);font-size:17px;color:var(--ink);background:#fff;border:1.5px solid #E2D6DC;border-radius:14px;padding:15px 16px;outline:none;transition:border-color .25s,box-shadow .25s;-webkit-appearance:none;appearance:none}
+.field input:focus,.q textarea:focus{border-color:var(--fuchsia);box-shadow:0 0 0 4px rgba(209,0,122,.12)}
+.field input.bad{border-color:#C4002E;box-shadow:0 0 0 4px rgba(196,0,46,.10)}
+.err{display:none;font-size:13px;color:#B00029;margin-top:6px}
+.err.show{display:block}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill input{position:absolute;opacity:0;pointer-events:none}
+.pill span{display:inline-block;font-size:15px;padding:11px 15px;border:1.5px solid #E2D6DC;border-radius:999px;cursor:pointer;transition:background-color .25s,border-color .25s,color .25s,transform .2s;user-select:none}
+.pill span:hover{border-color:var(--fuchsia)}
+.pill input:checked+span{background:var(--fuchsia);border-color:var(--fuchsia);color:#fff}
+.pill input:focus-visible+span{box-shadow:0 0 0 4px rgba(209,0,122,.18)}
+.divider{height:1px;background:var(--line);margin:30px 0}
+.rel h3{font-family:var(--serif);font-size:24px;margin-bottom:14px}
+.rel .pills{flex-direction:column}
+.rel .pill span{display:block;border-radius:14px}
+.q{margin-top:20px}
+.q textarea{min-height:92px;resize:vertical;font-size:16px}
+.q .opt{font-weight:400;color:var(--ink-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:62px;padding:16px 24px;border:0;border-radius:999px;background:var(--fuchsia);color:#fff;font-family:var(--sans);font-weight:700;font-size:17px;letter-spacing:.02em;cursor:pointer;text-decoration:none;transition:background-color .25s,transform .25s var(--ease),box-shadow .25s;box-shadow:0 18px 36px -18px rgba(209,0,122,.75)}
+.btn:hover{background:var(--fuchsia-deep);transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.99)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.btn.ghost{background:#fff;color:var(--fuchsia);border:1.5px solid var(--fuchsia);box-shadow:none}
+.submit{margin-top:28px}
+.form-err{display:none;margin-top:14px;padding:12px 14px;border-radius:12px;background:#FFF0F3;color:#9B0026;font-size:14px}
+.form-err.show{display:block}
+.privacy{margin-top:12px;font-size:13px;color:var(--ink-soft);text-align:center}
+
+/* marquee */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:16px 0;white-space:nowrap}
+.mq{display:inline-flex;animation:mq 60s linear infinite}
+.mq span{font-family:var(--serif);font-style:italic;font-size:22px;padding:0 22px;color:var(--ink)}
+.mq span.k{color:var(--fuchsia)}
+.mq span.dot{color:var(--champagne);font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* result */
+.result{display:none;padding-top:56px;padding-bottom:20px}
+.result.show{display:block;animation:fade .9s var(--ease) both}
+.res-head{text-align:center;padding:34px 18px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,#fff, var(--blush))}
+.res-head h2{font-family:var(--serif);font-size:clamp(26px,5vw,40px);line-height:1.1;margin-bottom:22px}
+.who{font-family:var(--serif);font-size:clamp(24px,4.6vw,34px);font-weight:700;line-height:1.15}
+.dob{font-size:15px;color:var(--ink-soft);margin-top:4px}
+.amp{font-family:var(--serif);font-style:italic;font-size:44px;color:var(--fuchsia);line-height:1;margin:14px 0}
+.nums{display:grid;grid-template-columns:1fr;gap:14px;margin-top:22px}
+.num-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fff}
+.num-card h4{font-family:var(--serif);font-size:19px;margin-bottom:8px}
+.num-card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}
+.num-card dt{color:var(--ink-soft)}
+.num-card dd{font-weight:700}
+.note{margin-top:14px;font-size:14px;color:var(--ink-soft);font-style:italic}
+.block{padding:30px 0;border-bottom:1px solid var(--line)}
+.block h3{font-family:var(--serif);font-size:clamp(24px,4.4vw,32px);margin-bottom:12px}
+.block p{font-size:17px;line-height:1.75;max-width:760px}
+.disclaimer{font-size:13px;color:var(--ink-soft);margin-top:18px}
+
+/* offer */
+.offer{display:none;padding-top:40px;padding-bottom:70px}
+.offer.show{display:block}
+.offer-in{border-radius:26px;background:var(--ink);color:#fff;padding:38px 22px;position:relative;overflow:hidden}
+.offer-in:after{content:"";position:absolute;inset:auto -80px -120px auto;width:300px;height:300px;border:1px solid rgba(194,162,107,.45);border-radius:50%;pointer-events:none}
+.offer-in>*{position:relative;z-index:1}
+.offer h2{font-family:var(--serif);font-size:clamp(28px,5.6vw,46px);line-height:1.08;margin-bottom:16px}
+.offer p{color:#E6E0E3;font-size:17px;max-width:640px}
+.product{margin:26px 0;padding:22px;border:1px solid rgba(194,162,107,.55);border-radius:18px;background:rgba(255,255,255,.03)}
+.product h3{font-family:var(--serif);font-size:22px;color:#fff}
+.product ul{list-style:none;margin-top:12px;display:grid;gap:6px;font-size:15px;color:#E6E0E3}
+.product li:before{content:"— ";color:var(--champagne)}
+.price{font-family:var(--serif);font-size:58px;line-height:1;margin:18px 0 6px;color:#fff}
+.price small{font-size:16px;font-family:var(--sans);color:#D8CFD3;margin-left:8px}
+#paypal-area{display:none;margin-top:18px;background:#fff;border-radius:18px;padding:18px;color:var(--ink)}
+#paypal-area.show{display:block}
+.pp-note{font-size:14px;color:var(--ink-soft)!important;margin-bottom:12px}
+.pp-warn{font-size:14px;background:#FFF7E8;color:#6A4A00;border-radius:12px;padding:12px 14px}
+.status{margin-top:14px;font-size:15px}
+.status.ok{color:#0B7A3B}.status.ko{color:#B00029}
+
+/* delivery */
+.deliver{display:none;padding-top:10px;padding-bottom:70px}
+.deliver.show{display:block;animation:fade .8s var(--ease) both}
+.deliver-in{border:1.5px solid var(--fuchsia);border-radius:22px;padding:28px 20px;text-align:center}
+.deliver h3{font-family:var(--serif);font-size:30px;margin-bottom:8px}
+.bar{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin:18px auto;max-width:420px}
+.bar i{display:block;height:100%;width:0;background:var(--fuchsia);transition:width .4s var(--ease)}
+.saved{margin-top:18px;font-size:14px;color:var(--ink-soft)}
+.saved button{background:none;border:0;color:var(--fuchsia);text-decoration:underline;font-size:14px;cursor:pointer;padding:4px}
+
+footer{border-top:1px solid var(--line);padding:34px 0 46px;font-size:13px;color:var(--ink-soft)}
+footer .brand{margin-bottom:12px}
+
+.rv{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.pre{opacity:0;transform:translateY(26px)}
+
+@media (min-width:760px){
+  .wrap{padding:0 36px}
+  .hero{padding-top:60px;padding-bottom:40px}
+  .card{padding:42px 40px}
+  .persons{grid-template-columns:1fr 1fr;gap:44px}
+  .rel .pills{flex-direction:row}
+  .rel .pill span{border-radius:999px}
+  .nums{grid-template-columns:1fr 1fr}
+  .offer-in{padding:56px 52px}
+  .btn{width:auto;min-width:340px}
+  .submit{text-align:center}
+  .deliver-in{padding:40px}
+}
+@media (max-width:759px){
+  .hero-grid{width:230px;height:230px;right:-80px;top:-10px;opacity:.35}
+  .lo i{font-size:30px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ln>span{transform:none;animation:none}.sub{opacity:1;animation:none}.mq{animation:none}.rv.pre{opacity:1;transform:none}
+}
+</style>
+
+<style>
+:root{--man:#2878C8;--man-soft:#EFF6FF;--man-line:#D7E7FA}
+.quiz-intro{padding-top:20px;padding-bottom:8px}
+.quiz-intro h1{font-family:var(--serif);font-size:clamp(32px,7vw,54px);line-height:1.08;margin:0 0 10px}
+.quiz-intro p{font-size:16px;color:var(--ink-soft);max-width:620px}
+.calc{padding-top:10px}
+.person.woman{--person:var(--fuchsia);--person-bg:var(--blush);--person-line:var(--line)}
+.person.man{--person:var(--man);--person-bg:var(--man-soft);--person-line:var(--man-line)}
+.person{padding:18px;border:1px solid var(--person-line)!important;border-radius:18px;background:linear-gradient(180deg,var(--person-bg),#fff 58%)}
+.person .tag,.person h2 .k{color:var(--person)}
+.person input:focus{border-color:var(--person);box-shadow:0 0 0 4px color-mix(in srgb,var(--person) 14%,transparent)}
+.who:first-of-type,.woman-text,.woman-card h4{color:var(--fuchsia)}
+.man-text,.man-card h4{color:var(--man)}
+.woman-card{border-color:var(--line);background:linear-gradient(180deg,var(--blush),#fff 60%)}
+.man-card{border-color:var(--man-line);background:linear-gradient(180deg,var(--man-soft),#fff 60%)}
+@media(max-width:759px){.person{padding:16px}.quiz-intro{padding-top:12px}}
+</style>
+
+</head>
+<body>
+<header class="wrap top">
+  <a class="brand" href="#" data-testid="brand-logo" aria-label="La Chiave del Successo">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 56C14 43 6 33 6 22 6 13 13 7 21 7c5 0 9 3 11 7 2-4 6-7 11-7 8 0 15 6 15 15 0 11-8 21-26 34z" fill="#D1007A"/><circle cx="32" cy="27" r="6" fill="#fff"/><path d="M29.5 31h5l2 12h-9z" fill="#fff"/></svg>
+    <span>La Chiave del Successo</span>
+  </a>
+  <small>Numerologia dell'amore</small>
+</header>
+
+<main>
+<section class="quiz-intro wrap" id="hero">
+  <div class="eyebrow">La vostra compatibilità sentimentale</div>
+  <h1>Scopri la vostra <span class="k">compatibilità</span></h1>
+  <p>Inserisci i vostri nomi e le date di nascita per ricevere la lettura personalizzata.</p>
+</section>
+
+<section class="calc wrap" id="calcolatore">
+  <form class="card" id="form" novalidate data-testid="compat-form">
+    <div class="persons">
+      <fieldset class="person woman" style="border:0">
+        <div class="tag">Lei</div>
+        <h2>I suoi <span class="k">dati</span></h2>
+        <div class="field"><label for="a-nome">Nome</label><input id="a-nome" autocomplete="given-name" data-testid="p1-nome-input" placeholder="Nome di lei"><div class="err" data-for="a-nome">Inserisci il nome.</div></div>
+        <div class="field"><label for="a-data">Data di nascita</label><input id="a-data" class="date" inputmode="numeric" maxlength="10" placeholder="GG/MM/AAAA" data-testid="p1-data-input"><div class="err" data-for="a-data">Inserisci una data valida nel formato GG/MM/AAAA.</div></div>
+      </fieldset>
+      <fieldset class="person man" style="border:0">
+        <div class="tag">Lui</div>
+        <h2>I suoi <span class="k">dati</span></h2>
+        <div class="field"><label for="b-nome">Nome</label><input id="b-nome" data-testid="p2-nome-input" placeholder="Nome di lui"><div class="err" data-for="b-nome">Inserisci il nome.</div></div>
+        <div class="field"><label for="b-data">Data di nascita</label><input id="b-data" class="date" inputmode="numeric" maxlength="10" placeholder="GG/MM/AAAA" data-testid="p2-data-input"><div class="err" data-for="b-data">Inserisci una data valida nel formato GG/MM/AAAA.</div></div>
+      </fieldset>
+    </div>
+    <div class="divider"></div>
+    <div class="rel">
+      <h3>Che rapporto c’è tra voi?</h3>
+      <div class="pills" data-group="rel" data-testid="relazione-group"></div>
+      <div class="err" data-for="rel">Seleziona il tipo di rapporto.</div>
+      <div class="q"><label for="q-tempo">Da quanto tempo vi conoscete? <span class="opt">(facoltativo)</span></label><textarea id="q-tempo" maxlength="200" data-testid="tempo-input" placeholder="Es. da due anni, da qualche mese..."></textarea></div>
+      <div class="q"><label for="q-capire">C'è qualcosa che vorresti comprendere meglio della vostra relazione? <span class="opt">(facoltativo)</span></label><textarea id="q-capire" maxlength="500" data-testid="capire-input" placeholder="Scrivi liberamente..."></textarea></div>
+    </div>
+    <div class="submit"><button class="btn" type="submit" data-testid="calcola-btn">❤️ SCOPRI LA VOSTRA COMPATIBILITÀ</button></div>
+    <div class="form-err" id="form-err" data-testid="form-error">Controlla i campi evidenziati.</div>
+    <p class="privacy">I dati restano sul tuo dispositivo.</p>
+  </form>
+</section>
+
+<section class="result wrap" id="risultato" data-testid="result-section" aria-live="polite"></section>
+
+<section class="offer wrap" id="offerta" data-testid="offer-section">
+  <div class="offer-in rv">
+    <h2>❤️ VUOI SCOPRIRE <span class="k">TUTTO</span> SULLA VOSTRA COMPATIBILITÀ?</h2>
+    <p>«Quello che hai appena scoperto è soltanto una piccola parte della vostra connessione. Ogni relazione presenta caratteristiche, bisogni emotivi, punti di forza e dinamiche che possono essere esplorati più a fondo.»</p>
+    <div class="product">
+      <h3>LA VOSTRA COMPATIBILITÀ SENTIMENTALE — FASCICOLO COMPLETO</h3>
+      <p style="margin-top:8px;font-size:15px">Un'analisi approfondita e personalizzata di 50–60 pagine, dedicata esclusivamente alle due persone.</p>
+      <ul><li>15 capitoli scritti sulla vostra combinazione di numeri</li><li>Copertina con i vostri nomi e le vostre date di nascita</li><li>Formato PDF A4, pronto da scaricare subito dopo il pagamento</li></ul>
+      <div class="price" data-testid="price">25 €<small>pagamento unico</small></div>
+    </div>
+    <button class="btn" id="buy-btn" type="button" data-testid="buy-btn">❤️ OTTIENI IL TUO FASCICOLO COMPLETO —&nbsp;25&nbsp;€</button>
+    <div id="paypal-area" data-testid="paypal-area">
+      <p class="pp-note">Pagamento sicuro con PayPal o carta. Al termine, il fascicolo verrà generato automaticamente in questa pagina.</p>
+      <div id="paypal-buttons" data-testid="paypal-buttons"></div>
+      <div class="status" id="pay-status" data-testid="pay-status"></div>
+    </div>
+  </div>
+</section>
+
+<section class="deliver wrap" id="consegna" data-testid="delivery-section">
+  <div class="deliver-in">
+    <h3>Il tuo <span class="k">fascicolo</span></h3>
+    <p id="deliver-msg" data-testid="delivery-message">Pagamento verificato. Sto preparando il tuo fascicolo personalizzato…</p>
+    <div class="bar"><i id="bar"></i></div>
+    <button class="btn" id="dl-btn" type="button" style="display:none" data-testid="download-pdf-btn">Scarica il fascicolo PDF</button>
+  </div>
+</section>
+
+<section class="wrap" id="saved-area" style="display:none"><div class="saved" id="saved" data-testid="saved-orders"></div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><path d="M32 56C14 43 6 33 6 22 6 13 13 7 21 7c5 0 9 3 11 7 2-4 6-7 11-7 8 0 15 6 15 15 0 11-8 21-26 34z" fill="#D1007A"/><circle cx="32" cy="27" r="6" fill="#fff"/><path d="M29.5 31h5l2 12h-9z" fill="#fff"/></svg><span>La Chiave del Successo</span></div>
+    <p>Le interpretazioni proposte sono simboliche e hanno finalità di riflessione personale: non costituiscono certezze, previsioni o consulenza psicologica.</p>
+    <p style="margin-top:8px">© <span id="yr"></span> La Chiave del Successo</p>
+  </div>
+</footer>
+
+<script>
+const NUMS = {
+1:{titolo:"l'Acqua profonda", img:"un fiume che scorre sotto la superficie", pregio:"una profondità silenziosa e un intuito molto fine", nodo:"il bisogno di proteggersi ritirandosi nel silenzio",
+ess:"Il numero 1 è associato all'Acqua nella sua forma più profonda: l'inverno, la notte, la sorgente che scorre nascosta prima di diventare fiume. Chi porta questa energia tende a vivere molto di ciò che accade dentro, lontano dagli sguardi. All'esterno può apparire calma, riservata, talvolta difficile da decifrare, ma sotto la superficie si muove un mondo interiore ricco, fatto di riflessioni, intuizioni e sentimenti che maturano lentamente. L'Acqua ha la capacità di adattarsi a qualsiasi forma senza perdere la propria natura: allo stesso modo, questa energia sa adeguarsi alle circostanze con grande flessibilità, pur custodendo con cura una parte di sé che non mostra a tutti. La solitudine, per questo numero, non è un vuoto ma uno spazio necessario in cui ritrovarsi.",
+amo:"In amore l'energia dell'Acqua sceglie con attenzione. Non si concede facilmente, osserva a lungo, ascolta le sensazioni prima di fidarsi. Quando però decide di aprirsi, il sentimento può diventare molto intenso e duraturo, anche se non sempre viene espresso con parole o gesti eclatanti. Chi porta il 1 desidera un legame che offra vicinanza senza togliere libertà: ha bisogno di sentire di poter tornare nel proprio spazio interiore senza che questo venga interpretato come freddezza. Proprio qui nasce una delle sue sfide sentimentali: la persona amata potrebbe leggere i silenzi come distanza, mentre per l'Acqua sono un modo per elaborare. Quando si sente al sicuro, questa energia diventa una compagna o un compagno di grande lealtà, capace di comprendere l'altro in profondità.",
+att:"L'energia del 1 attrae soprattutto per il suo mistero. C'è qualcosa di non detto nel suo modo di stare al mondo che incuriosisce, una calma che sembra nascondere molto più di quanto mostri. Chi la incontra percepisce spesso un ascolto autentico, la sensazione di essere compresi senza bisogno di spiegare troppo. A sua volta l'Acqua tende a essere attratta da chi le trasmette calore, vitalità o stabilità: persone che la aiutano a uscire dal proprio mondo interiore senza forzarla.",
+emo:"Sul piano emotivo l'Acqua è fluida: le emozioni arrivano, si trasformano, scorrono in profondità. Non sempre vengono mostrate nel momento in cui nascono; spesso hanno bisogno di tempo per essere comprese prima di essere condivise. In condizioni di serenità questa energia è paziente, comprensiva, capace di accogliere gli stati d'animo altrui. Sotto pressione, invece, può emergere una componente di paura o di insicurezza, che porta a chiudersi, a dubitare di sé o a temere di perdere ciò che si ama. In quei momenti il bisogno principale è sentirsi rassicurati con delicatezza, senza essere incalzati.",
+com:"La comunicazione dell'energia 1 è misurata, riflessiva, spesso essenziale. Preferisce poche parole ben scelte a lunghe discussioni e tende a pensare molto prima di parlare. Questo la rende un'interlocutrice attenta e una buona ascoltatrice, ma può anche far sì che alcune cose importanti restino taciute troppo a lungo. Nei momenti di tensione il rischio è quello di ridurre la comunicazione al minimo, lasciando all'altra persona il compito di interpretare. Per chi le sta accanto può essere utile sapere che dietro una risposta breve c'è spesso un pensiero lungo, non un disinteresse.",
+pas:"Nell'intimità l'Acqua è profonda e sensibile. Il desiderio non nasce dall'apparenza, ma dalla fiducia e dalla sensazione di potersi lasciare andare in un luogo sicuro. Quando questa condizione è presente, l'energia del 1 può rivelare una passione intensa, quasi sorprendente rispetto alla riservatezza mostrata all'esterno. La vicinanza fisica diventa per lei un linguaggio emotivo, un modo di comunicare ciò che a parole resta difficile. Al contrario, pressione, fretta o giudizio tendono a raffreddarla.",
+forza:"Il punto di forza principale dell'Acqua è la capacità di comprendere. Sa leggere tra le righe, intuire ciò che l'altra persona non dice, adattarsi ai cambiamenti senza spezzarsi. Possiede una pazienza che le permette di attraversare periodi difficili mantenendo una sorta di calma interiore, e una lealtà che, una volta concessa, raramente viene ritirata.",
+ombra:"Le fragilità di questa energia si manifestano soprattutto quando si sente insicura. Può diventare diffidente, chiudersi nel silenzio, sviluppare forme di possessività nate dalla paura di perdere l'altro. A volte tende a dipendere emotivamente dalla persona amata, altre volte, al contrario, a mostrarsi distaccata proprio quando avrebbe più bisogno di vicinanza. Il dubbio su di sé, se non riconosciuto, rischia di essere proiettato sulla relazione.",
+bis:"I bisogni sentimentali dell'Acqua ruotano attorno a due parole: fiducia e spazio. Ha bisogno di sentire che il legame è solido, che non verrà abbandonata al primo silenzio, e allo stesso tempo di poter vivere momenti di solitudine senza sensi di colpa. Desidera essere compresa anche quando non riesce a spiegarsi del tutto e apprezza profondamente chi le offre costanza più che grandi dichiarazioni.",
+pot:"In una relazione stabile l'energia del 1 può essere un elemento di profondità e di continuità. Non cerca legami superficiali e, quando si sente scelta, tende a investire con serietà. Il potenziale cresce quando la coppia impara a rispettare i suoi tempi interiori; si complica quando i silenzi vengono letti come rifiuto e non come elaborazione.",
+quo:"Nella vita quotidiana l'Acqua tende a preferire ritmi tranquilli, momenti di raccoglimento, serate in cui non è necessario parlare per stare bene. Può aver bisogno di un angolo tutto suo, anche simbolico, e di tempo per decomprimersi dopo una giornata intensa. Prima di affrontare una conversazione impegnativa, spesso preferisce lasciar sedimentare le emozioni.",
+dono:"Ciò che l'Acqua può insegnare è l'arte dell'ascolto profondo e della pazienza: la capacità di non reagire subito, di lasciare che le cose si chiariscano da sole, di comprendere l'altro oltre le parole.",
+cons:"Per questa energia, il consiglio più prezioso è dare voce a ciò che si muove dentro prima che diventi troppo pesante da sostenere. Non serve dire tutto, ma condividere almeno il senso di ciò che si prova: anche una frase semplice come «ho bisogno di un po' di tempo, ma ci sono» può trasformare un silenzio ambiguo in un gesto di fiducia.",
+chiave:"La chiave dell'Acqua in amore è la fiducia: quando si sente al sicuro, scorre verso l'altro con naturalezza e diventa una presenza capace di nutrire la relazione in profondità."},
+
+2:{titolo:"la Terra accogliente", img:"un campo fertile che accoglie e fa crescere", pregio:"una dedizione costante e una cura attenta ai dettagli", nodo:"la tendenza a dare moltissimo dimenticando i propri bisogni",
+ess:"Il numero 2 è legato alla Terra nella sua qualità più ricettiva: il campo che accoglie il seme, la madre che nutre, la stagione che prepara il raccolto. Chi porta questa energia tende a vivere le relazioni come un luogo in cui prendersi cura, sostenere, creare un'atmosfera di calore e di appartenenza. È un'energia concreta, osservatrice, attenta ai dettagli che altri trascurano. Lavora bene in squadra, sa essere tenace e dedicarsi a lungo a ciò in cui crede. La sua forza non è appariscente, ma costante: come la terra, sostiene in silenzio ciò che cresce sopra di lei.",
+amo:"In amore l'energia del 2 è devota e fedele. Quando si lega a qualcuno tende a dedicarsi con generosità, prestando attenzione ai suoi gusti, alle sue abitudini, ai suoi stati d'animo. Ama far sentire l'altra persona accolta e protetta, e spesso esprime il sentimento attraverso gesti pratici più che con dichiarazioni. Il rischio, quando questa dedizione diventa eccessiva, è quello di voler essere tutto per l'altro, fino a sviluppare forme di dipendenza reciproca o di attenzione quasi ossessiva per i particolari della vita del partner. Il suo amore migliore nasce quando la cura va in entrambe le direzioni.",
+att:"L'energia del 2 attrae per il senso di casa che trasmette. Accanto a lei ci si sente visti, ascoltati, accuditi; c'è una morbidezza che rassicura. Spesso è attratta da persone dotate di iniziativa, visione o carisma, che le offrono una direzione in cui riversare la propria dedizione. In cambio porta stabilità e concretezza, qualità che possono diventare preziose per chi tende a disperdersi.",
+emo:"Emotivamente la Terra ricettiva è sensibile all'atmosfera: percepisce subito se qualcosa non va e si impegna per ristabilire l'armonia. Le sue emozioni sono costanti più che esplosive. Tende però a mettere i bisogni altrui prima dei propri, e quando si sente poco apprezzata può accumulare malcontento senza esprimerlo. Il dubbio su di sé o una sottile forma di invidia possono emergere nei periodi in cui sente di dare molto senza ricevere.",
+com:"Nella comunicazione l'energia del 2 è attenta, concreta, orientata ad aiutare. Nota i dettagli, ricorda ciò che l'altro ha detto, sa porre domande pratiche. Talvolta, all'inizio, può sembrare meno profonda di quanto sia, perché preferisce parlare di cose concrete piuttosto che di idee astratte. Nei conflitti tende ad evitare lo scontro diretto, cercando di ricucire: un pregio, purché non diventi rinuncia a esprimere il proprio punto di vista.",
+pas:"Nell'intimità la Terra del 2 è calda, sensoriale, generosa. Vive la vicinanza fisica come una forma di cura e di accoglienza, e la sua sensualità si nutre di continuità, di tenerezza, di gesti che si ripetono e diventano rito. Ha bisogno di sentirsi desiderata non solo come persona che dà, ma anche come persona che riceve piacere e attenzione.",
+forza:"I punti di forza del 2 sono la costanza, la capacità di prendersi cura e lo spirito di collaborazione. È una presenza su cui si può contare nei momenti difficili, che sa trasformare una casa in un rifugio e una relazione in un progetto condiviso. La sua tenacia le permette di non arrendersi davanti alle prime difficoltà.",
+ombra:"Le fragilità di questa energia emergono quando la cura si trasforma in controllo o in annullamento di sé. Può diventare apprensiva, voler gestire ogni dettaglio, faticare a lasciare spazio all'altro. Oppure può trascurare se stessa al punto da sentirsi poi svuotata e non riconosciuta. Riconoscere il proprio bisogno di essere accudita è per lei un passaggio importante.",
+bis:"I bisogni sentimentali del 2 riguardano il riconoscimento e la reciprocità. Ha bisogno di sentirsi apprezzata per ciò che fa, di ricevere a sua volta attenzioni, di sapere che il proprio impegno non viene dato per scontato. Desidera stabilità, progetti condivisi e una quotidianità in cui sentirsi parte di un noi.",
+pot:"In una relazione stabile la Terra accogliente è un pilastro: sa costruire, mantenere, far durare. Il potenziale del legame cresce quando la sua dedizione viene ricambiata e quando la coppia trova un equilibrio tra cura e libertà; si complica se il rapporto diventa sbilanciato, con una persona che dà e l'altra che si limita a ricevere.",
+quo:"Nella vita quotidiana l'energia del 2 è pratica e organizzata: si accorge di ciò che manca in casa, ricorda le scadenze, si preoccupa del benessere comune. Ama le abitudini condivise, i pasti insieme, i piccoli rituali che danno ritmo alle giornate. Può però irritarsi se percepisce trascuratezza o se sente di portare da sola il peso delle incombenze.",
+dono:"Ciò che la Terra del 2 può insegnare è il valore della cura costante: l'idea che l'amore non si dimostri soltanto nei grandi momenti, ma nella presenza quotidiana e nell'attenzione ai dettagli.",
+cons:"Per questa energia il consiglio più utile è imparare a ricevere. Chiedere aiuto, esprimere un desiderio, concedersi del tempo per sé non sono atti di egoismo, ma modi per mantenere viva la propria capacità di dare. Una relazione diventa più sana quando anche chi cura viene curato.",
+chiave:"La chiave della Terra accogliente in amore è la reciprocità: quando la sua dedizione trova risposta, diventa il terreno fertile su cui la relazione può crescere a lungo."},
+
+3:{titolo:"il Legno del tuono", img:"un tuono di primavera che risveglia la natura", pregio:"un entusiasmo vitale e una grande capacità di iniziativa", nodo:"l'impulsività che porta a reagire prima di ascoltare",
+ess:"Il numero 3 è associato al Legno nella sua forma più dinamica: il tuono di primavera, il germoglio che spinge per uscire dalla terra, l'energia dell'alba. Chi porta questa vibrazione tende a essere vitale, ottimista, orientata all'azione. Ha idee rapide, ama iniziare, si entusiasma facilmente e trascina gli altri con la sua energia. Dietro una certa esuberanza, a volte perfino brusca, si nasconde spesso una sensibilità che non sempre viene mostrata. È un'energia che guarda avanti, al futuro, a ciò che può nascere, e che fatica a stare ferma troppo a lungo.",
+amo:"In amore il Legno del 3 desidera un coinvolgimento intenso, vivo, stimolante, ma senza rinunciare alla propria indipendenza. Si innamora con slancio e ama le fasi iniziali di una relazione, quando tutto è scoperta. Può essere un partner vivace e appassionante, capace di portare movimento e allegria, a patto di sentirsi libero di esprimere la propria natura. Il rischio è che l'entusiasmo iniziale lasci spazio all'irrequietezza quando la relazione entra nella routine: per questo ha bisogno di un legame che continui a evolversi, a proporre obiettivi, a crescere.",
+att:"L'energia del 3 attrae per la sua vitalità. Porta con sé un senso di possibilità, di movimento, di leggerezza coraggiosa che risveglia chi le sta accanto. È spesso attratta da persone che le offrono profondità o stabilità, qualità che compensano la sua tendenza a correre avanti, oppure da chi sa tenerle testa con altrettanta energia.",
+emo:"Sul piano emotivo il Legno del 3 è immediato: le emozioni emergono rapidamente e vengono espresse senza troppi filtri. Può arrabbiarsi in fretta e, altrettanto in fretta, tornare sereno. Questa spontaneità rende le sue reazioni facili da leggere, ma può anche ferire chi è più sensibile ai toni. Sotto la superficie esuberante c'è spesso una certa autocritica e il timore di non essere all'altezza delle proprie ambizioni.",
+com:"La comunicazione del 3 è diretta, rapida, spesso schietta. Tende a pensare ad alta voce, a dire ciò che pensa nel momento stesso in cui lo pensa e, talvolta, a completare le frasi degli altri. È un interlocutore stimolante, pieno di idee e di proposte. Il rischio è quello di risultare brusco o di non lasciare abbastanza spazio all'ascolto, soprattutto con persone che hanno bisogno di più tempo per esprimersi.",
+pas:"Nell'intimità l'energia del 3 è fisica, spontanea, energica. La dimensione tattile è importante e il desiderio si accende con rapidità. Ama la novità, la sorpresa, l'iniziativa. Per mantenere viva la passione ha bisogno di sentire che il rapporto non diventa prevedibile e che c'è spazio per il gioco e per l'avventura condivisa.",
+forza:"I punti di forza del Legno del 3 sono l'entusiasmo, il coraggio di iniziare e la capacità di guardare avanti. Sa rimettere in moto una relazione che si è fermata, proporre progetti nuovi, trasformare un momento difficile in un'occasione per ripartire. La sua sincerità, anche quando è un po' ruvida, è una garanzia di trasparenza.",
+ombra:"Le fragilità del 3 emergono quando l'impazienza prende il sopravvento. Può iniziare troppe cose senza portarle a termine, reagire in modo impulsivo, trascurare i bisogni altrui quando è sotto pressione. A volte l'ambizione e la fretta lo portano a sottovalutare il valore della costanza e dei tempi lenti.",
+bis:"I bisogni sentimentali del 3 riguardano la libertà di movimento e lo stimolo. Ha bisogno di sentirsi incoraggiato, apprezzato per le proprie idee, libero di avere spazi personali. Desidera un partner che non lo trattenga ma che cammini con lui, condividendo progetti e visioni.",
+pot:"In una relazione stabile l'energia del 3 porta crescita e rinnovamento. Il potenziale si rafforza quando la coppia condivide obiettivi e trova continuamente nuovi stimoli; si complica se la quotidianità diventa troppo statica o se il bisogno di indipendenza viene vissuto dall'altro come una minaccia.",
+quo:"Nella vita quotidiana il Legno del 3 è attivo, pieno di iniziative, spesso in movimento. Può avere difficoltà con la routine, con le attese, con le decisioni che richiedono tempi lunghi. Porta energia nelle giornate, ma può dimenticare i dettagli pratici o lasciare a metà ciò che non lo stimola più.",
+dono:"Ciò che il Legno del 3 può insegnare è il coraggio di cominciare: la fiducia nel futuro, la capacità di rialzarsi rapidamente e di vedere nelle difficoltà un punto di partenza.",
+cons:"Per questa energia il consiglio più prezioso è rallentare nei momenti decisivi. Contare fino a dieci prima di reagire, ascoltare fino in fondo prima di rispondere, dare valore anche alla costanza: sono piccoli esercizi che permettono al suo entusiasmo di diventare una forza costruttiva e duratura.",
+chiave:"La chiave del Legno del 3 in amore è la crescita condivisa: quando la relazione resta viva e in movimento, la sua energia diventa un motore potente per entrambi."},
+
+4:{titolo:"il Legno del vento", img:"un vento gentile che penetra ovunque", pregio:"una sensibilità romantica e una grande capacità di comprendere", nodo:"l'indecisione e il timore di essere fraintesi",
+ess:"Il numero 4 è associato al Legno nella sua qualità più sottile: il vento che penetra ovunque, la pianta che cresce flessibile, la tarda primavera piena di promesse. Chi porta questa energia possiede spesso una sensibilità delicata, un animo idealista e una certa innocenza nello sguardo sul mondo. Dietro un'apparente fermezza si cela un interno vulnerabile. È un'energia capace di idee originali, indipendente, determinata a seguire la propria strada, ma anche molto influenzabile dall'ambiente in cui si trova.",
+amo:"In amore il 4 crede profondamente nel vero amore. Ha un'idea romantica della relazione, cerca un legame autentico e totale, e può idealizzare la persona amata. Questa visione rende i suoi sentimenti sinceri e generosi, ma la espone anche a delusioni quando la realtà non corrisponde al sogno. Tende a essere leale e ad attribuire grande valore alla fiducia. Talvolta fatica a esprimere ciò che prova in modo chiaro, e i suoi tentennamenti possono essere scambiati per incertezza nei sentimenti, quando in realtà nascono dal desiderio di non sbagliare.",
+att:"L'energia del 4 attrae per la sua dolcezza e per quel fascino quasi ipnotico che passa attraverso lo sguardo. Comunica molto con gli occhi e ha bisogno del contatto visivo per sentirsi in relazione. Può essere attratta da persone che emanano sicurezza, forza o influenza, qualità che sembrano offrirle una direzione.",
+emo:"Emotivamente il Legno del 4 è sensibile e permeabile: assorbe gli stati d'animo dell'ambiente e delle persone vicine. Questo lo rende empatico, ma anche vulnerabile ai contesti tesi. Quando si sente sotto pressione può confondersi, perdere la chiarezza, lasciare che siano gli altri a decidere. Ha bisogno di serenità per ritrovare il proprio centro.",
+com:"Nella comunicazione il 4 sa essere molto efficace nel chiarire le situazioni e nel cogliere i punti essenziali, ma può diventare vago quando gli argomenti toccano corde emotive. Ha bisogno di sentirsi guardato e ascoltato davvero. Le esitazioni, le frasi lasciate a metà, i tempi lunghi nel decidere possono essere fraintesi; per questo apprezza chi sa porre domande con delicatezza.",
+pas:"Nell'intimità il 4 è romantico e sognatore. Il desiderio è legato all'atmosfera, all'emozione, alla sensazione di un incontro speciale. Ama la tenerezza, gli sguardi, i gesti che raccontano un sentimento. Quando si sente compreso può abbandonarsi con grande dolcezza; quando percepisce freddezza tende a ritirarsi.",
+forza:"I punti di forza del Legno del 4 sono la sensibilità, l'originalità e la capacità di cogliere ciò che gli altri non vedono. Sa portare nella relazione romanticismo, delicatezza, ideali condivisi. La sua lealtà e il desiderio di un amore autentico sono qualità preziose.",
+ombra:"Le fragilità del 4 emergono soprattutto nella difficoltà a prendere decisioni e nella tendenza a lasciarsi influenzare. Può trascurare i dettagli, sentirsi sopraffatto dalle complicazioni, cedere il controllo per evitare il conflitto. In alcuni momenti, quando si sente ferito, può esprimere il malcontento in modo indiretto anziché affrontarlo apertamente.",
+bis:"I bisogni sentimentali del 4 riguardano la sicurezza emotiva e la sincerità. Ha bisogno di sentire che il sentimento è autentico, di ricevere conferme, di vivere in un clima sereno. Desidera un partner che lo aiuti a scegliere senza imporsi, e che rispetti la sua sensibilità senza considerarla debolezza.",
+pot:"In una relazione stabile il Legno del 4 porta delicatezza e profondità di sentimento. Il potenziale cresce quando il legame offre chiarezza e protezione dal caos esterno; si complica se le aspettative idealizzate non vengono confrontate con la realtà o se le decisioni importanti vengono continuamente rimandate.",
+quo:"Nella vita quotidiana il 4 può avere un ritmo variabile: momenti di grande ispirazione si alternano a fasi di incertezza. Ama gli ambienti armoniosi e risente molto del disordine o delle tensioni domestiche. Può aver bisogno di aiuto nell'organizzazione pratica, mentre offre grande sensibilità nei rapporti.",
+dono:"Ciò che il Legno del 4 può insegnare è la delicatezza: il valore degli ideali, dei sogni condivisi, della capacità di guardare l'altro con meraviglia anche dopo molto tempo.",
+cons:"Per questa energia il consiglio più utile è esercitarsi a dire con chiarezza ciò che si desidera, anche nelle piccole scelte quotidiane. Ogni decisione presa con consapevolezza rafforza la fiducia in se stessi e rende la relazione più leggibile e più serena.",
+chiave:"La chiave del Legno del 4 in amore è l'autenticità: quando il sentimento è vero e sereno, la sua sensibilità diventa un vento gentile che rinnova continuamente il legame."},
+
+5:{titolo:"la Terra del centro", img:"il centro di gravità attorno a cui tutto ruota", pregio:"un carisma naturale e la capacità di catalizzare le situazioni", nodo:"la tendenza agli estremi e a una certa testardaggine",
+ess:"Il numero 5 occupa il centro: è la Terra che sta in mezzo a tutte le altre energie, il punto attorno a cui le cose ruotano e si trasformano. Chi porta questa vibrazione possiede spesso un carisma naturale, una presenza che si fa notare anche senza volerlo. È un catalizzatore: dove arriva, le situazioni si muovono, si trasformano, giungono a una svolta. È un'energia complessa, capace di grande generosità e di altrettanta ostinazione, che oscilla tra il desiderio di essere al centro e quello di mettersi al servizio degli altri.",
+amo:"In amore il 5 trova facilmente persone che si avvicinano, attratte dalla sua forza magnetica. Vive i sentimenti in modo intenso e totale, con una forte componente fisica. Può essere molto generoso e protettivo, ma anche bisognoso di attenzioni e incline agli estremi: o tutto o niente. In alcune fasi questa intensità lo porta a mettere alla prova la relazione o a cercare stimoli altrove. Il suo amore migliore nasce quando trova un equilibrio tra il bisogno di essere riconosciuto e la capacità di riconoscere l'altro.",
+att:"L'energia del 5 attrae per il suo carisma e per la sua forza. C'è qualcosa di inevitabile nella sua presenza, una gravità che tiene vicini gli altri. Tende a essere attratta da persone che sanno sostenerla, ma anche da chi le offre una sfida, qualcuno che non si lasci semplicemente trascinare.",
+emo:"Sul piano emotivo il 5 è intenso e talvolta imprevedibile. Può essere schietto fino alla durezza, impaziente, testardo, ma anche profondamente altruista. Sotto la superficie forte si nasconde spesso il dubbio su di sé, che può rendere difficile accettare le critiche. Quando si sente compreso diventa un sostegno potente; quando si sente giudicato può irrigidirsi.",
+com:"Nella comunicazione il 5 è diretto, a volte troppo. Dice ciò che pensa con franchezza e tende ad avere opinioni forti. Sa risolvere problemi e guidare le discussioni verso una conclusione, ma può essere percepito come egocentrico o poco disposto a cambiare idea. Il dialogo con lui funziona meglio quando è chiaro, concreto e privo di giochi indiretti.",
+pas:"Nell'intimità il 5 è fortemente fisico e sensuale. Prova piacere nel donare piacere e vive la passione come un'esperienza totale. Il desiderio può essere intenso e costante, ma ha bisogno di sentire coinvolgimento reale dall'altra parte. La monotonia o la sensazione di essere rifiutato possono renderlo inquieto.",
+forza:"I punti di forza della Terra del centro sono la capacità di guidare, di risolvere, di trasformare. Nei momenti critici sa prendere in mano la situazione e trovare una via d'uscita. La sua generosità, quando si esprime, è grande e concreta.",
+ombra:"Le fragilità del 5 emergono nella tendenza agli estremi, nella testardaggine e in una certa fatica ad accettare le critiche. Può diventare bisognoso, esigente, oppure troppo brusco. Non sempre riesce a usare i propri talenti a proprio vantaggio e talvolta crea attriti senza accorgersene.",
+bis:"I bisogni sentimentali del 5 riguardano il riconoscimento e l'intensità. Ha bisogno di sentirsi importante per l'altra persona, di ricevere attenzioni e di vivere un legame pieno, non tiepido. Desidera anche un partner abbastanza solido da non farsi travolgere dalla sua forza.",
+pot:"In una relazione stabile il 5 può essere il centro attorno a cui la coppia si organizza. Il potenziale cresce quando la sua forza viene messa al servizio del progetto comune; si complica quando il bisogno di controllo o di intensità rende la relazione un'altalena.",
+quo:"Nella vita quotidiana il 5 tende a prendere iniziative, organizzare, decidere. Può essere molto presente e protettivo, ma anche impaziente con chi ha ritmi diversi. Ha bisogno di sentirsi utile e riconosciuto anche nelle piccole cose.",
+dono:"Ciò che la Terra del centro può insegnare è la capacità di affrontare le situazioni, di prendere posizione, di trasformare una crisi in una svolta.",
+cons:"Per questa energia il consiglio più prezioso è coltivare la morbidezza: accogliere un punto di vista diverso senza viverlo come una sconfitta, ammorbidire i toni, chiedere attenzione con dolcezza anziché pretenderla.",
+chiave:"La chiave della Terra del centro in amore è l'equilibrio: quando la sua intensità trova una misura, diventa una forza capace di tenere unita e viva la relazione."},
+
+6:{titolo:"il Metallo del cielo", img:"il cielo ampio che dà ordine e direzione", pregio:"un forte senso di responsabilità e una lealtà profonda", nodo:"l'autocritica e la rigidità nelle aspettative",
+ess:"Il numero 6 è associato al Metallo nella sua espressione più alta: il cielo, l'ordine, la chiarezza della mente. Chi porta questa energia possiede spesso un forte senso morale, una naturale attitudine al comando e il desiderio di fare le cose nel modo giusto. È orientata al risultato, organizzata, capace di dare struttura alle situazioni. Ha anche una componente intuitiva notevole, una percezione sottile che le permette di cogliere ciò che sta accadendo prima che diventi evidente.",
+amo:"In amore il 6 cerca un legame profondo e vero. Ha idee precise su ciò che è giusto in una relazione e tende a prendere molto sul serio l'impegno. Quando si sente in un rapporto stabile e rispettoso può essere una persona molto devota, presente e appassionata. Talvolta però la sua tendenza a definire regole chiare e a pretendere molto, prima di tutto da sé, può rendere difficile gestire la parte più emotiva e imprevedibile dei sentimenti.",
+att:"L'energia del 6 attrae per la sua dignità e per il senso di affidabilità che trasmette. Accanto a lei ci si sente in buone mani. È spesso attratta da persone capaci di sostenerla, di offrirle calore o di ammorbidire la sua serietà con leggerezza e spontaneità.",
+emo:"Sul piano emotivo il 6 tende a controllare ciò che prova. Può apparire composto anche quando dentro c'è molto movimento. È molto autocritico: quando sente di non essere all'altezza, rischia di cadere nel senso di colpa o in una sorta di stanchezza interiore. Gli stati emotivi più fluidi della relazione possono metterlo in difficoltà, perché sfuggono all'ordine.",
+com:"Nella comunicazione il 6 è chiaro, autorevole, a volte perentorio. Sa organizzare un discorso, prendere decisioni, indicare una direzione. Quando è sotto stress può diventare tagliente o poco diplomatico, e dare l'impressione di voler imporre il proprio punto di vista. Apprezza il dialogo onesto e rispettoso, mentre fatica con le ambiguità.",
+pas:"Nell'intimità il 6 può essere molto devoto e intenso, soprattutto quando il legame è stabile e basato sulla fiducia. Ha bisogno di sentirsi rispettato e di vivere la passione in modo coerente con i propri valori. Quando si sente al sicuro può lasciare cadere il controllo e rivelare una sorprendente profondità.",
+forza:"I punti di forza del Metallo del cielo sono l'affidabilità, la lealtà, la capacità di dare struttura e direzione. È una persona che mantiene la parola, che si assume le proprie responsabilità e che sa proteggere chi ama.",
+ombra:"Le fragilità del 6 emergono quando l'esigenza di perfezione diventa rigidità. Può essere troppo critico con sé e con gli altri, dominante nei momenti di stress, poco flessibile davanti a ciò che non rientra nelle sue aspettative. A volte la durezza è una difesa contro la propria vulnerabilità.",
+bis:"I bisogni sentimentali del 6 riguardano il rispetto, la stima e la coerenza. Ha bisogno di sentire che il partner apprezza il suo impegno e condivide i suoi valori. Desidera una relazione chiara, in cui ognuno faccia la propria parte.",
+pot:"In una relazione stabile il 6 è un punto di riferimento solido. Il potenziale cresce quando la sua capacità di guida viene bilanciata da apertura e tenerezza; si complica se il bisogno di controllo prevale sul dialogo.",
+quo:"Nella vita quotidiana il 6 tende all'ordine, alla pianificazione, alla responsabilità. Ama sapere cosa accadrà, organizzare le giornate, mantenere gli impegni. Può irritarsi davanti al disordine o all'imprecisione e talvolta faticare a concedersi momenti di pura spensieratezza.",
+dono:"Ciò che il Metallo del cielo può insegnare è il valore della coerenza e dell'impegno: la capacità di mantenere una promessa e di costruire qualcosa che resista nel tempo.",
+cons:"Per questa energia il consiglio più utile è concedersi l'imperfezione. Ammettere un errore, chiedere aiuto, lasciare che l'altro faccia a modo suo: sono gesti che non tolgono autorevolezza, ma aggiungono umanità e vicinanza.",
+chiave:"La chiave del Metallo del cielo in amore è la fiducia nella tenerezza: quando permette alla propria vulnerabilità di emergere, la sua lealtà diventa calore."},
+
+7:{titolo:"il Metallo del lago", img:"un lago sereno che riflette la luce", pregio:"un fascino naturale e una grande capacità di godere della vita", nodo:"la tendenza ad aggirare i conflitti con mezze verità",
+ess:"Il numero 7 è associato al Metallo nella sua qualità più gioiosa: il lago tranquillo che riflette il cielo, l'autunno maturo, il piacere delle cose belle. Chi porta questa energia possiede spesso un fascino naturale, una parola facile, un gusto raffinato per la qualità della vita. È riflessiva, sa apprezzare le sfumature, ama l'armonia e la bellezza. Ha un temperamento tendenzialmente ottimista e una spiccata capacità diplomatica.",
+amo:"In amore il 7 è romantico, attraente, piacevole da frequentare. Sa corteggiare con le parole, creare atmosfere, far sentire l'altro speciale. Ama il piacere e la leggerezza, e cerca una relazione che sia anche fonte di gioia. Può però avere difficoltà ad adattarsi quando il partner ha un'idea diversa di ciò che rende bella la vita. In alcune situazioni sa orientare le cose a proprio favore pur dando l'impressione di subirle.",
+att:"L'energia del 7 attrae per la sua grazia, la sua voce, il suo modo di parlare e di far sentire a proprio agio. Ha un magnetismo leggero e accogliente. È spesso attratta da persone solide che le offrono sicurezza, o da chi sa apprezzare e condividere il suo amore per la qualità.",
+emo:"Sul piano emotivo il 7 è riflessivo e tendenzialmente sereno, ma può evitare le emozioni più pesanti, preferendo mantenere un clima piacevole. Quando qualcosa la ferisce può esprimerlo in modo indiretto. A volte il suo ottimismo rischia di minimizzare le difficoltà vissute dall'altra persona.",
+com:"Nella comunicazione il 7 è brillante: sa scegliere le parole, raccontare, convincere. È diplomatico e cerca di non ferire, ma proprio per questo può ricorrere a piccole approssimazioni della verità per evitare discussioni. Il dialogo con lei è piacevole; diventa più profondo quando si sente libera di dire anche ciò che è scomodo.",
+pas:"Nell'intimità il 7 è molto sensuale e vive la passione come un'arte da coltivare. Ama la cura dei dettagli, l'atmosfera, il tempo dedicato al piacere. Ha bisogno di bellezza e di leggerezza anche nei momenti più intimi e può rendere la vicinanza fisica un'esperienza raffinata.",
+forza:"I punti di forza del Metallo del lago sono il fascino, la diplomazia e la capacità di portare gioia. Sa alleggerire i momenti difficili, creare armonia, valorizzare ciò che di bello c'è nella relazione.",
+ombra:"Le fragilità del 7 emergono quando la ricerca di piacere evita la fatica. Può apparire superficiale, sottrarsi alle responsabilità più pesanti, esprimere il disagio in modo passivo anziché diretto. Talvolta suscita invidia o incomprensione per il suo modo di godersi la vita.",
+bis:"I bisogni sentimentali del 7 riguardano la leggerezza, l'apprezzamento e la qualità del tempo condiviso. Ha bisogno di sentirsi ammirata, di vivere momenti piacevoli, di sapere che la relazione non è solo dovere ma anche gioia.",
+pot:"In una relazione stabile il 7 porta piacere, armonia e capacità di mediazione. Il potenziale cresce quando la coppia sa unire leggerezza e responsabilità; si complica se i problemi vengono continuamente rimandati per non turbare l'atmosfera.",
+quo:"Nella vita quotidiana il 7 ama la bellezza: una casa curata, una cena preparata con gusto, un'uscita piacevole. Può faticare con le incombenze ripetitive e preferire attività che portano soddisfazione. È spesso la persona che ricorda di festeggiare e di concedersi una pausa.",
+dono:"Ciò che il Metallo del lago può insegnare è l'arte di godersi la vita: la capacità di celebrare, di alleggerire, di trovare il bello anche nei giorni ordinari.",
+cons:"Per questa energia il consiglio più prezioso è scegliere la sincerità anche quando è scomoda. Una verità detta con gentilezza costruisce più fiducia di molte parole piacevoli, e permette alla relazione di diventare profonda oltre che bella.",
+chiave:"La chiave del Metallo del lago in amore è la gioia autentica: quando la leggerezza si unisce alla sincerità, il suo fascino diventa una luce che rende il legame prezioso."},
+
+8:{titolo:"la Terra della montagna", img:"una montagna stabile e silenziosa", pregio:"una stabilità rassicurante e una lealtà tenace", nodo:"la difficoltà a mostrare ciò che prova e una certa ostinazione",
+ess:"Il numero 8 è associato alla Terra nella sua forma più solida: la montagna, l'immobilità, il tempo del passaggio tra la fine dell'inverno e l'inizio della primavera. Chi porta questa energia trasmette stabilità e affidabilità. Si muove con lentezza e determinazione, segue la propria direzione con perseveranza e presta un'attenzione meticolosa ai dettagli. Vive le esperienze con profondità: nulla, per l'8, è davvero superficiale. Sotto una superficie che appare imperturbabile si nasconde una sensibilità notevole.",
+amo:"In amore l'8 vive ogni esperienza come qualcosa di importante. Non ama la leggerezza fine a se stessa e tende a costruire legami solidi, duraturi, basati sulla lealtà. Il suo modo di amare è costante e protettivo, anche se non sempre esplicito. Può essere difficile da leggere emotivamente, e chi gli sta accanto potrebbe chiedersi cosa provi davvero. È molto sensibile alla mancanza di comprensione: se si sente frainteso può chiudersi ancora di più.",
+att:"L'energia dell'8 attrae per la sua solidità. Accanto a lei ci si sente al riparo, come ai piedi di una montagna. Spesso è la persona a cui gli altri si rivolgono per un consiglio. È attratta da chi le porta calore, vivacità ed espressività, qualità che la aiutano ad aprirsi.",
+emo:"Sul piano emotivo l'8 è profondo ma riservato. Le emozioni si accumulano lentamente e non sempre trovano espressione. Quando è sereno è calmo e rassicurante; quando è sotto stress può diventare indeciso, fragile o timoroso, oppure irrigidirsi in posizioni ostinate. Il suo coinvolgimento, quando si attiva, può essere molto intenso.",
+com:"Nella comunicazione l'8 è misurato e riflessivo. Pesa le parole, non ama le discussioni improvvise, preferisce affrontare le questioni quando ha avuto il tempo di pensarci. Può essere un ottimo consigliere per gli altri, ma faticare a parlare di sé. Chi gli sta accanto può imparare a leggere i suoi segnali, che sono spesso più nei gesti che nelle parole.",
+pas:"Nell'intimità l'8 ha un desiderio forte e duraturo, anche se non sempre manifesto. La passione cresce con la fiducia e con il tempo, e si esprime con profondità e costanza. Ha bisogno di sentirsi compreso e accettato per potersi lasciare andare davvero.",
+forza:"I punti di forza della Terra della montagna sono la stabilità, la lealtà, la cura profonda e l'attenzione ai dettagli. È una presenza costante, che non scompare nei momenti difficili e che sa custodire nel tempo ciò che ha costruito.",
+ombra:"Le fragilità dell'8 emergono nell'indecisione, nella chiusura e in una possibile ostinazione. Può fissarsi su un'idea, coinvolgersi troppo in una questione, perdere la visione d'insieme a causa di un'eccessiva attenzione ai particolari. Talvolta il suo silenzio viene percepito come distacco.",
+bis:"I bisogni sentimentali dell'8 riguardano la comprensione, la stabilità e il tempo. Ha bisogno di sentire che può fidarsi, di non essere spinto a decidere in fretta, di essere accolto anche nei suoi silenzi. Desidera un legame che duri.",
+pot:"In una relazione stabile l'8 è un fondamento solido. Il potenziale cresce quando la coppia impara a dialogare nonostante i suoi tempi lenti; si complica se la chiusura emotiva diventa un muro o se i cambiamenti necessari vengono continuamente rimandati.",
+quo:"Nella vita quotidiana l'8 è affidabile, preciso, costante. Ama le abitudini, la casa, la sicurezza delle cose conosciute. Può resistere ai cambiamenti improvvisi e aver bisogno di tempo per adattarsi alle novità proposte dall'altro.",
+dono:"Ciò che la Terra della montagna può insegnare è il valore della costanza: la capacità di restare, di attraversare il tempo, di custodire un legame senza lasciarsi scuotere da ogni cambiamento.",
+cons:"Per questa energia il consiglio più utile è lasciar trasparire di più le proprie emozioni. Un piccolo gesto esplicito, una parola affettuosa detta senza aspettare il momento perfetto, possono aiutare l'altra persona a sentire tutto il calore che la montagna custodisce.",
+chiave:"La chiave della Terra della montagna in amore è la fiducia condivisa: quando si sente compresa, la sua stabilità diventa un rifugio sicuro per entrambi."},
+
+9:{titolo:"il Fuoco luminoso", img:"una fiamma che illumina e riscalda", pregio:"una passione luminosa e una grande espressività", nodo:"l'impulsività e il bisogno costante di riconoscimento",
+ess:"Il numero 9 è associato al Fuoco: la piena estate, il mezzogiorno, la luce che illumina e rende tutto visibile. Chi porta questa energia possiede spesso una brillantezza naturale, un carisma che attira, una percezione chiara delle situazioni. È appassionata, espressiva, capace di accendere l'entusiasmo negli altri. Ama essere vista e riconosciuta, e il suo calore può rendere luminoso qualsiasi ambiente. Come il fuoco, però, ha bisogno di essere alimentata e di trovare una base stabile su cui ardere.",
+amo:"In amore il 9 è romantico ed espressivo. Ama corteggiare ed essere corteggiato, vive i sentimenti con passione e li mostra apertamente. Attira molte persone e può essere percepito come volubile o un po' vanitoso, ma in realtà cerca un legame stabile in cui sentirsi riconosciuto. È tendenzialmente fedele e si aspetta lo stesso dall'altro. Può essere ingenuo nelle relazioni, fidandosi delle apparenze o lasciandosi trascinare dall'emozione del momento.",
+att:"L'energia del 9 attrae per la sua luce. È difficile non notarla: il suo entusiasmo, il suo modo di parlare, la sua passione catturano lo sguardo. È spesso attratta da persone che le offrono stabilità e radici, o da chi alimenta la sua fiamma con stimoli e ammirazione.",
+emo:"Sul piano emotivo il Fuoco è intenso e immediato. Le emozioni divampano rapidamente e vengono espresse con forza. Può essere schietto, faticare a tenere un segreto, reagire in modo impulsivo. Quando si sente sostenuto è generoso e caloroso; quando si sente ignorato può diventare inquieto o cercare conferme altrove.",
+com:"Nella comunicazione il 9 è brillante e persuasivo. Le sue parole colpiscono, sa entusiasmare e convincere. Talvolta, trascinato dall'entusiasmo, può promettere più di quanto riesca a mantenere o dare un'impressione diversa da ciò che intendeva. Ama un dialogo vivace e diretto.",
+pas:"Nell'intimità il Fuoco è passionale e caldo. Il desiderio si accende con intensità e ha bisogno di essere alimentato da ammirazione, sguardi, parole. Ama sentirsi desiderato e vivere la passione come una celebrazione. La routine e l'indifferenza possono spegnerlo più di qualsiasi conflitto.",
+forza:"I punti di forza del Fuoco sono la passione, la chiarezza e la generosità emotiva. Sa illuminare la relazione, riaccendere l'entusiasmo, vedere con lucidità ciò che sta accadendo. Il suo calore può essere una fonte di energia per entrambi.",
+ombra:"Le fragilità del 9 emergono nell'impulsività e nel bisogno di riconoscimento. Può apparire poco concreto, eccessivo, a volte superficiale. Senza una base stabile rischia di consumarsi in fretta e di passare dall'entusiasmo alla delusione.",
+bis:"I bisogni sentimentali del 9 riguardano l'ammirazione, la passione e la stabilità. Ha bisogno di sentirsi visto e apprezzato, di vivere un sentimento intenso, ma anche di avere accanto qualcuno che gli offra radici e continuità.",
+pot:"In una relazione stabile il Fuoco porta calore, passione e vitalità. Il potenziale cresce quando la coppia trova un equilibrio tra intensità e stabilità; si complica se il bisogno di stimoli e di conferme non trova spazio nella quotidianità.",
+quo:"Nella vita quotidiana il 9 è vivace, sociale, pieno di iniziative. Ama uscire, incontrare persone, condividere esperienze. Può annoiarsi facilmente nella ripetizione e aver bisogno di nuovi stimoli per sentirsi vivo.",
+dono:"Ciò che il Fuoco può insegnare è il coraggio di esprimersi: la capacità di mostrare apertamente ciò che si prova e di portare luce anche nei momenti più grigi.",
+cons:"Per questa energia il consiglio più prezioso è coltivare la continuità. Mantenere viva la fiamma non significa cercare sempre nuove scintille, ma prendersi cura del fuoco già acceso, con gesti costanti e con la pazienza di chi sa che le cose più belle hanno bisogno di tempo.",
+chiave:"La chiave del Fuoco in amore è il calore costante: quando la passione trova radici, la sua luce diventa una presenza che riscalda la relazione nel tempo."}
+};
+
+const CHILD = {
+1:"Il numero emotivo 1 suggerisce una sensibilità che, fin dall'infanzia, ha imparato a proteggersi custodendo dentro di sé ciò che prova. Nei momenti di difficoltà tende a ritirarsi, a riflettere in silenzio, a cercare da sola le proprie risposte. Nelle relazioni intime questo si traduce in un bisogno di sicurezza prima di aprirsi davvero: le emozioni ci sono, ma vengono mostrate solo quando l'ambiente sembra abbastanza sicuro.",
+2:"Il numero emotivo 2 indica una sensibilità orientata all'accoglienza e alla cura. Fin da piccola, questa parte della personalità ha imparato a percepire i bisogni degli altri e a rispondere con premura. Nell'intimità affettiva tende a cercare armonia, a evitare i conflitti, a prendersi cura dell'altro anche quando avrebbe bisogno di essere accudita a sua volta.",
+3:"Il numero emotivo 3 descrive una reattività immediata: le emozioni emergono rapide, vengono espresse senza troppi filtri e si placano con altrettanta velocità. Nelle relazioni intime questa parte porta spontaneità e vivacità, ma anche una certa impazienza quando le cose non procedono come si vorrebbe. Dietro le reazioni accese c'è spesso il desiderio di essere preso sul serio.",
+4:"Il numero emotivo 4 suggerisce una sensibilità sottile e permeabile, che risente molto dell'atmosfera circostante. Nell'intimità questa parte cerca dolcezza, rassicurazione e sguardi sinceri. Davanti alle tensioni può confondersi o rimandare le decisioni, e ha bisogno di serenità per ritrovare la propria chiarezza.",
+5:"Il numero emotivo 5 indica una vita interiore intensa, che tende agli estremi: grande generosità e grande bisogno, forza e fragilità insieme. Nelle relazioni intime questa parte può desiderare di essere al centro dell'attenzione dell'altro e vivere con difficoltà le critiche. Quando si sente sostenuta, però, diventa un punto di riferimento emotivo molto solido.",
+6:"Il numero emotivo 6 descrive una sensibilità che si esprime attraverso il senso di responsabilità. Fin da presto questa parte ha imparato a controllare le proprie emozioni e a pretendere molto da sé. Nell'intimità può faticare a mostrarsi vulnerabile e tende a reagire alle difficoltà cercando di rimettere ordine, anche quando servirebbe semplicemente un abbraccio.",
+7:"Il numero emotivo 7 indica una sensibilità che cerca piacere, armonia e leggerezza. Nelle relazioni intime questa parte desidera un clima sereno e tende ad allontanare ciò che pesa troppo. Sa consolare e alleggerire, ma può esprimere il disagio in modo indiretto, sperando che l'altro lo intuisca senza doverlo dire apertamente.",
+8:"Il numero emotivo 8 suggerisce un mondo interiore profondo e stabile, che si muove lentamente. Le emozioni si sedimentano a lungo prima di emergere. Nell'intimità questa parte offre costanza e protezione, ma può risultare difficile da leggere; quando si sente incompresa tende a chiudersi o a irrigidirsi in una posizione.",
+9:"Il numero emotivo 9 descrive una sensibilità ardente e visibile. Le emozioni si accendono rapidamente e chiedono di essere espresse e riconosciute. Nelle relazioni intime questa parte desidera calore, attenzione e ammirazione; quando si sente trascurata può reagire con impulsività o cercare conferme altrove."
+};
+
+const TEND = {
+1:"Il numero di espressione 1 indica che, nel modo di presentarsi agli altri e di reagire alle situazioni nuove, prevale la riservatezza: si osserva prima di esporsi e si mostra una calma che non sempre rivela ciò che si muove dentro.",
+2:"Il numero di espressione 2 indica un modo di porsi accogliente e disponibile: davanti alle persone e alle situazioni nuove emerge spontaneamente il desiderio di aiutare, di collaborare, di creare un clima sereno.",
+3:"Il numero di espressione 3 indica un modo di porsi vivace e diretto: nelle situazioni nuove emerge spontaneamente l'iniziativa, la voglia di fare, una schiettezza che può sorprendere chi si aspetta più cautela.",
+4:"Il numero di espressione 4 indica un modo di porsi gentile e sensibile: si entra in relazione con delicatezza, ascoltando l'atmosfera, e si comunica molto attraverso lo sguardo e la disponibilità.",
+5:"Il numero di espressione 5 indica un modo di porsi magnetico e deciso: anche senza volerlo, si tende a diventare un punto di riferimento e a influenzare l'andamento delle situazioni.",
+6:"Il numero di espressione 6 indica un modo di porsi autorevole e composto: si trasmette affidabilità, si tende ad assumere responsabilità e a dare struttura a ciò che accade.",
+7:"Il numero di espressione 7 indica un modo di porsi affascinante e diplomatico: si mettono gli altri a proprio agio, si sa scegliere la parola giusta e si cerca naturalmente l'armonia.",
+8:"Il numero di espressione 8 indica un modo di porsi stabile e misurato: si prende tempo, si riflette prima di agire e si trasmette un senso di solidità rassicurante.",
+9:"Il numero di espressione 9 indica un modo di porsi luminoso ed espressivo: si viene notati facilmente, si comunica con entusiasmo e si porta calore nelle situazioni."
+};
+
+const ELEM = {
+water:{nome:"Acqua", stag:"l'inverno", amo:"L'elemento Acqua porta nell'amore profondità, ascolto e capacità di adattamento. È l'energia della notte e dell'inverno, dei tempi di raccoglimento in cui le cose maturano senza essere viste. Chi vive questo elemento ama con discrezione e intensità, ha bisogno di fiducia per aprirsi e tende a custodire i sentimenti come qualcosa di prezioso.", emo:"Le emozioni dell'Acqua sono profonde e mutevoli, scorrono in silenzio e possono accumularsi se non trovano uno sbocco. La sua sfida è dare forma a ciò che sente, senza lasciarsi travolgere dalla paura o dal dubbio.", bis:"Dal punto di vista dell'elemento, l'Acqua ha bisogno di quiete, di tempo per sé e di un legame che rassicuri senza trattenere. Si rigenera nel silenzio, nel riposo, nella sensazione di potersi fidare.", quo:"L'Acqua predilige ritmi tranquilli e momenti di raccoglimento: una serata in casa, una conversazione a bassa voce, il tempo di decomprimere prima di affrontare le questioni."},
+wood:{nome:"Legno", stag:"la primavera", amo:"L'elemento Legno porta nell'amore crescita, iniziativa e desiderio di futuro. È l'energia della primavera e del mattino, del germoglio che spinge verso la luce. Chi vive questo elemento ama in modo vivo e progettuale, ha bisogno di sentire che la relazione evolve e fatica con ciò che resta fermo troppo a lungo.", emo:"Le emozioni del Legno sono vivaci e rivolte all'azione: quando qualcosa non va, il bisogno è di muoversi, cambiare, fare. La sua sfida è accettare che non tutto possa essere risolto subito.", bis:"Dal punto di vista dell'elemento, il Legno ha bisogno di spazio, di stimoli e di progetti condivisi. Si rigenera nel movimento, nella novità, nella sensazione di crescere.", quo:"Il Legno ama le giornate piene di iniziative, le proposte nuove, le attività all'aperto e i progetti da realizzare insieme."},
+fire:{nome:"Fuoco", stag:"l'estate", amo:"L'elemento Fuoco porta nell'amore passione, calore e visibilità. È l'energia dell'estate e del mezzogiorno, della luce che rende tutto chiaro. Chi vive questo elemento ama in modo espressivo e intenso, ha bisogno di sentirsi riconosciuto e di vivere un sentimento che si veda.", emo:"Le emozioni del Fuoco sono rapide e luminose: si accendono, divampano, chiedono di essere condivise. La sua sfida è non consumarsi nell'intensità e trovare una fiamma costante.", bis:"Dal punto di vista dell'elemento, il Fuoco ha bisogno di ammirazione, di calore umano e di una base stabile su cui ardere. Si rigenera nella condivisione, nella festa, nell'incontro.", quo:"Il Fuoco ama la vita sociale, le esperienze condivise, le sorprese e tutto ciò che rende le giornate vivaci e luminose."},
+earth:{nome:"Terra", stag:"il passaggio tra le stagioni", amo:"L'elemento Terra porta nell'amore stabilità, cura e concretezza. È l'energia dei passaggi tra le stagioni, del terreno che accoglie e sostiene. Chi vive questo elemento ama in modo costante e protettivo, ha bisogno di sicurezza e tende a costruire una relazione passo dopo passo.", emo:"Le emozioni della Terra sono stabili e durature, ma possono diventare pesanti quando si trasformano in preoccupazione o in ostinazione. La sua sfida è restare morbida senza perdere solidità.", bis:"Dal punto di vista dell'elemento, la Terra ha bisogno di sicurezza, di riconoscimento e di continuità. Si rigenera nella casa, nelle abitudini condivise, nella sensazione di appartenenza.", quo:"La Terra ama la casa, i pasti condivisi, l'organizzazione e i piccoli rituali che rendono la vita quotidiana un luogo sicuro."},
+metal:{nome:"Metallo", stag:"l'autunno", amo:"L'elemento Metallo porta nell'amore chiarezza, qualità e senso del valore. È l'energia dell'autunno e della sera, del raccolto e della raffinatezza. Chi vive questo elemento ama con serietà o con eleganza, ha bisogno di rispetto e apprezza ciò che è autentico e ben fatto.", emo:"Le emozioni del Metallo tendono a essere controllate o filtrate: si preferisce mantenere un certo ordine interiore. La sua sfida è lasciar entrare anche le emozioni imperfette.", bis:"Dal punto di vista dell'elemento, il Metallo ha bisogno di stima, di chiarezza e di bellezza. Si rigenera nell'ordine, nella qualità del tempo e nelle relazioni basate sul rispetto.", quo:"Il Metallo ama gli ambienti curati, i ritmi chiari, le cose fatte bene e i momenti di qualità dedicati a ciò che conta davvero."}
+};
+
+const REL = {
+identical:{
+con:"Condividete lo stesso numero principale, il {numA}, e quindi la stessa energia di base. È una combinazione particolare: vi riconoscete con facilità, quasi come davanti a uno specchio, e potreste avere la sensazione di capirvi senza bisogno di spiegazioni. Le vostre reazioni, i vostri tempi e le vostre priorità tendono ad assomigliarsi. Questa somiglianza crea una forma di intimità immediata, ma porta con sé anche una domanda importante: che cosa porta ciascuno di voi che l'altro non possiede già?",
+att:"Quando due persone condividono la stessa energia, l'attrazione nasce spesso dal riconoscimento. Tu potresti ritrovare in {B} qualcosa di familiare, un modo di sentire e di stare al mondo che ti fa sentire a casa. È un'attrazione che non ha bisogno di contrasti per accendersi: si fonda sulla sintonia. Il punto delicato è che, senza qualche differenza che porti novità, questa sintonia rischia col tempo di diventare abitudine.",
+com:"Parlando la stessa lingua energetica, potreste comprendervi rapidamente sulle questioni essenziali. Allo stesso tempo, potreste anche condividere gli stessi punti ciechi: se entrambi tendete a evitare un certo tipo di conversazione, nessuno dei due spingerà per affrontarla. La comunicazione tra voi diventa più ricca quando ciascuno si impegna a portare un punto di vista diverso, anche solo per curiosità.",
+pas:"Sul piano dell'intimità, la somiglianza può creare un'intesa naturale: desideri, tempi e modi tendono a incontrarsi. La sfida, nel lungo periodo, è mantenere vivo il mistero. Quando ci si conosce così bene, la sorpresa diventa preziosa.",
+forza:"Il vostro punto di forza è la comprensione reciproca. Potete sostenervi perché sapete, per esperienza diretta, che cosa prova l'altro. In molte situazioni vi basta uno sguardo.",
+diff:"La difficoltà principale di una combinazione con lo stesso numero è l'amplificazione: le qualità si raddoppiano, ma si raddoppiano anche le fragilità. Se entrambi tendete alla chiusura, all'impulsività o alla rigidità, nessuno dei due offre il contrappeso che servirebbe. Inoltre potreste ritrovarvi a competere nello stesso spazio, desiderando entrambi la stessa cosa nello stesso momento.",
+pot:"Il potenziale di questo legame è legato alla capacità di trasformare la somiglianza in complicità consapevole. Se riconoscete i vostri schemi comuni, potete aiutarvi a superarli insieme; se li ignorate, rischiano di ripetersi.",
+quo:"Nella vita quotidiana potreste avere abitudini simili e preferenze compatibili, il che rende più semplice la convivenza o la condivisione del tempo. Le frizioni tendono a nascere quando entrambi vorreste occupare lo stesso ruolo, ad esempio decidere, ritirarvi o essere al centro, nello stesso momento.",
+imp:"Ciò che potete imparare l'uno dall'altra è guardarvi da fuori: osservando {B} potresti riconoscere alcuni tuoi modi di fare con una lucidità nuova, e viceversa. È una forma di crescita molto particolare, che passa attraverso lo specchio.",
+mig:"Per migliorare il vostro rapporto, può essere utile introdurre consapevolmente ciò che manca alla vostra energia comune: esperienze nuove, persone diverse, attività che vi portino fuori dalla zona conosciuta. Allo stesso tempo, alternarvi nei ruoli vi aiuterà a non competere.",
+chiave:"La chiave della vostra combinazione è la consapevolezza: siete simili, e proprio per questo potete diventare l'uno per l'altra una guida preziosa, a patto di non lasciare che la somiglianza vi chiuda in un cerchio.",
+emo:"Anche sul piano emotivo condividete lo stesso numero. Le vostre reazioni profonde, quelle che emergono nei momenti di stress o di intimità, tendono ad assomigliarsi: potete comprendervi d'istinto, ma anche ferirvi negli stessi punti.",
+cross:"In questo incrocio ritroviamo lo stesso numero: una parte di te e una parte di {B} vibrano allo stesso modo, creando un punto di contatto spontaneo.",
+free_con:"Condividete lo stesso numero principale e questo crea una sensazione di riconoscimento quasi immediata, come se vi conosceste da sempre.",
+free_forza:"Il vostro punto di forza potrebbe essere una comprensione reciproca rapida e profonda: sapete per esperienza che cosa prova l'altro.",
+free_diff:"La difficoltà principale potrebbe essere l'amplificazione: condividendo la stessa energia, rischiate di raddoppiare anche le stesse fragilità senza che nessuno offra un contrappeso."
+},
+same:{
+con:"I vostri numeri principali sono diversi, il {numA} e il {numB}, ma appartengono entrambi all'elemento {elA}. Significa che condividete la stessa natura di fondo, pur esprimendola in modi differenti. È come se foste due manifestazioni della stessa sostanza: vi capite sulle cose essenziali, ma ciascuno porta una sfumatura propria. Questa combinazione offre una base di sintonia naturale, arricchita da quella giusta dose di diversità che evita la monotonia.",
+att:"L'attrazione tra voi nasce probabilmente da una sensazione di affinità: riconosci in {B} qualcosa che ti appartiene, ma vissuto in una forma diversa, che ti incuriosisce. Siete simili abbastanza per sentirvi a vostro agio e diversi abbastanza per continuare a scoprirvi.",
+com:"Nella comunicazione condividete gli stessi valori di fondo, legati all'elemento {elA}, e questo facilita la comprensione. Le differenze emergono nei modi: uno dei due potrebbe esprimersi in maniera più diretta, l'altro in modo più sfumato. Riconoscere che parlate la stessa lingua con accenti diversi può aiutarvi a non fraintendervi.",
+pas:"Nell'intimità l'appartenenza allo stesso elemento favorisce un'intesa spontanea sui bisogni di fondo. Le vostre differenze di numero possono invece portare varietà: una diversa intensità, un diverso ritmo, che arricchiscono la complicità.",
+forza:"Il vostro punto di forza è un'affinità di fondo che non ha bisogno di essere costruita: vi trovate d'accordo su ciò che conta, e questo dà stabilità al legame.",
+diff:"La difficoltà di questa combinazione è che, condividendo lo stesso elemento, potreste mancare di un contrappeso. Le tendenze tipiche dell'elemento {elA} rischiano di accentuarsi nella coppia, e le piccole differenze di stile possono trasformarsi in confronti su chi interpreti meglio la stessa natura.",
+pot:"Il potenziale del vostro legame è solido: l'affinità di elemento offre una base comune su cui costruire. Per crescere, la relazione ha bisogno di aprirsi anche a ciò che gli altri elementi rappresentano, attraverso esperienze, amicizie e progetti che portino qualità diverse.",
+quo:"Nella vita quotidiana tendete ad avere bisogni simili, il che semplifica molte scelte. Le differenze si notano nei dettagli: nei tempi, nei modi, nella misura. Sono proprio questi dettagli a richiedere un po' di attenzione reciproca.",
+imp:"Ciò che potete imparare l'uno dall'altra è il modo diverso di vivere la stessa natura: tu potresti scoprire attraverso {B} un'altra possibilità di essere {elA}, e trovare così nuove risorse per te.",
+mig:"Per migliorare il vostro rapporto, coltivate le vostre differenze anziché ridurle: ciascuno può valorizzare il proprio stile, e insieme potete cercare fuori dalla coppia gli stimoli che il vostro elemento non offre spontaneamente.",
+chiave:"La chiave della vostra compatibilità è l'affinità consapevole: condividete la stessa radice, e proprio per questo potete crescere insieme, purché ciascuno resti fedele alla propria sfumatura.",
+emo:"Sul piano emotivo, i vostri numeri appartengono allo stesso elemento: reagite alle difficoltà con un'impronta simile e questo può aiutarvi a comprendervi, anche se il modo di esprimere le emozioni resta personale.",
+cross:"In questo incrocio i due numeri condividono lo stesso elemento: c'è una affinità naturale, una base comune che rende il contatto spontaneo.",
+free_con:"I vostri numeri appartengono allo stesso elemento: condividete una natura di fondo simile, espressa però con sfumature diverse che vi rendono interessanti l'uno per l'altra.",
+free_forza:"Il vostro punto di forza potrebbe essere un'affinità profonda sulle cose essenziali, che rende più semplice sentirvi dalla stessa parte.",
+free_diff:"La difficoltà principale potrebbe nascere dalla mancanza di un contrappeso: le tendenze del vostro elemento comune rischiano di accentuarsi nella coppia."
+},
+gen:{
+con:"Tra i vostri numeri principali esiste un legame di generazione: {eX}, legata all'elemento {elX}, tende a nutrire e sostenere {eY}, legata all'elemento {elY}. Nel linguaggio di questo antico metodo si parla di una relazione simile a quella tra una madre e il proprio figlio: un flusso naturale di sostegno che va in una direzione precisa. È una delle combinazioni considerate più armoniose, perché l'energia scorre senza ostacoli e ciascuno trova un ruolo spontaneo nel rapporto.",
+att:"L'attrazione tra voi potrebbe nascere da questo flusso di nutrimento: chi dei due porta l'elemento {elX} trova naturale offrire, sostenere, dare forza; chi porta l'elemento {elY} si sente accolto e rafforzato. Questa dinamica crea un senso di completamento che può essere molto intenso, quasi come se l'incontro fosse avvenuto per una ragione precisa.",
+com:"Nella comunicazione il legame di generazione favorisce la comprensione: le parole tendono a fluire {daX} verso {aY} come un sostegno. Il rischio è che questa direzione diventi fissa, con una persona che consiglia, spiega e incoraggia, e l'altra che ascolta e riceve. Per un dialogo davvero equilibrato è importante che anche il flusso opposto trovi spazio.",
+pas:"Nell'intimità questa combinazione può creare una forte sensazione di accoglienza e di fiducia. L'energia che passa {daX} {aY} dà calore e sicurezza, e questo favorisce l'abbandono. Per mantenere viva la passione è utile che entrambi si sentano anche desiderati, non solo sostenuti o accuditi.",
+forza:"Il vostro punto di forza è il sostegno naturale: l'energia scorre tra voi senza troppe resistenze. Nei momenti difficili, il legame di generazione vi offre una base su cui appoggiarvi e un senso di direzione condivisa.",
+diff:"La difficoltà di questa combinazione riguarda l'equilibrio tra dare e ricevere. Chi nutre può sentirsi a lungo andare svuotato o non riconosciuto; chi riceve può abituarsi al sostegno fino a diventarne dipendente o, al contrario, sentirsi trattato come una persona da accudire anziché come un pari.",
+pot:"Il potenziale di un legame di generazione è alto: la relazione ha una spinta naturale verso la crescita. Il potenziale si realizza pienamente quando il sostegno diventa reciproco nei fatti, anche se la direzione energetica di fondo resta quella {daX} {aY}.",
+quo:"Nella vita quotidiana questo legame può tradursi in una divisione spontanea dei ruoli: chi porta l'elemento {elX} tende a farsi carico, a proporre, a sostenere; chi porta l'elemento {elY} tende a ricevere, a crescere, a sviluppare ciò che riceve. Va bene, purché nessuno dei due si senta chiuso in un ruolo.",
+imp:"Ciò che potete imparare l'uno dall'altra riguarda proprio il dare e il ricevere: {perX} si tratta di scoprire che anche lasciarsi aiutare è un atto d'amore, {perY} di comprendere quanto valore abbia restituire ciò che si riceve.",
+mig:"Per migliorare la vostra relazione, rendete visibile il sostegno: riconoscete con parole e gesti ciò che l'altro offre. Ogni tanto invertite consapevolmente i ruoli, lasciando che sia chi di solito riceve a prendersi cura, a proporre, a organizzare.",
+chiave:"La chiave della vostra compatibilità è il flusso: tra voi l'energia ha una direzione naturale di nutrimento, e la relazione fiorisce quando quel nutrimento viene riconosciuto e ricambiato.",
+emo:"Sul piano emotivo esiste un legame di generazione: {sX} tende a sostenere {sY}. Nei momenti delicati è probabile che sia una delle due parti a offrire conforto in modo spontaneo.",
+cross:"In questo incrocio c'è un flusso di sostegno: {eX} nutre {eY}, creando un punto di incontro morbido e favorevole.",
+free_con:"Tra le vostre energie esiste un legame di generazione: {eX} tende a nutrire {eY}, come accade tra una madre e il proprio figlio. È una combinazione in cui il sostegno può scorrere in modo naturale.",
+free_forza:"Il vostro punto di forza potrebbe essere proprio questo sostegno spontaneo: un'energia sembra fatta per rafforzare l'altra, e il legame ha una spinta naturale verso la crescita.",
+free_diff:"La difficoltà principale potrebbe riguardare l'equilibrio tra dare e ricevere: se il sostegno va sempre nella stessa direzione, una persona rischia di sentirsi svuotata e l'altra di adagiarsi."
+},
+ctrl:{
+con:"Tra i vostri numeri principali esiste una relazione di controllo: {eX}, legata all'elemento {elX}, tende a contenere, dare forma o limitare {eY}, legata all'elemento {elY}. Non si tratta necessariamente di un rapporto negativo: anche in natura il controllo serve a mantenere l'equilibrio, come l'argine dà forma al fiume. Questa combinazione, però, porta con sé una tensione creativa che chiede consapevolezza, perché una delle due energie tende a influenzare l'altra più di quanto venga influenzata.",
+att:"L'attrazione in una combinazione di controllo è spesso forte e magnetica. C'è qualcosa nell'altra persona che sfida, provoca, mette alla prova. Chi porta l'elemento {elY} può sentirsi attratto dalla forza che riceve, chi porta l'elemento {elX} dalla vitalità che percepisce e che desidera in qualche modo guidare. È un'attrazione che raramente lascia indifferenti.",
+com:"Nella comunicazione questa dinamica può manifestarsi in un modo di parlare in cui {eX} tende a correggere, indirizzare o porre limiti, mentre {eY} può sentirsi contenuta o non pienamente ascoltata. Quando entrambi ne siete consapevoli, la stessa dinamica può trasformarsi in un dialogo molto costruttivo, in cui una persona offre struttura e l'altra apertura.",
+pas:"Nell'intimità la tensione di questa combinazione può diventare una fonte di intensità. Il contrasto tra le due energie accende il desiderio. Perché resti un gioco e non diventi un peso, è importante che entrambi si sentano liberi di esprimersi e che nessuno senta di doversi adattare continuamente all'altro.",
+forza:"Il vostro punto di forza è la capacità di stimolarvi: vi spingete a crescere, a mettervi in discussione, a non accontentarvi. La relazione di controllo, vissuta con rispetto, può dare forma e direzione a energie che da sole si disperderebbero.",
+diff:"La difficoltà principale di questa combinazione è lo squilibrio di influenza. Chi porta l'elemento {elX} potrebbe, anche senza volerlo, imporre ritmi, idee o aspettative; chi porta l'elemento {elY} potrebbe sentirsi limitato, giudicato o costretto a ridimensionarsi. Se non viene riconosciuta, questa tensione può generare conflitti ricorrenti o una distanza silenziosa.",
+pot:"Il potenziale di questo legame dipende molto dalla consapevolezza. Una relazione di controllo può essere molto stabile e stimolante quando la forza di una persona diventa protezione e la vitalità dell'altra diventa ispirazione. Diventa faticosa quando si trasforma in una lotta per avere ragione.",
+quo:"Nella vita quotidiana questa dinamica può manifestarsi in piccole cose: chi decide i programmi, chi stabilisce i tempi, chi cede più spesso. Osservare questi momenti con leggerezza vi aiuta a riequilibrarli prima che diventino motivo di risentimento.",
+imp:"Ciò che potete imparare l'uno dall'altra è particolarmente prezioso: {perX} si tratta di scoprire il valore del lasciar andare e della fiducia, {perY} di imparare a definire con chiarezza i propri confini e a far sentire la propria voce.",
+mig:"Per migliorare la vostra relazione, è utile dare un nome alla dinamica senza colpevolizzare nessuno. Accordarvi su spazi in cui ciascuno decide liberamente, esprimere apprezzamento invece di correzione e verificare periodicamente se entrambi vi sentite liberi sono strumenti concreti per trasformare la tensione in crescita.",
+chiave:"La chiave della vostra compatibilità è il rispetto: tra voi esiste una forza che dà forma, e la relazione diventa un'opportunità quando quella forza protegge e accompagna invece di limitare.",
+emo:"Sul piano emotivo esiste una relazione di controllo: {sX} tende a contenere o a influenzare {sY}. Nei momenti di tensione, una delle due parti potrebbe sentirsi frenata nelle proprie reazioni.",
+cross:"In questo incrocio c'è una dinamica di controllo: {eX} tende a contenere {eY}. È un punto di attrito potenziale, ma anche di stimolo reciproco.",
+free_con:"Tra le vostre energie esiste una relazione di controllo: {eX} tende a contenere e dare forma a {eY}. È una combinazione magnetica, in cui il contrasto può accendere l'attrazione e la crescita.",
+free_forza:"Il vostro punto di forza potrebbe essere la capacità di stimolarvi a vicenda: le vostre differenze vi spingono a non accontentarvi e a crescere.",
+free_diff:"La difficoltà principale potrebbe nascere da uno squilibrio di influenza: una delle due energie tende a prevalere, e l'altra rischia di sentirsi limitata o non pienamente ascoltata."
+}
+};
+
+const PAIR = {
+"water-water":{img:"due correnti d'acqua che si incontrano e si mescolano", t:"Due energie d'Acqua insieme creano un legame profondo e silenzioso. È come un lago in cui confluiscono due sorgenti: le acque si mescolano con naturalezza, ma senza un argine rischiano di espandersi senza forma. In questa coppia l'intimità emotiva può essere molto intensa, mentre l'aspetto pratico e decisionale richiede uno sforzo consapevole."},
+"water-wood":{img:"l'acqua che nutre le radici di un albero", t:"L'Acqua che incontra il Legno è l'immagine della pioggia che nutre le radici: un'energia scorre verso l'altra e la fa crescere. È un'associazione simbolicamente fertile, in cui la profondità dell'Acqua offre al Legno il nutrimento per espandersi e il Legno dà all'Acqua una direzione verso cui fluire."},
+"water-fire":{img:"l'acqua e il fuoco che si sfidano e si attraggono", t:"L'Acqua e il Fuoco rappresentano una delle polarità più evidenti: freddo e caldo, notte e giorno, profondità e luce. L'Acqua tende a contenere la fiamma, mentre il Fuoco tende a scaldare e ad agitare l'Acqua. È una combinazione in cui l'attrazione può essere forte proprio perché ciascuno possiede ciò che manca all'altro, ma che richiede equilibrio per non trasformarsi in uno spegnersi reciproco."},
+"water-earth":{img:"la terra che fa da argine a un fiume", t:"La Terra e l'Acqua ricordano l'argine e il fiume: la Terra dà contenimento e forma, l'Acqua porta movimento e fertilità. Quando l'equilibrio funziona nasce una valle fertile; quando la Terra diventa troppo rigida, l'Acqua si sente imprigionata, e quando l'Acqua è troppo abbondante, la Terra si impantana."},
+"water-metal":{img:"una sorgente limpida che nasce dalla roccia", t:"Il Metallo e l'Acqua sono legati come la roccia e la sorgente: dal minerale nasce l'acqua limpida. È un legame di generazione elegante, in cui la chiarezza e la struttura del Metallo nutrono la profondità e l'intuizione dell'Acqua."},
+"wood-wood":{img:"due alberi che crescono vicini verso la luce", t:"Due energie di Legno insieme sono come due alberi che crescono fianco a fianco: si sostengono nella spinta verso la luce, ma possono anche contendersi lo spazio e il sole. È una combinazione vitale, ricca di progetti, che ha bisogno di lasciare a ciascuno il proprio spazio di crescita."},
+"wood-fire":{img:"il legno che alimenta la fiamma", t:"Il Legno che incontra il Fuoco è l'immagine del ceppo che alimenta la fiamma: un'energia offre all'altra il materiale per ardere. È una combinazione calda e dinamica, in cui l'entusiasmo del Legno accende la passione del Fuoco e il Fuoco dà al Legno la soddisfazione di vedere le proprie iniziative brillare."},
+"wood-earth":{img:"le radici che penetrano la terra", t:"Il Legno e la Terra sono legati come le radici e il suolo: il Legno penetra la Terra, la smuove, la rende viva, ma ne trae anche nutrimento. È una relazione di controllo che può essere molto feconda, purché la spinta del Legno non diventi invadenza e la stabilità della Terra non diventi resistenza."},
+"wood-metal":{img:"la lama che dà forma al legno", t:"Il Metallo e il Legno ricordano lo scultore e la materia: la lama dà forma al legno, lo pota, lo definisce. È una combinazione in cui la precisione e il rigore del Metallo incontrano la spinta vitale del Legno; può nascere qualcosa di bello e ben definito, oppure una sensazione di essere tagliati e trattenuti."},
+"fire-fire":{img:"due fiamme che si uniscono in un unico grande fuoco", t:"Due energie di Fuoco insieme creano un falò luminoso: passione, entusiasmo, voglia di vivere. È un incontro brillante, che però rischia di consumarsi rapidamente se non trova una base stabile su cui ardere e momenti di quiete in cui rigenerarsi."},
+"fire-earth":{img:"il fuoco che riscalda e rende fertile la terra", t:"Il Fuoco e la Terra sono legati come il sole e il campo: il calore rende la terra fertile e la Terra offre al Fuoco una base solida. È un legame di generazione caldo e concreto, in cui la passione si trasforma in qualcosa di duraturo."},
+"fire-metal":{img:"il fuoco che fonde e plasma il metallo", t:"Il Fuoco e il Metallo ricordano la forgia: la fiamma fonde il metallo e gli dà una nuova forma. È una relazione di controllo intensa, in cui il calore del Fuoco può ammorbidire la rigidità del Metallo, ma anche metterlo sotto pressione."},
+"earth-earth":{img:"due terre che si uniscono in un paesaggio solido", t:"Due energie di Terra insieme creano un paesaggio stabile: solidità, cura, concretezza. È una combinazione rassicurante, che offre radici profonde, ma che rischia di diventare statica se non si concede movimento, novità e leggerezza."},
+"earth-metal":{img:"la terra che custodisce i metalli preziosi", t:"La Terra e il Metallo sono legati come la montagna e i minerali preziosi che custodisce: dalla Terra nasce il Metallo. È un legame di generazione in cui la stabilità e la cura della Terra permettono al Metallo di esprimere il proprio valore e la propria chiarezza."},
+"metal-metal":{img:"due metalli preziosi che brillano insieme", t:"Due energie di Metallo insieme creano un legame elegante, basato sul rispetto, sulla qualità e sulla chiarezza. È una combinazione raffinata, che può però diventare fredda o competitiva se manca il calore di un'emozione condivisa."}
+};
+
+const RTYPE = {
+fidanzati:{label:"Siamo fidanzati.", rl:"la vostra relazione di coppia", intro:"Mi hai detto che siete una coppia di fidanzati. Questo significa che il vostro legame è già una scelta condivisa, un percorso avviato in cui entrambi avete deciso di camminare insieme. In questo fascicolo leggeremo la vostra combinazione numerologica proprio alla luce di questa fase: il momento in cui una relazione si consolida, si mette alla prova e inizia a immaginare il proprio futuro.", pot:"Per una coppia di fidanzati, il potenziale si gioca soprattutto nella capacità di trasformare l'intesa attuale in un progetto. Le energie che abbiamo osservato possono aiutarvi a capire su quali basi costruire e quali aspetti meritano un dialogo prima di compiere passi importanti.", cons:"Nella vostra fase di fidanzamento, può essere prezioso dedicare tempo a parlare del futuro senza fretta: che cosa desidera ciascuno, quali ritmi, quali priorità. Le differenze emerse dai vostri numeri non sono ostacoli, ma temi da conoscere prima che diventino sorprese.", chiave:"Siete in una fase in cui ogni scelta contribuisce a dare forma al vostro legame."},
+sposati:{label:"Siamo sposati.", rl:"il vostro matrimonio", intro:"Mi hai detto che siete sposati. Il vostro legame ha già attraversato una scelta importante e probabilmente molte esperienze condivise. In questo fascicolo leggeremo la vostra combinazione numerologica come una mappa per comprendere meglio ciò che già vivete: le dinamiche che vi sostengono, quelle che talvolta vi mettono alla prova e le risorse su cui potete contare negli anni.", pot:"Per una coppia sposata, il potenziale non riguarda tanto il se, quanto il come: come rinnovare il legame, come attraversare i cambiamenti della vita, come mantenere vivo il rispetto e la complicità nel tempo.", cons:"Nel vostro matrimonio, può essere utile ritagliare momenti in cui tornare a essere semplicemente una coppia, al di là delle responsabilità. Le energie che vi caratterizzano hanno bisogno di essere nutrite anche quando la quotidianità è piena.", chiave:"Avete già costruito molto insieme, e la vostra combinazione può aiutarvi a custodirlo e a rinnovarlo."},
+frequentazione:{label:"Ci stiamo frequentando.", rl:"la vostra frequentazione", intro:"Mi hai detto che vi state frequentando. È una fase delicata e bellissima, in cui ci si scopre, ci si osserva, si cerca di capire che forma potrà prendere il legame. In questo fascicolo leggeremo la vostra combinazione numerologica come uno strumento di conoscenza, senza dare nulla per scontato riguardo a ciò che diventerà la vostra relazione.", pot:"In una fase di frequentazione, il potenziale è ancora aperto. Le energie che abbiamo osservato descrivono possibilità, non destini: possono indicarvi su quali basi un legame potrebbe svilupparsi e quali aspetti meritano attenzione già da ora.", cons:"In questo momento di conoscenza, il consiglio più utile è osservare con curiosità e senza fretta. Lascia che i comportamenti di {B} ti raccontino chi è, e confrontali con ciò che i numeri suggeriscono, senza usarli per anticipare conclusioni.", chiave:"Siete all'inizio di una scoperta, e ogni passo può rivelarvi qualcosa di nuovo."},
+interesse:{label:"È una persona che mi interessa.", rl:"l'interesse che provi", intro:"Mi hai detto che {B} è una persona che ti interessa. Non sappiamo se questo interesse sia già reciproco o se il legame debba ancora nascere, ed è giusto non darlo per scontato. In questo fascicolo leggeremo la combinazione tra le vostre date come una possibilità: che tipo di dinamica potrebbe crearsi tra voi, quali energie si incontrerebbero e che cosa potrebbe favorire una connessione autentica.", pot:"Quando l'interesse non è ancora un legame definito, parlare di potenziale significa esplorare ciò che potrebbe nascere. I numeri non possono dirti che cosa prova {B}, ma possono aiutarti a comprendere quale tipo di incontro avverrebbe tra le vostre energie.", cons:"In questa fase, il consiglio più prezioso è restare fedele a te stessa o a te stesso e lasciare che l'eventuale avvicinamento avvenga con naturalezza. Conoscere le possibili dinamiche ti aiuta a riconoscere i segnali, non a forzarli.", chiave:"Qualunque cosa accada, conoscere questa combinazione ti aiuta a conoscere meglio anche te."},
+ex:{label:"È il mio ex partner.", rl:"il legame con il tuo ex partner", intro:"Mi hai detto che {B} è un tuo ex partner. Questo significa che tra voi c'è una storia, con momenti condivisi e una conclusione, almeno per ora. In questo fascicolo leggeremo la vostra combinazione numerologica come uno strumento per comprendere che cosa vi ha uniti, quali dinamiche possono aver contribuito alle difficoltà e che cosa questa relazione può insegnarti, qualunque sia la direzione che deciderai di prendere.", pot:"Nel caso di un ex partner, il potenziale va letto con particolare delicatezza. Le energie descrivono la natura del vostro incontro, ma non stabiliscono se un ritorno sia possibile o auspicabile: questa è una scelta che appartiene alla vostra libertà e alla vostra esperienza.", cons:"Nella tua situazione, il consiglio più utile è usare questa lettura per fare chiarezza dentro di te: comprendere che cosa hai vissuto, che cosa desideri davvero e che cosa ti fa bene, indipendentemente dalle scelte di {B}.", chiave:"Comprendere la vostra combinazione può aiutarti a dare un senso alla storia che avete vissuto."},
+complicata:{label:"Abbiamo una situazione sentimentale complicata.", rl:"la vostra situazione sentimentale", intro:"Mi hai detto che la vostra situazione sentimentale è complicata. Le relazioni non sempre seguono percorsi lineari, e spesso proprio le situazioni più difficili sono quelle che ci spingono a cercare comprensione. In questo fascicolo leggeremo la vostra combinazione numerologica con attenzione, cercando di illuminare le dinamiche che potrebbero contribuire alla complessità, senza giudizi e senza dare risposte definitive.", pot:"In una situazione complicata, il potenziale del legame dipende da molti fattori che vanno oltre i numeri: le scelte, le circostanze, la volontà di entrambi. La vostra combinazione può però indicarvi quali energie favoriscono la comprensione e quali tendono ad alimentare le tensioni.", cons:"Nella vostra situazione, il consiglio più prezioso è proteggere il tuo equilibrio. Comprendere le dinamiche tra te e {B} può aiutarti a scegliere con maggiore lucidità, dando la priorità a ciò che ti permette di stare bene.", chiave:"Anche nella complessità, la comprensione è un primo passo verso la chiarezza."},
+altro:{label:"Altro.", rl:"il vostro legame", intro:"Mi hai indicato che il vostro rapporto non rientra in una definizione precisa. È giusto così: ogni legame ha una forma propria. In questo fascicolo leggeremo la combinazione tra le vostre date di nascita senza presupporre che cosa siate l'uno per l'altra, concentrandoci sulle dinamiche che si creano quando le vostre energie si incontrano.", pot:"Poiché il vostro legame ha una forma particolare, il potenziale va letto in modo aperto: le energie descrivono il tipo di incontro tra voi, e sta a voi decidere quale spazio dargli nella vostra vita.", cons:"Qualunque sia la natura del vostro rapporto, il consiglio più utile è dare valore alla chiarezza: comprendere che cosa desideri da questo legame ti aiuta a viverlo in modo più sereno.", chiave:"Ogni legame, qualunque forma abbia, può insegnarci qualcosa di prezioso."}
+};
+
+const YY = {
+personal:{
+yang:"Entrambi i numeri principali e emotivi di questa persona hanno una qualità yang, cioè espansiva, attiva, rivolta verso l'esterno. È una configurazione che tende a dare sicurezza nell'agire e nel prendere iniziativa, ma che può rendere meno spontaneo l'ascolto delle qualità più ricettive, proprie e altrui.",
+yin:"Entrambi i numeri principali e emotivi di questa persona hanno una qualità yin, cioè ricettiva, interiore, accogliente. È una configurazione che favorisce la sensibilità e l'ascolto, ma che può rendere più faticoso imporsi o affrontare apertamente i conflitti.",
+mix:"I numeri di questa persona uniscono una qualità yang, attiva ed espansiva, e una qualità yin, ricettiva e interiore. È una configurazione che offre una certa flessibilità: la capacità di agire e quella di accogliere convivono, e permettono di comprendere stati d'animo e bisogni diversi."
+},
+couple:{
+same:"Dal punto di vista della polarità, avete una configurazione simile: questo facilita la comprensione dei rispettivi ritmi, ma può far mancare quella complementarità che spesso alimenta l'attrazione nel tempo.",
+diff:"Dal punto di vista della polarità, le vostre configurazioni sono diverse e complementari: dove una persona tende ad agire, l'altra tende ad accogliere, e viceversa. Questa differenza può alimentare l'attrazione e l'equilibrio, a patto che venga riconosciuta e non vissuta come incomprensione.",
+mixed:"Dal punto di vista della polarità, almeno uno di voi unisce in sé qualità attive e ricettive: questo rende la coppia più flessibile e capace di adattare i ruoli alle diverse situazioni."
+}
+};
+
+const QKW = [
+{re:/comunic|parl|dialog|ascolt|capir|silenz|risponde|messagg/i, t:"Mi hai scritto che vorresti comprendere meglio un aspetto legato alla comunicazione. Alla luce della vostra combinazione, è probabile che parte delle incomprensioni nasca da tempi e modi diversi di esprimersi, più che da una reale mancanza di interesse. Osservare come ciascuno reagisce sotto pressione, chi tende a parlare subito e chi ha bisogno di tempo, può già cambiare molto il modo in cui interpretate i silenzi e le parole."},
+{re:/gelos|fiduc|tradi|tradimento|fedel|bugi|menti/i, t:"Nella tua domanda emerge il tema della fiducia. I numeri non possono stabilire se qualcuno sia sincero o fedele, e sarebbe scorretto attribuire certezze a {B}. Possono però mostrarti quali dinamiche rendono più fragile la sensazione di sicurezza tra voi, ad esempio un diverso bisogno di conferme o di spazio personale, e quali gesti potrebbero rafforzarla."},
+{re:/futur|convivenz|sposar|matrimon|figli|progett|durare|durer/i, t:"Mi hai scritto che ti interessa il futuro del vostro legame. Il metodo non prevede il destino di una relazione, ma descrive le energie su cui potreste costruire. Gli elementi che abbiamo osservato indicano su quali basi potete contare e quali aspetti meritano un dialogo prima di compiere passi importanti."},
+{re:/distan|fredd|lontan|allontan|disinteress|cambiat/i, t:"Nella tua domanda emerge il tema della distanza. Alla luce della vostra combinazione, una parte della distanza percepita potrebbe dipendere da modi diversi di rigenerarsi e di vivere le emozioni: ciò che per una persona è un bisogno di spazio, per l'altra può sembrare freddezza. Comprendere questa differenza non risolve tutto, ma aiuta a non interpretare ogni distanza come un rifiuto."},
+{re:/litig|discut|conflitt|scontr|rabbia|arrabb|tension/i, t:"Mi hai scritto che vorresti capire meglio i vostri conflitti. La vostra combinazione suggerisce che le tensioni potrebbero nascere da modi diversi di reagire e di gestire le emozioni. Riconoscere lo schema che si ripete, chi accende la discussione e chi si ritira, è il primo passo per trasformare lo scontro in confronto."},
+{re:/passion|intim|sessu|desider|attrazion/i, t:"Nella tua domanda emerge il tema della passione e dell'intimità. Le vostre energie descrivono modi diversi di vivere il desiderio e la vicinanza: comprenderli può aiutarvi a parlarne con più libertà e a creare le condizioni in cui entrambi vi sentite a vostro agio."},
+{re:/tornar|ritorn|ricominc|lasciat|finit|chiuso|rottura/i, t:"Mi hai scritto qualcosa che riguarda la fine o la possibile ripresa del vostro legame. I numeri non possono dirti se tornerete insieme né che cosa desidera {B}. Possono però aiutarti a comprendere quali dinamiche vi hanno avvicinati e quali vi hanno messo in difficoltà, così da valutare con più lucidità che cosa è giusto per te."},
+{re:/ama|amore|prova|sentiment|interessat|piaccio|vuole/i, t:"Nella tua domanda emerge il desiderio di capire che cosa prova {B}. È una domanda comprensibile, ma nessun metodo numerologico può leggere con certezza i sentimenti di un'altra persona. Quello che possiamo fare è descrivere il suo modo tipico di vivere ed esprimere l'affetto, così che tu possa riconoscere meglio i segnali che già osservi."},
+{re:/famigl|genitor|suocer|amici/i, t:"Mi hai scritto un aspetto che coinvolge anche le persone intorno a voi. Le vostre energie descrivono modi diversi di vivere l'appartenenza e i legami esterni alla coppia: comprendere questi bisogni può aiutarvi a trovare un equilibrio tra il vostro spazio e quello delle persone care."},
+{re:/lavor|tempo|impegn|stress|stanc/i, t:"Nella tua domanda emerge il tema del tempo e degli impegni. La vostra combinazione suggerisce ritmi diversi di energia e di recupero: riconoscerli può aiutarvi a organizzare il tempo insieme in modo che entrambi si sentano considerati."}
+];
+
+const QUEST = {
+1:["In quali momenti senti che il vostro legame è più autentico?","Che cosa ti ha colpito per primo di {B}?","Quale immagine useresti per descrivere la vostra connessione?"],
+2:["In quali situazioni ti riconosci di più nella descrizione della tua energia?","Che cosa ti fa sentire davvero al sicuro in una relazione?","Quale tua qualità vorresti che {B} vedesse di più?"],
+3:["Quali tratti descritti riconosci nei comportamenti di {B}?","In che modo potresti chiedere a {B} che cosa desidera, invece di intuirlo?","Che cosa di {B} ti incuriosisce ancora?"],
+4:["Che cosa ti attrae di più nell'energia di {B}?","Che cosa pensi che {B} possa trovare nella tua energia?","Quale differenza tra voi vivi come una ricchezza?"],
+5:["Come esprimi di solito un'emozione difficile?","Che cosa ti aiuta a sentirti compresa o compreso?","Come potresti accogliere le emozioni di {B} senza doverle risolvere?"],
+6:["In quale situazione recente vi siete fraintesi?","Che cosa cambierebbe se interpretassi il silenzio come tempo e non come distanza?","Quale frase ti piacerebbe sentirti dire più spesso?"],
+7:["Che cosa favorisce la vostra complicità?","Di che cosa hai bisogno per lasciarti andare?","Come potreste mantenere viva la sorpresa?"],
+8:["Quale punto di forza della vostra coppia vorresti valorizzare di più?","In quale momento avete superato insieme una difficoltà?","Che cosa ti rende orgogliosa o orgoglioso del vostro legame?"],
+9:["Quale schema di tensione riconosci nella vostra relazione?","Che cosa ti succede dentro quando nasce un conflitto?","Che cosa potresti fare diversamente la prossima volta?"],
+10:["Qual è il tuo bisogno affettivo più importante?","Lo hai mai espresso apertamente a {B}?","Che cosa pensi che {B} abbia bisogno di ricevere?"],
+11:["Che cosa desideri davvero da questo legame?","Quali condizioni lo farebbero crescere?","Che cosa ti fa sentire in pace, qualunque sia la direzione?"],
+12:["Quale abitudine condivisa vi fa stare bene?","Quale piccola frizione quotidiana potreste alleggerire?","Come potreste dividere i ruoli in modo più equilibrato?"],
+13:["Che cosa hai già imparato da {B}?","Che cosa pensi di poter insegnare a {B}?","Quale qualità di {B} vorresti integrare in te?"],
+14:["Quale consiglio senti più vicino alla vostra situazione?","Quale piccolo gesto potresti iniziare questa settimana?","Come capirai che qualcosa sta migliorando?"],
+15:["Che cosa porterai con te da questa lettura?","Quale parola descrive oggi il vostro legame?","Che cosa desideri per te, al di là della relazione?"]
+};
+
+const METHOD_TXT = [
+"Il metodo utilizzato in questo fascicolo deriva da un antico sistema di numerologia giapponese, che collega la data di nascita a nove energie numeriche e a cinque elementi naturali: Acqua, Legno, Fuoco, Terra e Metallo. A differenza di altri sistemi, non si basa sul semplice anno solare: l'anno energetico inizia ai primi di febbraio, intorno al 4, e ciascun mese inizia in prossimità di una data precisa legata al ciclo delle stagioni.",
+"Il numero principale si ricava dall'anno di nascita, considerando che chi è nato tra il 1° gennaio e il 3 febbraio appartiene ancora all'anno energetico precedente. Questo numero descrive le qualità più mature e profonde della persona, il modo in cui tende a realizzarsi nella vita adulta e nelle relazioni.",
+"Il numero emotivo si ricava dal mese energetico di nascita, letto in relazione al numero principale. Descrive la parte più istintiva, quella che si è formata nell'infanzia e che emerge nelle reazioni spontanee, nei momenti di stress e nell'intimità.",
+"Il numero di espressione nasce dall'incontro tra i due numeri precedenti, osservando la posizione che il numero emotivo occupa nel quadrato magico dei nove numeri quando al centro si colloca il numero principale. Descrive il modo in cui la persona tende a presentarsi e a reagire nelle situazioni nuove.",
+"Ogni numero appartiene a un elemento: l'1 all'Acqua; il 2, il 5 e l'8 alla Terra; il 3 e il 4 al Legno; il 6 e il 7 al Metallo; il 9 al Fuoco. Gli elementi sono collegati tra loro da due cicli. Nel ciclo di generazione ogni elemento nutre il successivo: l'Acqua nutre il Legno, il Legno nutre il Fuoco, il Fuoco nutre la Terra, la Terra nutre il Metallo e il Metallo nutre l'Acqua. Nel ciclo di controllo ogni elemento contiene un altro: l'Acqua contiene il Fuoco, il Fuoco contiene il Metallo, il Metallo contiene il Legno, il Legno contiene la Terra e la Terra contiene l'Acqua.",
+"La compatibilità sentimentale non viene espressa con percentuali o punteggi: viene letta osservando come i numeri e gli elementi delle due persone si incontrano. Una relazione di generazione indica un flusso naturale di sostegno, una relazione di controllo indica una tensione che può diventare stimolo, la condivisione dello stesso elemento indica affinità. Nessuna combinazione è di per sé giusta o sbagliata: ognuna descrive un modo diverso di stare insieme."
+];
+
+const ELEM2 = {
+water:{
+att:"Dal punto di vista dell'elemento, l'Acqua attrae attraverso la profondità e il silenzio. Chi la incontra percepisce uno spazio di ascolto in cui sentirsi accolto, e spesso un desiderio di scoprire ciò che resta nascosto. L'Acqua, dal canto suo, si avvicina a chi le offre calore senza invaderla e una direzione verso cui scorrere.",
+com:"L'elemento Acqua comunica per immagini, intuizioni, sensazioni. Spesso capisce prima di saper spiegare, e per questo può avere bisogno di tempo per tradurre in parole ciò che percepisce. Nelle discussioni preferisce aggirare l'ostacolo piuttosto che urtarlo, come fa un fiume con una roccia.",
+pas:"Nell'intimità l'elemento Acqua cerca fusione e profondità. Il contatto diventa un modo per sentire l'altro oltre le parole, ma ha bisogno di fiducia e di tempi lenti per esprimersi pienamente.",
+forza:"La risorsa principale dell'elemento Acqua è la capacità di adattarsi senza perdersi: può attraversare cambiamenti, distanze e difficoltà trovando sempre una via, e porta nella relazione una comprensione silenziosa.",
+ombra:"L'ombra dell'elemento Acqua è la paura: quando prevale, l'acqua ristagna, si chiude, diventa diffidente o sfuggente. In quei momenti ciò che serve non è una pressione esterna, ma un clima di sicurezza.",
+pot:"Nel lungo periodo l'elemento Acqua porta continuità e profondità: le relazioni con questa energia tendono a maturare lentamente ma con radici profonde.",
+imp:"Dall'elemento Acqua si può imparare l'arte di attendere, di ascoltare il proprio mondo interiore e di fidarsi dell'intuizione.",
+cons:"Per l'elemento Acqua è importante trovare un argine buono: abitudini, impegni e parole chiare che diano forma alle emozioni senza imprigionarle."},
+wood:{
+att:"Dal punto di vista dell'elemento, il Legno attrae attraverso la vitalità e la visione. Porta con sé la sensazione che tutto sia possibile, un'energia di inizio che risveglia chi gli sta accanto. A sua volta è attratto da chi lo nutre di profondità o gli offre un terreno solido in cui mettere radici.",
+com:"L'elemento Legno comunica in modo diretto, propositivo, rivolto al futuro. Ama le idee, i progetti, le soluzioni. Nelle discussioni tende a voler arrivare subito al punto e può spazientirsi davanti alle esitazioni o ai lunghi giri di parole.",
+pas:"Nell'intimità l'elemento Legno porta spontaneità, iniziativa e voglia di scoperta. Il desiderio cresce con la novità e con la sensazione di libertà condivisa.",
+forza:"La risorsa principale dell'elemento Legno è la capacità di rinnovamento: sa ripartire, immaginare nuove possibilità, dare slancio alla relazione nei momenti in cui sembra fermarsi.",
+ombra:"L'ombra dell'elemento Legno è la frustrazione: quando si sente bloccato o trattenuto, la sua energia di crescita si trasforma in irritazione, impazienza o rabbia.",
+pot:"Nel lungo periodo l'elemento Legno porta evoluzione: le relazioni con questa energia hanno bisogno di obiettivi comuni e di un orizzonte da raggiungere insieme.",
+imp:"Dall'elemento Legno si può imparare il coraggio di iniziare, la fiducia nel futuro e la capacità di trasformare un'idea in un progetto.",
+cons:"Per l'elemento Legno è importante imparare la pazienza della stagione: anche un albero ha bisogno di tempo per crescere, e non tutto può accadere subito."},
+fire:{
+att:"Dal punto di vista dell'elemento, il Fuoco attrae attraverso la luce e il calore. È visibile, espressivo, magnetico: difficilmente passa inosservato. A sua volta è attratto da chi alimenta la sua fiamma con ammirazione e da chi gli offre una base stabile su cui ardere.",
+com:"L'elemento Fuoco comunica con entusiasmo e immediatezza. Le sue parole sono vivide, spesso coinvolgenti, a volte impulsive. Nelle discussioni tende ad accendersi rapidamente, ma anche a dimenticare altrettanto in fretta.",
+pas:"Nell'intimità l'elemento Fuoco porta ardore, slancio e desiderio di celebrazione. Ama sentirsi desiderato e ha bisogno di passione visibile per sentirsi davvero coinvolto.",
+forza:"La risorsa principale dell'elemento Fuoco è la capacità di illuminare: porta chiarezza, gioia, calore e la forza di riaccendere l'entusiasmo anche dopo un periodo spento.",
+ombra:"L'ombra dell'elemento Fuoco è l'eccesso: quando arde troppo, si consuma, diventa irrequieto, cerca conferme continue o si spegne bruscamente nella delusione.",
+pot:"Nel lungo periodo l'elemento Fuoco porta vitalità: le relazioni con questa energia hanno bisogno di momenti di festa, di riconoscimento e di una fiamma che venga curata con costanza.",
+imp:"Dall'elemento Fuoco si può imparare a esprimersi apertamente, a celebrare ciò che di bello si vive e a non nascondere la propria luce.",
+cons:"Per l'elemento Fuoco è importante trovare il proprio focolare: una base stabile, ritmi di riposo e gesti costanti che permettano alla passione di durare."},
+earth:{
+att:"Dal punto di vista dell'elemento, la Terra attrae attraverso la solidità e la cura. Accanto a lei ci si sente al sicuro, accolti, sostenuti. A sua volta è attratta da chi porta calore e vitalità nella sua vita, oppure da chi le offre l'occasione di prendersi cura e di costruire.",
+com:"L'elemento Terra comunica in modo concreto e misurato. Preferisce i fatti alle teorie, i gesti alle promesse. Nelle discussioni tende a mantenere la propria posizione con fermezza e ha bisogno di tempo per cambiare idea.",
+pas:"Nell'intimità l'elemento Terra porta sensorialità, tenerezza e costanza. Il desiderio si nutre di continuità, di familiarità e di gesti che diventano rito.",
+forza:"La risorsa principale dell'elemento Terra è la stabilità: sa costruire, mantenere, proteggere. Nei momenti difficili è il terreno su cui la relazione può poggiare.",
+ombra:"L'ombra dell'elemento Terra è la pesantezza: quando prevale, la cura diventa preoccupazione, la stabilità diventa rigidità e il desiderio di sicurezza diventa resistenza al cambiamento.",
+pot:"Nel lungo periodo l'elemento Terra porta solidità: le relazioni con questa energia tendono a durare, purché trovino anche spazio per il movimento e la leggerezza.",
+imp:"Dall'elemento Terra si può imparare il valore della presenza, della cura quotidiana e della pazienza che fa crescere le cose.",
+cons:"Per l'elemento Terra è importante concedersi leggerezza: smuovere ogni tanto il terreno, accogliere il nuovo, lasciare che non tutto sia sotto controllo."},
+metal:{
+att:"Dal punto di vista dell'elemento, il Metallo attrae attraverso l'eleganza, la chiarezza e il senso del valore. Trasmette affidabilità e una certa raffinatezza. A sua volta è attratto da chi lo sostiene con stabilità o da chi ammorbidisce la sua precisione con calore e spontaneità.",
+com:"L'elemento Metallo comunica con chiarezza e precisione. Sa scegliere le parole, definire, distinguere. Nelle discussioni può essere tagliente quando si sente in disaccordo, e apprezza un dialogo ordinato e rispettoso.",
+pas:"Nell'intimità l'elemento Metallo porta raffinatezza, cura dei dettagli e profondità. Ha bisogno di rispetto e di qualità per abbandonarsi.",
+forza:"La risorsa principale dell'elemento Metallo è la chiarezza: sa distinguere ciò che conta, mantenere gli impegni e dare struttura e valore alla relazione.",
+ombra:"L'ombra dell'elemento Metallo è la rigidità: quando prevale, la precisione diventa critica, l'ordine diventa controllo e la chiarezza diventa distanza.",
+pot:"Nel lungo periodo l'elemento Metallo porta qualità e coerenza: le relazioni con questa energia si fondano sul rispetto e sulla fiducia reciproca.",
+imp:"Dall'elemento Metallo si può imparare il valore della coerenza, della sincerità e della capacità di lasciare andare ciò che non serve più.",
+cons:"Per l'elemento Metallo è importante lasciarsi scaldare: accogliere le emozioni imperfette, ammorbidire i giudizi e concedersi momenti senza regole."}
+};
+
+const REL2 = {
+identical:{
+con:"C'è un aspetto interessante in questa combinazione: quando due persone condividono la stessa energia di fondo, la relazione tende a funzionare come una cassa di risonanza. Ciò che uno prova, l'altro lo sente amplificato. Nei periodi sereni questo crea una sensazione di sintonia profonda; nei periodi difficili, invece, una piccola preoccupazione può diventare grande perché rimbalza da uno all'altra. Sapere questo ti permette di riconoscere quando state semplicemente facendo eco l'uno all'altra.",
+att:"Col passare del tempo, l'attrazione tra due energie uguali ha bisogno di essere nutrita da ciò che ciascuno porta di personale: le esperienze, le passioni, le amicizie, i progetti individuali. Sono queste differenze, anche piccole, a mantenere viva la curiosità reciproca.",
+com:"Un esercizio utile, nella vostra comunicazione, è chiedersi ogni tanto: «stiamo dicendo la stessa cosa perché la pensiamo davvero entrambi, o perché è il nostro modo comune di evitare un argomento?». Questa domanda può aprire conversazioni che altrimenti non avverrebbero.",
+pas:"Nella vostra intimità, introdurre consapevolmente novità e piccoli cambiamenti di ritmo può essere il modo più semplice per evitare che la somiglianza si trasformi in prevedibilità.",
+forza:"Questa combinazione possiede anche una grande capacità di sostegno nei momenti difficili: chi meglio di una persona con la tua stessa energia può comprendere ciò che stai attraversando? La solidarietà, tra voi, può essere istintiva.",
+diff:"Un'altra difficoltà possibile è la competizione silenziosa: se entrambi desiderate lo stesso ruolo nella relazione, ad esempio essere quello che decide, quello che viene accudito o quello che ha bisogno di spazio, potreste ritrovarvi a contendervelo senza accorgervene.",
+pot:"Le coppie con la stessa energia possono costruire legami molto solidi, a condizione di riconoscere il rischio della chiusura a due. Mantenere relazioni e stimoli esterni non indebolisce il legame, ma lo arricchisce.",
+quo:"Nella gestione della casa, del tempo libero o delle decisioni pratiche, accordarvi su chi fa che cosa può evitare molte piccole frizioni: avendo la stessa energia, è probabile che entrambi tendiate a occuparvi delle stesse cose e a trascurare le stesse altre.",
+imp:"Da questa relazione puoi imparare molto su te stessa o su te stesso: vedere le proprie qualità e fragilità vissute da un'altra persona è uno dei modi più efficaci per comprenderle e accettarle.",
+mig:"Un consiglio concreto: quando sentite che una tensione si sta amplificando, provate a fermarvi e a chiedervi se state reagendo all'altro o a voi stessi riflessi nell'altro. Spesso basta questa consapevolezza per abbassare l'intensità.",
+chiave:"Siete come due note uguali: possono creare un suono pieno e potente, purché ciascuna mantenga il proprio timbro."},
+same:{
+con:"La condivisione dello stesso elemento crea tra voi una sorta di terreno comune: valori simili, bisogni affini, una sensibilità che vibra sulle stesse frequenze di fondo. Allo stesso tempo, i vostri numeri diversi raccontano due modi distinti di abitare quell'elemento. È proprio in questo spazio tra somiglianza e differenza che si gioca il fascino del vostro legame.",
+att:"Col tempo, l'attrazione tra voi può trasformarsi in una profonda complicità. Il rischio da tenere presente è che la familiarità faccia perdere di vista le differenze che all'inizio vi incuriosivano: coltivarle consapevolmente aiuta a mantenere viva la scintilla.",
+com:"Quando una discussione si blocca, può essere utile ricordare che desiderate probabilmente la stessa cosa, ma la chiedete in modi diversi. Spostare l'attenzione dal come al che cosa permette spesso di ritrovarsi rapidamente.",
+pas:"La condivisione dell'elemento può rendere l'intimità naturale e rassicurante. Per mantenerla viva, è utile valorizzare le diverse sfumature dei vostri numeri: una diversa intensità, un diverso ritmo, un diverso modo di esprimere il desiderio.",
+forza:"Avete inoltre una risorsa preziosa: quando la relazione attraversa un momento difficile, l'appartenenza allo stesso elemento vi aiuta a ritrovare rapidamente un linguaggio comune e un senso di squadra.",
+diff:"Un'altra possibile difficoltà è la mancanza di stimoli complementari. Senza un elemento diverso che porti ciò che vi manca, la relazione potrebbe faticare in alcune aree: ad esempio nella spinta al cambiamento, nella capacità di contenimento o nell'espressione emotiva, a seconda dell'elemento che condividete.",
+pot:"Il vostro legame può contare su una base di affinità che rende più semplici molte scelte di vita. Il potenziale si arricchisce quando la coppia sa aprirsi anche a qualità diverse, attraverso esperienze, persone e progetti nuovi.",
+quo:"Nella vita di tutti i giorni potreste trovarvi d'accordo sui grandi temi e discutere sui piccoli dettagli. È un segno di vicinanza, non di distanza: discutete del come perché siete d'accordo sul che cosa.",
+imp:"In questa combinazione, ciascuno può diventare per l'altro un esempio di come la stessa natura possa essere vissuta in modo diverso, aprendo possibilità che da soli non avreste considerato.",
+mig:"Un consiglio concreto: dedicate del tempo a esperienze che appartengono a un elemento diverso dal vostro. Se il vostro elemento è più riflessivo, cercate attività vivaci; se è più attivo, cercate momenti di quiete. Sarà un modo semplice per riequilibrare la coppia.",
+chiave:"Siete due espressioni della stessa natura: insieme potete scoprire quante forme diverse possa assumere ciò che vi accomuna."},
+gen:{
+con:"In questo tipo di legame, il ruolo di chi nutre e quello di chi viene nutrito non sono gerarchie, ma funzioni naturali. Proprio come l'acqua non è superiore all'albero che nutre, {eX} non è più importante di {eY}: semplicemente, l'energia tra voi ha un verso preferenziale. Riconoscerlo vi aiuta a comprendere perché alcune dinamiche si ripetono e perché, in certi momenti, uno dei due sembra dare più dell'altro.",
+att:"Con il tempo questa attrazione può trasformarsi in un senso profondo di appartenenza: chi riceve sente di crescere grazie all'altro, chi offre sente di avere uno scopo. Per mantenerla viva è importante che entrambi continuino a sentirsi scelti, non soltanto necessari.",
+com:"Un esercizio utile, nella vostra comunicazione, è invertire ogni tanto i ruoli: lasciare che sia chi di solito ascolta a proporre, consigliare, guidare la conversazione. Questo piccolo cambiamento può rivelare aspetti dell'altro che non avevate ancora conosciuto.",
+pas:"Nella vostra intimità, la fiducia creata dal legame di generazione è una base preziosa. Arricchirla con momenti in cui il ruolo si capovolge, in cui chi di solito accoglie prende l'iniziativa, può rendere la complicità ancora più completa.",
+forza:"Questa combinazione possiede anche una qualità rara: la capacità di far crescere entrambi. Chi nutre impara la generosità, chi viene nutrito sviluppa le proprie potenzialità. Nel tempo, la relazione può diventare un luogo di trasformazione reciproca.",
+diff:"Un'altra difficoltà possibile riguarda il riconoscimento: chi offre sostegno potrebbe aspettarsi, anche senza dirlo, una forma di gratitudine; chi lo riceve potrebbe darlo per scontato. Quando questo accade, il flusso naturale si trasforma in un credito silenzioso che pesa sulla relazione.",
+pot:"Nel lungo periodo, un legame di generazione può diventare molto solido, perché si fonda su un bisogno reciproco reale. La sua maturità si misura nella capacità di rendere il sostegno consapevole, visibile e, quando serve, reversibile.",
+quo:"Nella gestione pratica delle giornate, potreste notare che {eX} tende a farsi carico di più cose. Fermarsi periodicamente a ridistribuire i compiti aiuta a prevenire la stanchezza di chi dà e il senso di dipendenza di chi riceve.",
+imp:"In fondo, questa relazione può insegnare a entrambi che l'amore è anche uno scambio di nutrimento, e che dare e ricevere sono due gesti ugualmente preziosi.",
+mig:"Un consiglio concreto: create un piccolo rituale di riconoscimento, ad esempio dirvi ogni settimana una cosa che l'altro ha fatto per voi e che avete apprezzato. Rende visibile il flusso di sostegno e lo mantiene vivo.",
+chiave:"Siete come la sorgente e il fiume, o come il sole e il campo: il vostro legame vive di un nutrimento che, quando viene riconosciuto, fa crescere entrambi."},
+ctrl:{
+con:"È importante non leggere la parola controllo in senso negativo. Nel linguaggio degli elementi, il controllo è ciò che impedisce a un'energia di eccedere: il fuoco senza acqua brucerebbe tutto, l'albero senza la lama crescerebbe disordinato. Nella vostra relazione, {eX} può offrire a {eY} misura, struttura e protezione. Il punto delicato è che chi esercita il contenimento spesso non se ne accorge, mentre chi lo riceve lo sente chiaramente.",
+att:"Con il tempo, questa attrazione magnetica ha bisogno di trasformarsi in rispetto reciproco. Quando entrambi sentono che la forza dell'altro non minaccia la propria libertà, il contrasto diventa complementarità e la relazione può acquisire una grande intensità.",
+com:"Un esercizio utile, nella vostra comunicazione, è prestare attenzione alle parole che correggono o che limitano. Sostituire, quando possibile, un «dovresti» con un «che ne pensi se...» può cambiare profondamente il clima delle vostre conversazioni.",
+pas:"Nella vostra intimità, la tensione tra le vostre energie può diventare complicità quando entrambi vi sentite liberi di proporre, desiderare e dire di no. Il rispetto dei tempi dell'altro trasforma l'intensità in fiducia.",
+forza:"Questa combinazione possiede anche una qualità preziosa: la capacità di rendere più forte chi la vive. Il confronto con un'energia diversa obbliga a definire i propri confini, a chiarire i propri desideri, a crescere. Molte relazioni di controllo vissute con consapevolezza diventano relazioni di grande maturità.",
+diff:"Un'altra difficoltà possibile è la reazione di chi si sente contenuto: a volte si adatta in silenzio, accumulando frustrazione; altre volte si ribella in modo improvviso, sorprendendo l'altro. In entrambi i casi la radice è la stessa: la sensazione di non avere abbastanza spazio.",
+pot:"Nel lungo periodo, una relazione di controllo può trovare un equilibrio molto stabile, perché ciascuno impara a conoscere i propri limiti e quelli dell'altro. Il suo potenziale si realizza quando la forza diventa protezione e non limitazione.",
+quo:"Nella gestione pratica delle giornate, alternare consapevolmente chi propone e chi decide può essere sufficiente a prevenire molti attriti, e a far sentire entrambi parte attiva della relazione.",
+imp:"In fondo, questa relazione può insegnare a entrambi qualcosa di molto importante: che la forza e la libertà possono convivere, e che i confini chiari rendono l'amore più sicuro, non più piccolo.",
+mig:"Un consiglio concreto: concordate insieme alcuni ambiti in cui ciascuno ha piena libertà di scelta, senza commenti o correzioni da parte dell'altro. È un modo semplice per bilanciare l'influenza tra le vostre energie.",
+chiave:"Siete come l'argine e il fiume: insieme potete dare forma a qualcosa di bello, purché l'argine protegga senza soffocare e il fiume scorra senza travolgere."}
+};
+
+const DEEP = {
+1:"Per comprendere davvero una connessione sentimentale, questo metodo osserva tre livelli. Il primo è quello dei numeri principali, che descrivono il modo maturo e consapevole in cui ciascuno vive le relazioni. Il secondo è quello dei numeri emotivi, che raccontano le reazioni più istintive, quelle che emergono nell'intimità e sotto pressione. Il terzo è quello degli incroci, cioè il modo in cui la parte adulta di una persona incontra la parte più emotiva dell'altra. Nel vostro caso, i numeri principali sono il {numA} e il {numB}, legati agli elementi {elA} e {elB}: è da questo incontro che nasce il tono generale del vostro legame.",
+2:"Prima di guardare la relazione, è importante guardare te. Spesso, in amore, si cerca di capire l'altro dimenticando di chiedersi che cosa si porta nella relazione: i propri bisogni, le proprie paure, il proprio modo di dare e di ricevere. Conoscere la tua energia ti aiuterà a riconoscere quali reazioni ti appartengono profondamente e quali, invece, nascono dall'incontro con l'altra persona.",
+3:"Guardare un'altra persona attraverso i numeri richiede delicatezza. Ciò che segue descrive le tendenze dell'energia di {B}, ma ogni persona è più della propria data di nascita: la sua storia, le sue esperienze e le sue scelte possono rafforzare alcune qualità e attenuarne altre. Usa queste pagine per osservare con occhi nuovi i comportamenti che già conosci, chiedendoti dove ti sembra di riconoscerla o riconoscerlo e dove invece no.",
+4:"Nel linguaggio di questo metodo, l'attrazione non è un mistero inspiegabile, ma il risultato dell'incontro tra elementi. Alcune combinazioni si attraggono perché si nutrono a vicenda, altre perché si sfidano, altre ancora perché si riconoscono. Nessuna di queste forme è migliore delle altre: ciascuna crea un tipo diverso di magnetismo, con le sue promesse e le sue sfide.",
+5:"Il numero emotivo è particolarmente importante quando si parla di sentimenti. Mentre il numero principale descrive il modo in cui una persona sceglie di vivere l'amore, il numero emotivo descrive il modo in cui reagisce quando l'amore la tocca nel profondo: quando si sente ferita, quando ha paura di perdere qualcosa, quando si lascia andare. Per questo, nella compatibilità emotiva, osserviamo con attenzione sia i numeri principali sia quelli emotivi.",
+6:"Ogni elemento ha un proprio linguaggio. L'Acqua comunica per intuizioni, il Legno per proposte, il Fuoco per entusiasmo, la Terra per gesti concreti, il Metallo per definizioni chiare. Quando due persone parlano con elementi diversi, possono dire la stessa cosa senza riconoscersi, oppure fraintendere il tono più del contenuto. Nel vostro caso si incontrano il linguaggio dell'elemento {elA} e quello dell'elemento {elB}.",
+7:"L'intimità, in questo metodo, è il luogo in cui il numero principale e quello emotivo si incontrano più intensamente: la parte consapevole sceglie la vicinanza, la parte istintiva la vive. Per questo il modo in cui ciascuno si lascia andare dipende molto dalla sicurezza emotiva che sente nella relazione.",
+8:"I punti di forza di una relazione non sono soltanto le qualità di ciascuno, ma il modo in cui queste qualità si combinano. Una persona paziente accanto a una persona vivace, ad esempio, può creare un equilibrio che nessuna delle due avrebbe da sola. Riconoscere le vostre risorse comuni vi aiuta a farvi affidamento nei momenti in cui la relazione ne ha più bisogno.",
+9:"Ogni combinazione di elementi porta con sé tensioni tipiche. Non sono difetti della relazione, ma punti in cui le vostre nature diverse si sfiorano e talvolta si urtano. Il metodo invita a osservarle senza paura: una tensione riconosciuta perde gran parte del suo potere, mentre una tensione ignorata tende a ripresentarsi in forme diverse.",
+10:"Ogni elemento ha bisogni affettivi propri: l'Acqua cerca fiducia e spazio, il Legno libertà e crescita, il Fuoco riconoscimento e calore, la Terra sicurezza e continuità, il Metallo rispetto e chiarezza. Quando i bisogni di due persone sono diversi, nessuno sbaglia: semplicemente, ciascuno misura l'amore con il proprio metro. Imparare il metro dell'altro è uno dei gesti più profondi che si possano compiere in una relazione.",
+11:"Il potenziale di una relazione non è un destino scritto: è l'insieme delle possibilità che le due energie offrono. Alcune combinazioni favoriscono la stabilità, altre la crescita, altre ancora l'intensità. Il modo in cui queste possibilità si realizzano dipende dalla consapevolezza, dalla volontà e dalle circostanze della vita.",
+12:"La vita quotidiana è il banco di prova di ogni compatibilità. È qui che emergono le differenze di ritmo, di abitudini, di modi di organizzare il tempo e lo spazio. Molti conflitti apparentemente piccoli, come chi decide, chi organizza o chi si occupa di che cosa, sono in realtà l'espressione di energie diverse che cercano un equilibrio.",
+13:"Nel ciclo degli elementi, ogni energia ha qualcosa da offrire alle altre. L'Acqua insegna la profondità, il Legno il coraggio, il Fuoco l'espressione, la Terra la cura, il Metallo la chiarezza. In una relazione, l'altra persona diventa spesso il maestro inaspettato delle qualità che non abbiamo ancora sviluppato.",
+14:"I consigli che seguono nascono direttamente dalla vostra combinazione numerologica. Non sono regole universali, ma indicazioni pensate per le energie specifiche che si incontrano tra te e {B}. Ti suggerisco di sceglierne uno o due da mettere in pratica subito, osservando con calma che cosa cambia.",
+15:"Arrivati alla conclusione, vale la pena ricordare il senso di questo percorso. I numeri non decidono chi amare né come andrà una relazione: offrono una chiave di lettura, un linguaggio per dare un nome a ciò che si vive. La vera chiave della compatibilità resta nelle mani delle persone che la vivono."
+};
+
+/* ================= CONFIGURAZIONE ================= */
+const CONFIG = {
+  PAYPAL_CLIENT_ID: "INSERISCI_QUI_IL_TUO_PAYPAL_CLIENT_ID",
+  // Alternativa senza Client ID: il tuo link di pagamento (es. https://paypal.me/tuonome/25EUR). Pagamento NON verificato automaticamente.
+  LINK_PAGAMENTO: "https://www.paypal.com/ncp/payment/KABVXQXJB2T58",
+  ISTRUZIONI_CONSEGNA: "Dopo il pagamento inviami in DM su Instagram il codice e la ricevuta: riceverai il tuo fascicolo personalizzato.",
+  // Impronta SHA-256 della password dell'area riservata (#venditrice). Non e' la password.
+  HASH_VENDITRICE: "a5b8c13aa8e3ee5164b20b553160360a315e5bdee045b800762cc51f32ab589a",
+  PREZZO: "25.00",
+  VALUTA: "EUR",
+  PRODOTTO: "La Vostra Compatibilita Sentimentale - Fascicolo Completo",
+  JSPDF_URL: "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+};
+
+/* ================= MOTORE NUMEROLOGICO ================= */
+const EL = {1:"water",2:"earth",3:"wood",4:"wood",5:"earth",6:"metal",7:"metal",8:"earth",9:"fire"};
+const EL_ORDER = ["water","wood","fire","earth","metal"];
+const POL = {1:"yang",2:"yin",3:"yang",4:"yin",5:"mix",6:"yang",7:"yin",8:"yang",9:"yin"};
+const MONTH_STARTS = [[2,4],[3,6],[4,5],[5,6],[6,6],[7,8],[8,8],[9,8],[10,9],[11,8],[12,8]];
+const NEED_KW = {water:"fiducia e spazio interiore", wood:"libertà e crescita", fire:"riconoscimento e calore", earth:"sicurezza e continuità", metal:"rispetto e chiarezza"};
+const EXER = {
+  water:"Per l'energia dell'Acqua: concedersi ogni giorno un breve momento di silenzio e poi condividere con una frase ciò che si è compreso.",
+  wood:"Per l'energia del Legno: scegliere un piccolo progetto comune da portare fino in fondo, celebrando il traguardo raggiunto.",
+  fire:"Per l'energia del Fuoco: esprimere apprezzamento in modo esplicito e ricordarsi di alimentare la fiamma con gesti costanti, non solo straordinari.",
+  earth:"Per l'energia della Terra: chiedere qualcosa per sé almeno una volta alla settimana, imparando a ricevere oltre che a dare.",
+  metal:"Per l'energia del Metallo: lasciare spazio a un momento imperfetto e spontaneo, senza programmarlo e senza giudicarlo."
+};
+const SCEN = {
+  identical:"Pensa, ad esempio, a una serata in cui entrambi siete stanchi: con la stessa energia di base, potreste avere esattamente lo stesso bisogno nello stesso momento. Se entrambi desiderate essere accolti, nessuno dei due ha la forza di accogliere; se entrambi volete decidere, la scelta più semplice può trasformarsi in un piccolo braccio di ferro. Accorgervi di questa somiglianza vi permette di alternarvi con leggerezza: stasera tocca a te, domani a {B}.",
+  same:"Pensa, ad esempio, all'organizzazione di un fine settimana: condividendo lo stesso elemento, probabilmente vi trovate d'accordo sul tipo di esperienza che desiderate. Le differenze possono emergere nei dettagli, come i tempi, il livello di programmazione o quanto spazio lasciare all'imprevisto. Sono proprio questi dettagli, apparentemente piccoli, a dirvi molto sul modo diverso in cui interpretate la stessa natura.",
+  gen:"Pensa, ad esempio, a un momento difficile vissuto da uno dei due: in una combinazione di generazione è probabile che sia {eX} a offrire sostegno in modo spontaneo, proponendo soluzioni, incoraggiando, prendendosi cura. È un gesto prezioso. Ma nella quotidianità vale la pena chiedersi: quando a essere stanca è proprio l'energia che di solito sostiene, chi se ne accorge?",
+  ctrl:"Pensa, ad esempio, a una decisione pratica, come la scelta di dove trascorrere una vacanza o come organizzare una giornata: in una combinazione di controllo potrebbe capitare che {eX} tenda a definire la cornice, mentre {eY} si adatta, magari senza dire del tutto ciò che preferirebbe. Se succede una volta non è un problema; se diventa uno schema, il malcontento si accumula in silenzio."
+};
+const CH = [
+  ["LA VOSTRA CONNESSIONE SENTIMENTALE","Ogni incontro tra due energie racconta una storia unica."],
+  ["CHI SEI TU IN AMORE","Conoscere se stessi è il primo passo per comprendere l'altro."],
+  ["CHI È L'ALTRA PERSONA IN AMORE","Osservare senza giudicare, comprendere senza pretendere certezze."],
+  ["PERCHÉ VI ATTRAGGETE","L'attrazione nasce spesso da ciò che riconosciamo e da ciò che ci manca."],
+  ["LA VOSTRA COMPATIBILITÀ EMOTIVA","Le emozioni sono il linguaggio più antico dell'amore."],
+  ["COME COMUNICATE","Tra ciò che si dice e ciò che si intende c'è lo spazio della comprensione."],
+  ["PASSIONE E INTIMITÀ","La vicinanza si costruisce con fiducia, tempo e desiderio condiviso."],
+  ["I VOSTRI PUNTI DI FORZA","Ciò che vi unisce merita di essere riconosciuto e coltivato."],
+  ["LE VOSTRE DIFFICOLTÀ","Ogni tensione, se compresa, può diventare un'occasione di crescita."],
+  ["I BISOGNI SENTIMENTALI DI ENTRAMBI","Amare significa anche imparare ciò di cui l'altro ha bisogno."],
+  ["IL POTENZIALE DELLA RELAZIONE","Le energie descrivono possibilità: le scelte restano vostre."],
+  ["LA VOSTRA COMPATIBILITÀ NELLA VITA QUOTIDIANA","È nei giorni ordinari che una relazione mostra la sua vera forma."],
+  ["COSA POTETE IMPARARE L'UNO DALL'ALTRA","Ogni persona che incontriamo porta con sé un insegnamento."],
+  ["COME MIGLIORARE LA VOSTRA RELAZIONE","Piccoli gesti consapevoli possono cambiare molto."],
+  ["LA CHIAVE DELLA VOSTRA COMPATIBILITÀ","La chiave non apre una porta sola: apre un modo nuovo di guardarvi."]
+];
+
+function parseDate(s){
+  const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec((s||"").trim()); if(!m) return null;
+  const d=+m[1], mo=+m[2], y=+m[3]; const dt=new Date(y,mo-1,d);
+  if(dt.getFullYear()!==y||dt.getMonth()!==mo-1||dt.getDate()!==d) return null;
+  const now=new Date(); if(y<1900||dt>now) return null;
+  return {d,m:mo,y};
+}
+function yearNumber(y){ const r=((11-(y%9))%9+9)%9; return r===0?9:r; }
+function monthIndex(d,m){
+  if(m===1) return d>=6?11:10;
+  if(m===2&&d<4) return 11;
+  let idx=0; MONTH_STARTS.forEach(([mm,dd],i)=>{ if(m>mm||(m===mm&&d>=dd)) idx=i; }); return idx;
+}
+function calcCore(dt){
+  const effY=(dt.m===1||(dt.m===2&&dt.d<4))?dt.y-1:dt.y;
+  const Y=yearNumber(effY);
+  const start=[1,4,7].includes(Y)?8:[2,5,8].includes(Y)?2:5;
+  const idx=monthIndex(dt.d,dt.m);
+  const M=(((start-idx-1)%9)+9)%9+1;
+  const T=(((M-Y+4)%9)+9)%9+1;
+  return {Y,M,T,effY,idx};
+}
+function shiftDate(dt,days){ const x=new Date(Date.UTC(dt.y,dt.m-1,dt.d)+days*864e5); return {d:x.getUTCDate(),m:x.getUTCMonth()+1,y:x.getUTCFullYear()}; }
+function calc(dt){
+  const c=calcCore(dt); c.near=null;
+  const b=[...MONTH_STARTS,[1,6]];
+  for(const [mm,dd] of b){
+    const diff=(Date.UTC(dt.y,dt.m-1,dt.d)-Date.UTC(dt.y,mm-1,dd))/864e5;
+    if(Math.abs(diff)<=1){
+      const alt=calcCore(shiftDate(dt, diff>=0?-(diff+1):(-diff)));
+      if(alt.Y!==c.Y||alt.M!==c.M) c.near={year:(mm===2&&dd===4), alt};
+      break;
+    }
+  }
+  return c;
+}
+function rel(na,nb){
+  if(na===nb) return {t:"identical"};
+  const ea=EL_ORDER.indexOf(EL[na]), eb=EL_ORDER.indexOf(EL[nb]);
+  if(ea===eb) return {t:"same"};
+  if((ea+1)%5===eb) return {t:"gen",x:"A"};
+  if((eb+1)%5===ea) return {t:"gen",x:"B"};
+  if((ea+2)%5===eb) return {t:"ctrl",x:"A"};
+  return {t:"ctrl",x:"B"};
+}
+const elName = n => ELEM[EL[n]].nome;
+const pairKey = (a,b) => { const ia=EL_ORDER.indexOf(EL[a]), ib=EL_ORDER.indexOf(EL[b]); return ia<=ib?EL[a]+"-"+EL[b]:EL[b]+"-"+EL[a]; };
+function polOf(p){ const a=POL[p.c.Y], b=POL[p.c.M]; if(a==="mix"||b==="mix"||a!==b) return "mix"; return a; }
+
+/* ================= TESTI ================= */
+const G = (p,f,m,n) => p.gen==="donna"?f:p.gen==="uomo"?m:n;
+const cap = s => s.charAt(0).toUpperCase()+s.slice(1);
+function genderize(s, A, Bg){
+  const pairs=[["a te stessa o a te stesso","a te stessa","a te stesso"],["compresa o compreso","compresa","compreso"],["orgogliosa o orgoglioso","orgogliosa","orgoglioso"]];
+  pairs.push(["te stessa o su te stesso","te stessa","te stesso"]);
+  pairs.forEach(([both,f,m])=>{ if(A.gen==="donna") s=s.split(both).join(f); else if(A.gen==="uomo") s=s.split(both).join(m); });
+  if(Bg==="donna") s=s.split("riconoscerla o riconoscerlo").join("riconoscerla"); else if(Bg==="uomo") s=s.split("riconoscerla o riconoscerlo").join("riconoscerlo");
+  return s;
+}
+function mkCtx(S, r, na, nb){
+  const {A,B}=S; let X=A,Y=B,nX=na,nY=nb;
+  if((r.t==="gen"||r.t==="ctrl")&&r.x==="B"){ X=B;Y=A;nX=nb;nY=na; }
+  return {A,B,X,Y,na,nb,nX,nY};
+}
+function tp(s, c){
+  const pp=(p,te,pre)=>p.reader?te:pre+p.nome;
+  const map={
+    A:c.A.nome, B:c.B.nome, numA:c.na, numB:c.nb, elA:elName(c.na), elB:elName(c.nb),
+    numX:c.nX, numY:c.nY, elX:elName(c.nX), elY:elName(c.nY),
+    inX:pp(c.X,"in te","in "), inY:pp(c.Y,"in te","in "), conX:pp(c.X,"con te","con "), conY:pp(c.Y,"con te","con "),
+    aX:pp(c.X,"a te","a "), aY:pp(c.Y,"a te","a "), perX:pp(c.X,"per te","per "), perY:pp(c.Y,"per te","per "),
+    daX:pp(c.X,"da te","da "), daY:pp(c.Y,"da te","da "),
+    eX:pp(c.X,"la tua energia","l'energia di "), eY:pp(c.Y,"la tua energia","l'energia di "),
+    sX:pp(c.X,"la tua sensibilità","la sensibilità di "), sY:pp(c.Y,"la tua sensibilità","la sensibilità di ")
+  };
+  map.EX=cap(map.eX); map.EY=cap(map.eY); map.SX=cap(map.sX); map.SY=cap(map.sY);
+  return genderize(s.replace(/\{(\w+)\}/g,(m,k)=>map[k]!==undefined?String(map[k]):m), c.A, c.B.gen);
+}
+const firstSentence = s => { const i=s.indexOf(". "); return i>0?s.slice(0,i+1):s; };
+function seedOf(S){ return (S.A.dt.d*31+S.A.dt.m*17+S.A.dt.y+S.B.dt.d*13+S.B.dt.m*7+S.B.dt.y*3)>>>0; }
+
+function buildState(f){
+  const mk=(o,reader,gen)=>{ const dt=parseDate(o.data); return {nome:o.nome.trim(), full:o.nome.trim(), dob:o.data, dt, gen, reader, c:calc(dt)}; };
+  const A=mk(f.a,true,"donna"), B=mk(f.b,false,"uomo");
+  const S={A,B,relType:f.rel,tempo:(f.tempo||"").trim(),capire:(f.capire||"").trim()};
+  S.ra=rel(A.c.Y,B.c.Y); S.rc=rel(A.c.M,B.c.M); S.rx1=rel(A.c.Y,B.c.M); S.rx2=rel(A.c.M,B.c.Y);
+  S.ctxA=mkCtx(S,S.ra,A.c.Y,B.c.Y); S.ctxC=mkCtx(S,S.rc,A.c.M,B.c.M);
+  return S;
+}
+function nearNote(p){
+  const n=p.c.near; if(!n) return "";
+  const who=p.reader?"La tua data di nascita":"La data di nascita di "+p.nome;
+  return who+" cade a ridosso di un passaggio tra due periodi energetici"+(n.year?" (l'inizio dell'anno, intorno al 4 febbraio)":"")+". In questi casi il metodo suggerisce di considerare anche le qualità del periodo vicino: in particolare il numero "+(n.alt.Y!==p.c.Y?n.alt.Y+" ("+elName(n.alt.Y)+")":n.alt.M+" ("+elName(n.alt.M)+")")+", che può aggiungere qualche sfumatura alla lettura.";
+}
+function childPhrase(S){
+  const r=S.rc, c=S.ctxC;
+  if(r.t==="identical") return "Sul piano emotivo condividete anche lo stesso numero, il "+S.A.c.M+": nelle reazioni più spontanee potreste sentirvi capiti quasi d'istinto.";
+  if(r.t==="same") return "Sul piano emotivo, i vostri numeri appartengono entrambi all'elemento "+elName(S.A.c.M)+", e questo può rendere più naturale comprendervi nei momenti delicati.";
+  if(r.t==="gen") return tp("Sul piano emotivo esiste un flusso di sostegno: {sX} tende a nutrire {sY}.",c);
+  return tp("Sul piano emotivo, {sX} tende a contenere {sY}, e questo potrebbe creare qualche attrito nei momenti più sensibili.",c);
+}
+function freeResult(S){
+  const {A,B,ra}=S, NA=NUMS[A.c.Y], NB=NUMS[B.c.Y], pk=PAIR[pairKey(A.c.Y,B.c.Y)];
+  const con=A.nome+", osservando la combinazione tra la tua data di nascita e quella di "+B.nome+", emerge un'immagine precisa: "+pk.img+". "+tp(REL[ra.t].free_con,S.ctxA)+" La tua energia principale è il "+A.c.Y+", "+NA.titolo+", mentre quella di "+B.nome+" è il "+B.c.Y+", "+NB.titolo+". "+childPhrase(S);
+  const forza=tp(REL[ra.t].free_forza,S.ctxA)+" "+(A.c.Y===B.c.Y?"In particolare, "+NA.pregio+" è una qualità che potreste riconoscere l'uno nell'altra e che, condivisa, potrebbe diventare la base della vostra intesa.":"In particolare, "+NA.pregio+" che appartiene alla tua energia e "+NB.pregio+" che caratterizza l'energia di "+B.nome+" potrebbero completarsi, offrendo alla relazione risorse diverse e preziose.");
+  const diff=tp(REL[ra.t].free_diff,S.ctxA)+" "+(A.c.Y===B.c.Y?"Da entrambe le parti potrebbe emergere "+NA.nodo+", e quando accade insieme diventa più difficile ritrovare l'equilibrio.":"Da parte tua potrebbe emergere "+NA.nodo+", mentre in "+B.nome+" potrebbe manifestarsi "+NB.nodo+": quando queste due tendenze si incontrano, il rischio è di fraintendersi proprio nei momenti più importanti.")+" Si tratta di tendenze simboliche, non di certezze: conoscerle è già un modo per gestirle meglio.";
+  return {con,forza,diff};
+}
+
+/* ================= UI ================= */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let STATE=null, LAST_DOC=null, lenis=null;
+const GEN_OPTS=[];
+
+function buildPills(){
+  $('[data-group="rel"]').innerHTML=Object.entries(RTYPE).map(([k,v])=>`<label class="pill"><input type="radio" name="rel" value="${k}" data-testid="rel-${k}"><span>${v.label}</span></label>`).join("");
+}
+function maskDate(e){
+  const el=e.target; let v=el.value.replace(/\D/g,"").slice(0,8);
+  if(v.length>4) v=v.slice(0,2)+"/"+v.slice(2,4)+"/"+v.slice(4); else if(v.length>2) v=v.slice(0,2)+"/"+v.slice(2);
+  el.value=v; el.classList.remove("bad"); const er=document.querySelector(`.err[data-for="${el.id}"]`); if(er) er.classList.remove("show");
+}
+function readForm(){
+  const val=id=>$("#"+id).value; const radio=n=>{ const r=document.querySelector(`input[name="${n}"]:checked`); return r?r.value:""; };
+  return {a:{nome:val("a-nome"),data:val("a-data")}, b:{nome:val("b-nome"),data:val("b-data")}, rel:radio("rel"), tempo:val("q-tempo"), capire:val("q-capire")};
+}
+function validate(f){
+  let ok=true; const flag=(id,bad)=>{ const er=document.querySelector(`.err[data-for="${id}"]`); if(er) er.classList.toggle("show",bad); const inp=$("#"+id); if(inp) inp.classList.toggle("bad",bad); if(bad) ok=false; };
+  ["a","b"].forEach(p=>{ const o=f[p]; flag(p+"-nome",!o.nome.trim()); flag(p+"-data",!parseDate(o.data)); });
+  flag("rel",!f.rel); return ok;
+}
+function scrollToEl(el){ if(lenis){ lenis.resize(); requestAnimationFrame(()=>lenis.scrollTo(el,{offset:-12,duration:1.2,force:true})); } else window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-12,behavior:"smooth"}); }
+function numCard(p,label){
+  return `<div class="num-card ${p.reader?"woman-card":"man-card"}"><h4>${esc(p.full)}</h4><dl><dt>Numero principale</dt><dd>${p.c.Y} · ${elName(p.c.Y)}</dd><dt>Numero emotivo</dt><dd>${p.c.M} · ${elName(p.c.M)}</dd><dt>Numero di espressione</dt><dd>${p.c.T}</dd></dl></div>`;
+}
+function renderResult(S){
+  const r=freeResult(S); const notes=[nearNote(S.A),nearNote(S.B)].filter(Boolean);
+  $("#risultato").innerHTML=`
+  <div class="res-head" data-testid="result-header">
+    <h2>❤️ LA VOSTRA COMPATIBILITÀ <span class="k">SENTIMENTALE</span></h2>
+    <div class="who" data-testid="result-p1-name">${esc(S.A.full)}</div><div class="dob woman-text" data-testid="result-p1-dob">Data di nascita: ${esc(S.A.dob)}</div>
+    <div class="amp">&amp;</div>
+    <div class="who" data-testid="result-p2-name">${esc(S.B.full)}</div><div class="dob man-text" data-testid="result-p2-dob">Data di nascita: ${esc(S.B.dob)}</div>
+    <div class="nums">${numCard(S.A)}${numCard(S.B)}</div>
+    ${notes.map(n=>`<p class="note">${esc(n)}</p>`).join("")}
+  </div>
+  <div class="block"><h3>❤️ LA VOSTRA <span class="k">CONNESSIONE</span></h3><p data-testid="result-connection">${esc(r.con)}</p></div>
+  <div class="block"><h3>✨ IL VOSTRO <span class="k">PUNTO DI FORZA</span></h3><p data-testid="result-strength">${esc(r.forza)}</p></div>
+  <div class="block"><h3>💔 LA VOSTRA <span class="k">DIFFICOLTÀ</span> PRINCIPALE</h3><p data-testid="result-difficulty">${esc(r.diff)}</p>
+  <p class="disclaimer">Interpretazione simbolica basata su un antico metodo di numerologia giapponese: non rappresenta una certezza né una previsione.</p></div>`;
+  $("#risultato").classList.add("show"); $("#offerta").classList.add("show");
+  setTimeout(()=>scrollToEl($("#risultato")),60);
+}
+function onSubmit(e){
+  e.preventDefault(); const f=readForm();
+  if(!validate(f)){ $("#form-err").classList.add("show"); const b=document.querySelector(".bad,.err.show"); if(b) scrollToEl(b.closest(".field")||b); return; }
+  $("#form-err").classList.remove("show");
+  STATE=buildState(f); STATE.form=f; renderResult(STATE);
+  $("#paypal-area").classList.remove("show"); $("#consegna").classList.remove("show");
+}
+
+/* ================= PAYPAL ================= */
+function loadScript(src){ return new Promise((res,rej)=>{ const s=document.createElement("script"); s.src=src; s.onload=res; s.onerror=()=>rej(new Error("load")); document.head.appendChild(s); }); }
+let ppLoaded=false;
+function encodeOrder(f){ const c=[f.a.nome,f.a.data,f.b.nome,f.b.data,f.rel,f.tempo||"",f.capire||""]; return "LCS-"+btoa(unescape(encodeURIComponent(JSON.stringify(c)))).replace(/=+$/,""); }
+function decodeOrder(code){ try{ const raw=code.trim().replace(/^LCS-/,'').replace(/\s+/g,''); const c=JSON.parse(decodeURIComponent(escape(atob(raw)))); if(!Array.isArray(c)) return null; let f; if(c.length>=9){ f={a:{nome:c[0],data:c[2]},b:{nome:c[4],data:c[6]},rel:c[8],tempo:c[9]||'',capire:c[10]||''}; } else { f={a:{nome:c[0],data:c[1]},b:{nome:c[2],data:c[3]},rel:c[4],tempo:c[5]||'',capire:c[6]||''}; } return f.a.nome&&f.b.nome&&f.rel&&parseDate(f.a.data)&&parseDate(f.b.data)?f:null; }catch(e){ return null; } }
+function renderLinkPayment(){
+  const code=encodeOrder(STATE.form); const n0=document.querySelector("#paypal-area > .pp-note"); if(n0) n0.style.display="none";
+  $("#paypal-buttons").innerHTML=`<p class="pp-note" style="margin-bottom:10px"><b>1.</b> Copia il tuo codice personale: contiene i dati per preparare il fascicolo.</p>
+  <div style="font-family:monospace;font-size:12px;word-break:break-all;background:#FFF4F9;border-radius:12px;padding:12px;margin-bottom:10px" data-testid="order-code">${esc(code)}</div>
+  <button class="btn ghost" type="button" id="copy-code" data-testid="copy-code-btn" style="width:100%;min-width:0;min-height:50px;margin-bottom:18px">Copia il codice</button>
+  <p class="pp-note" style="margin-bottom:10px"><b>2.</b> Completa il pagamento di 25 €.</p>
+  <a class="btn" href="${esc(CONFIG.LINK_PAGAMENTO)}" target="_blank" rel="noopener" data-testid="payment-link-btn" style="width:100%;min-width:0;margin-bottom:18px">Paga 25 € con PayPal</a>
+  <p class="pp-note"><b>3.</b> ${esc(CONFIG.ISTRUZIONI_CONSEGNA)}</p>`;
+  $("#copy-code").onclick=async()=>{ try{ await navigator.clipboard.writeText(code); $("#copy-code").textContent="Codice copiato ✓"; }catch(e){ $("#copy-code").textContent="Tieni premuto sul codice per copiarlo"; } };
+}
+/* Pannello riservato: apri il file con #venditrice alla fine dell'indirizzo */
+async function sha256(t){ const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t)); return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(""); }
+function sellerPanel(){
+  if(location.hash!=="#venditrice") return;
+  const s=document.createElement("section"); s.className="wrap"; s.style.padding="40px 22px 70px"; s.id="venditrice";
+  s.innerHTML=`<div class="card" data-testid="seller-panel"><div class="tag">Area riservata</div><h2 class="serif" style="font-size:28px;margin-bottom:14px">Genera un <span class="k">fascicolo</span></h2>
+  <div class="field"><label for="s-pass">Password</label><input id="s-pass" type="password" data-testid="seller-password-input"></div>
+  <div class="q"><label for="s-code">Codice della cliente</label><textarea id="s-code" data-testid="seller-code-input" placeholder="LCS-..."></textarea></div>
+  <div class="submit"><button class="btn" type="button" id="s-go" data-testid="seller-generate-btn">Genera e scarica il PDF</button></div>
+  <p class="status" id="s-status" data-testid="seller-status"></p></div>`;
+  document.querySelector("main").prepend(s);
+  $("#s-go").onclick=async()=>{ const st=$("#s-status");
+    try{ if(await sha256($("#s-pass").value)!==CONFIG.HASH_VENDITRICE){ st.className="status ko"; st.textContent="Password non corretta."; return; } }catch(e){ st.className="status ko"; st.textContent="Apri il file da un indirizzo https o da Chrome/Safari aggiornati."; return; }
+    const f=decodeOrder($("#s-code").value); if(!f){ st.className="status ko"; st.textContent="Codice non valido."; return; }
+    st.className="status"; st.textContent="Generazione in corso…";
+    try{ if(!window.jspdf) await loadScript(CONFIG.JSPDF_URL); const S=buildState(f); const r=makePDF(S); r.doc.save(r.file); st.className="status ok"; st.textContent=`Fascicolo per ${f.a.nome} e ${f.b.nome} generato: ${r.pages} pagine.`; }catch(e){ st.className="status ko"; st.textContent="Errore nella generazione del PDF."; }
+  };
+}
+async function openPayment(){
+  const area=$("#paypal-area"); area.classList.add("show"); const st=$("#pay-status");
+  if(!CONFIG.PAYPAL_CLIENT_ID||CONFIG.PAYPAL_CLIENT_ID.indexOf("INSERISCI")===0){
+    if(/^https:\/\//.test(CONFIG.LINK_PAGAMENTO||"")){ renderLinkPayment(); return; }
+    $("#paypal-buttons").innerHTML=`<div class="pp-warn" data-testid="paypal-not-configured">Il pagamento non è ancora attivo: inserisci il tuo PayPal Client ID oppure il tuo link di pagamento nella sezione CONFIG del file.</div>`; return;
+  }
+  if(ppLoaded) return;
+  try{
+    await loadScript(`https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(CONFIG.PAYPAL_CLIENT_ID)}&currency=${CONFIG.VALUTA}&intent=capture&locale=it_IT`);
+    ppLoaded=true;
+    window.paypal.Buttons({
+      style:{layout:"vertical",shape:"pill",color:"gold",label:"pay"},
+      createOrder:(d,a)=>a.order.create({intent:"CAPTURE",purchase_units:[{description:CONFIG.PRODOTTO,custom_id:(STATE.A.nome+" & "+STATE.B.nome).slice(0,120),amount:{currency_code:CONFIG.VALUTA,value:CONFIG.PREZZO}}],application_context:{shipping_preference:"NO_SHIPPING",brand_name:"La Chiave del Successo"}}),
+      onApprove:async(d,a)=>{
+        st.className="status"; st.textContent="Verifica del pagamento in corso…";
+        try{
+          const det=await a.order.capture(); const cap0=det?.purchase_units?.[0]?.payments?.captures?.[0];
+          if(det?.status==="COMPLETED"&&cap0?.status==="COMPLETED"&&cap0?.amount?.value===CONFIG.PREZZO&&cap0?.amount?.currency_code===CONFIG.VALUTA){
+            st.className="status ok"; st.textContent="Pagamento completato. Ordine "+det.id;
+            saveOrder(det.id,STATE.form); deliver(STATE);
+          } else { st.className="status ko"; st.textContent="Il pagamento non risulta completato. Nessun addebito confermato."; }
+        }catch(err){ st.className="status ko"; st.textContent="Non è stato possibile completare il pagamento. Riprova."; }
+      },
+      onCancel:()=>{ st.className="status"; st.textContent="Pagamento annullato."; },
+      onError:()=>{ st.className="status ko"; st.textContent="Si è verificato un errore con PayPal. Riprova tra qualche istante."; }
+    }).render("#paypal-buttons");
+  }catch(err){ $("#paypal-buttons").innerHTML=`<div class="pp-warn">Impossibile caricare PayPal. Controlla la connessione e riprova.</div>`; }
+}
+function getOrders(){ try{ const v=JSON.parse(localStorage.getItem("lcs_orders")||"[]"); return Array.isArray(v)?v:[]; }catch(e){ return []; } }
+function saveOrder(id,form){ const o=getOrders().filter(x=>x.id!==id); o.unshift({id,at:Date.now(),form}); try{ localStorage.setItem("lcs_orders",JSON.stringify(o.slice(0,10))); }catch(e){} renderSaved(); }
+function renderSaved(){
+  const o=getOrders(); if(!o.length) return; $("#saved-area").style.display="block";
+  $("#saved").innerHTML="Fascicoli acquistati su questo dispositivo: "+o.map((x,i)=>`<button type="button" data-i="${i}" data-testid="saved-order-${i}">${esc(x.form.a.nome)} &amp; ${esc(x.form.b.nome)}</button>`).join(" · ");
+  $("#saved").querySelectorAll("button").forEach(b=>b.onclick=()=>{ const x=getOrders()[+b.dataset.i]; const S=buildState(x.form); S.form=x.form; deliver(S); });
+}
+async function deliver(S){
+  const sec=$("#consegna"); sec.classList.add("show"); scrollToEl(sec);
+  const bar=$("#bar"), msg=$("#deliver-msg"), btn=$("#dl-btn"); btn.style.display="none"; bar.style.width="15%";
+  msg.textContent="Sto preparando il tuo fascicolo personalizzato…";
+  try{
+    if(!window.jspdf) await loadScript(CONFIG.JSPDF_URL); bar.style.width="45%";
+    await new Promise(r=>setTimeout(r,50));
+    const res=makePDF(S); LAST_DOC=res; bar.style.width="100%";
+    msg.textContent=`Il tuo fascicolo è pronto: ${res.pages} pagine dedicate a ${S.A.nome} e ${S.B.nome}.`.replace("Pagamento verificato. ","");
+    btn.style.display="inline-flex"; btn.onclick=()=>res.doc.save(res.file);
+  }catch(err){ msg.textContent="Non è stato possibile generare il PDF. Ricarica la pagina e usa il link dei fascicoli acquistati qui sotto."; }
+}
+
+/* ================= PDF ================= */
+const C_F=[209,0,122], C_G=[194,162,107], C_I=[13,13,13], C_S=[88,84,86];
+function clean(s){ return String(s).replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[—–]/g,"-").replace(/…/g,"...").replace(/[^\x00-\xFF]/g,""); }
+function makePDF(S){
+  let scale=1.0, res=null;
+  for(let i=0;i<5;i++){
+    res=renderPDF(S,scale);
+    if(res.pages>=50&&res.pages<=60) break;
+    scale=Math.max(0.8,Math.min(1.5,scale*Math.sqrt(55/res.pages)));
+  }
+  return res;
+}
+function renderPDF(S,s){
+  const {jsPDF}=window.jspdf; const doc=new jsPDF({unit:"pt",format:"a4",compress:true});
+  const W=595.28,H=841.89,ML=74,CW=W-148,TOP=96,BOT=H-84;
+  const fs=12*s, lh=fs*1.68; let y=TOP; const tocPages=[];
+  const {A,B}=S, cA=S.ctxA, NA=NUMS[A.c.Y], RT=RTYPE[S.relType]||RTYPE.altro;
+  const sameMain=A.c.Y===B.c.Y; const NBsrc=sameMain?(B.c.M!==A.c.Y?NUMS[B.c.M]:null):NUMS[B.c.Y];
+  const T=t=>tp(t,cA);
+  doc.setProperties({title:"La Vostra Compatibilita Sentimentale - "+A.full+" & "+B.full,author:"La Chiave del Successo",subject:"Fascicolo di compatibilita sentimentale",creator:"La Chiave del Successo"});
+  const chrome=()=>{ doc.setFont("helvetica","bold"); doc.setFontSize(7.5); doc.setTextColor(...C_F); doc.text("LA CHIAVE DEL SUCCESSO",ML,52,{charSpace:1.4}); doc.setFont("helvetica","normal"); doc.setTextColor(...C_S); doc.text(clean((A.full+" & "+B.full).slice(0,70)),W-ML,52,{align:"right"}); doc.setDrawColor(...C_G); doc.setLineWidth(0.4); doc.line(ML,62,W-ML,62); };
+  const newPage=()=>{ doc.addPage(); chrome(); y=TOP; };
+  const need=h=>{ if(y+h>BOT) newPage(); };
+  const para=(t,opt={})=>{ const setF=()=>{ doc.setFont("helvetica",opt.italic?"italic":"normal"); doc.setFontSize(fs); doc.setTextColor(...C_I); }; setF(); const lines=doc.splitTextToSize(clean(t),CW); lines.forEach((ln,i)=>{ if(y+lh>BOT){ newPage(); setF(); } if(i<lines.length-1) doc.text(ln,ML,y,{align:"justify",maxWidth:CW}); else doc.text(ln,ML,y); y+=lh; }); y+=fs*0.7; };
+  const sub=t=>{ const z=fs*1.42; need(z*1.6+lh*3); y+=fs*0.5; doc.setFont("times","bolditalic"); doc.setFontSize(z); doc.setTextColor(...C_F); doc.splitTextToSize(clean(t),CW).forEach(l=>{ doc.text(l,ML,y); y+=z*1.25; }); y+=fs*0.35; };
+  const quote=t=>{ const z=fs*1.3, l2=z*1.45; doc.setFont("times","italic"); doc.setFontSize(z); const lines=doc.splitTextToSize(clean(t),CW-34); const h=lines.length*l2; need(h+fs*2); doc.setFont("times","italic"); doc.setFontSize(z); y+=fs*0.4; doc.setFillColor(...C_F); doc.rect(ML,y-z,2.2,h,"F"); doc.setTextColor(...C_I); lines.forEach(l=>{ doc.text(l,ML+20,y); y+=l2; }); y+=fs*0.9; };
+  const box=(title,items)=>{ const z=fs*0.98, l2=z*1.6; doc.setFont("helvetica","normal"); doc.setFontSize(z); const rows=items.map(it=>doc.splitTextToSize(clean(it),CW-48)); const h=24+fs*1.6+rows.reduce((a,r)=>a+r.length*l2+5,0)+10; need(h+10); doc.setFont("helvetica","normal"); doc.setFontSize(z); y+=fs*0.4; doc.setFillColor(255,244,249); doc.roundedRect(ML,y-fs,CW,h,8,8,"F"); let yy=y+10; doc.setFont("times","bold"); doc.setFontSize(fs*1.15); doc.setTextColor(...C_F); doc.text(clean(title),ML+20,yy); yy+=fs*1.6; doc.setFont("helvetica","normal"); doc.setFontSize(z); doc.setTextColor(...C_I); rows.forEach(r=>{ doc.setFillColor(...C_F); doc.circle(ML+24,yy-z*0.33,1.6,"F"); r.forEach(l=>{ doc.text(l,ML+34,yy); yy+=l2; }); yy+=5; }); y=y-fs+h+fs*1.4; };
+  const chapter=(n,title,tag)=>{ newPage(); tocPages[n]=doc.getNumberOfPages(); y=TOP+30*s; doc.setFont("helvetica","bold"); doc.setFontSize(9); doc.setTextColor(...C_F); doc.text("CAPITOLO "+n,ML,y,{charSpace:2}); y+=30*s; doc.setFont("times","bold"); const z=25*s; doc.setFontSize(z); doc.setTextColor(...C_I); doc.splitTextToSize(clean(title),CW).forEach(l=>{ doc.text(l,ML,y); y+=z*1.12; }); y+=4; doc.setDrawColor(...C_G); doc.setLineWidth(0.8); doc.line(ML,y,ML+70,y); y+=24; doc.setFont("times","italic"); doc.setFontSize(fs*1.1); doc.setTextColor(...C_S); doc.splitTextToSize(clean(tag),CW).forEach(l=>{ doc.text(l,ML,y); y+=fs*1.5; }); y+=fs*1.6; };
+  const heart=(cx,cy,sz)=>{ const r=sz*0.27; doc.setFillColor(...C_F); doc.circle(cx-r*0.95,cy,r,"F"); doc.circle(cx+r*0.95,cy,r,"F"); doc.triangle(cx-r*1.9,cy+r*0.3,cx+r*1.9,cy+r*0.3,cx,cy+r*2.5,"F"); };
+  const key=(x,yk,sz)=>{ doc.setDrawColor(...C_G); doc.setLineWidth(sz*0.12); doc.circle(x,yk,sz*0.32,"S"); doc.line(x+sz*0.32,yk,x+sz*1.25,yk); doc.line(x+sz*1.0,yk,x+sz*1.0,yk+sz*0.3); doc.line(x+sz*1.2,yk,x+sz*1.2,yk+sz*0.38); };
+  const qs=n=>QUEST[n].map(q=>T(q));
+  const facetB=(k,label)=>{ if(!sameMain){ para(NUMS[B.c.Y][k]); return; } para("Su questo piano, condividendo con te lo stesso numero principale, "+B.nome+" potrebbe vivere tendenze simili a quelle che hai appena letto, espresse però con uno stile personale."+(NBsrc?" Il suo numero emotivo, il "+B.c.M+", aggiunge una sfumatura diversa:":"")); if(NBsrc) para(NBsrc[k]); };
+
+  /* COPERTINA */
+  doc.setDrawColor(...C_G); doc.setLineWidth(0.7); doc.rect(28,28,W-56,H-56); doc.setLineWidth(0.3); doc.rect(34,34,W-68,H-68);
+  heart(W/2,168,46);
+  doc.setFont("times","bold"); doc.setTextColor(...C_I); doc.setFontSize(30); doc.text(clean("LA VOSTRA COMPATIBILITÀ"),W/2,262,{align:"center"}); doc.text("SENTIMENTALE",W/2,298,{align:"center"});
+  doc.setDrawColor(...C_F); doc.setLineWidth(1); doc.line(W/2-40,326,W/2+40,326);
+  let cy=392; const person=(p,isWoman)=>{ doc.setFont("times","bold"); doc.setFontSize(24); doc.setTextColor(...(isWoman?C_F:[40,120,200])); doc.splitTextToSize(clean(p.full.toUpperCase()),W-140).forEach(l=>{ doc.text(l,W/2,cy,{align:"center"}); cy+=28; }); doc.setFont("helvetica","normal"); doc.setFontSize(12.5); doc.setTextColor(...C_S); doc.text("Data di nascita: "+p.dob,W/2,cy-2,{align:"center"}); cy+=22; };
+  person(A,true); doc.setFont("times","italic"); doc.setFontSize(44); doc.setTextColor(...C_F); doc.text("&",W/2,cy+34,{align:"center"}); cy+=88; person(B,false);
+  doc.setFont("times","bold"); doc.setFontSize(15); doc.setTextColor(...C_F); const brand="LA CHIAVE DEL SUCCESSO"; const bw=doc.getTextWidth(brand)+1.8*(brand.length-1); doc.text(brand,W/2-14-bw/2,730,{charSpace:1.8}); key(W/2-14+bw/2+14,725,16);
+  doc.setFont("helvetica","normal"); doc.setFontSize(9); doc.setTextColor(...C_S); doc.text("Fascicolo personale di compatibilità sentimentale",W/2,758,{align:"center"});
+
+  /* LETTERA */
+  newPage(); y=TOP+20; doc.setFont("times","bold"); doc.setFontSize(26*s); doc.setTextColor(...C_I); doc.text("Una lettera per te",ML,y); y+=24*s+14;
+  para(G(A,"Cara ","Caro ","")+A.nome+",");
+  para("questo fascicolo è stato scritto esclusivamente per te e per "+B.nome+". Le pagine che stai per leggere nascono dall'incontro tra due date precise: la tua, il "+A.dob+", e quella di "+B.nome+", il "+B.dob+". Da queste date ho ricavato i numeri personali di ciascuno, gli elementi a cui appartengono e il modo in cui queste energie dialogano tra loro. Non troverai percentuali o punteggi: troverai una lettura discorsiva, pensata per aiutarti a comprendere meglio il vostro legame.");
+  para("Ti chiedo di leggere con curiosità e con apertura. Le interpretazioni che seguono sono simboliche: descrivono tendenze, possibilità, dinamiche che potresti riconoscere nella tua esperienza oppure no. Nessun numero può dire con certezza che cosa pensa o prova un'altra persona, e per questo, ogni volta che parleremo di "+B.nome+", lo faremo con il rispetto che si deve a chi non è qui a raccontarsi.");
+  if(S.tempo) para("Mi hai detto che vi conoscete "+(S.tempo.toLowerCase().startsWith("da")?"":"da ")+"«"+S.tempo+"». Terrò presente questo dettaglio, perché il tempo condiviso cambia il modo in cui le energie si manifestano: alcune dinamiche potrebbero esservi già familiari, altre potrebbero emergere più avanti.");
+  if(S.capire) para("Mi hai anche scritto che vorresti comprendere meglio questo aspetto: «"+S.capire.slice(0,400)+"». È una domanda che porteremo con noi lungo tutto il fascicolo e a cui dedicheremo uno spazio specifico nei capitoli finali.");
+  para("Prenditi il tempo che ti serve. Puoi leggere tutto d'un fiato o un capitolo alla volta, tornando sulle pagine che senti più vicine. Alla fine di ogni capitolo troverai alcune domande: non hanno risposte giuste o sbagliate, servono soltanto ad accompagnarti nella riflessione.");
+  para("Con affetto,",{italic:true}); doc.setFont("times","bolditalic"); doc.setFontSize(fs*1.3); doc.setTextColor(...C_F); doc.text("La Chiave del Successo",ML,y); y+=lh;
+
+  /* INDICE */
+  newPage(); const tocPage=doc.getNumberOfPages();
+
+  /* I VOSTRI NUMERI */
+  newPage(); doc.setFont("times","bold"); doc.setFontSize(26*s); doc.setTextColor(...C_I); doc.text("I vostri numeri",ML,y+10); y+=26*s+24;
+  [A,B].forEach(p=>{
+    const rows=[["Data di nascita",p.dob],["Anno energetico di riferimento",String(p.c.effY)],["Numero principale",p.c.Y+" - "+NUMS[p.c.Y].titolo+" (elemento "+elName(p.c.Y)+")"],["Numero emotivo",p.c.M+" - elemento "+elName(p.c.M)],["Numero di espressione",String(p.c.T)]];
+    need(rows.length*fs*1.9+fs*3); doc.setFont("times","bold"); doc.setFontSize(fs*1.5); doc.setTextColor(...C_F); doc.text(clean(p.full),ML,y); y+=fs*1.9;
+    rows.forEach(([k,v])=>{ doc.setFont("helvetica","normal"); doc.setFontSize(fs*0.95); doc.setTextColor(...C_S); doc.text(clean(k),ML,y); doc.setFont("helvetica","bold"); doc.setTextColor(...C_I); doc.text(clean(v),ML+CW*0.42,y,{maxWidth:CW*0.58}); y+=fs*1.85; });
+    if(p.c.effY!==p.dt.y) para((p.reader?"Essendo la tua nascita":"Essendo la nascita di "+p.nome)+" anteriore al 4 febbraio, il calcolo considera l'anno energetico "+p.c.effY+", come previsto dal metodo.");
+    const nn=nearNote(p); if(nn) para(nn); y+=fs;
+  });
+  const relLbl=r=>r.t==="identical"?"stesso numero":r.t==="same"?"stesso elemento":r.t==="gen"?"relazione di generazione":"relazione di controllo";
+  box("Le vostre combinazioni",["Numeri principali ("+A.c.Y+" e "+B.c.Y+"): "+relLbl(S.ra),"Numeri emotivi ("+A.c.M+" e "+B.c.M+"): "+relLbl(S.rc),"Il tuo numero principale e il numero emotivo di "+B.nome+": "+relLbl(S.rx1),"Il tuo numero emotivo e il numero principale di "+B.nome+": "+relLbl(S.rx2)]);
+  sub("Come leggere questo fascicolo"); METHOD_TXT.forEach(t=>para(t));
+
+  /* CAPITOLI */
+  const PK=PAIR[pairKey(A.c.Y,B.c.Y)], R=REL[S.ra.t], R2=REL2[S.ra.t], sameEl=EL[A.c.Y]===EL[B.c.Y];
+  const E2=(p,k)=>ELEM2[EL[p.c.Y]][k]; const E2B=k=>{ if(!sameEl) para(E2(B,k)); };
+  // 1
+  chapter(1,...CH[0]);
+  para(A.nome+", questo primo capitolo è dedicato a ciò che accade quando la tua energia e quella di "+B.nome+" si incontrano. La tua data di nascita, il "+A.dob+", e quella di "+B.nome+", il "+B.dob+", generano due combinazioni di numeri diverse che, insieme, descrivono un tipo di legame preciso. È da qui che partiremo per comprendere tutto il resto."); para(T(DEEP[1]));
+  para(T(RT.intro)); sub("L'immagine del vostro incontro"); para(PK.t); quote(firstSentence(T(R.con))); sub("La natura del vostro legame"); para(T(R.con)); para(T(R2.con)); para(childPhrase(S));
+  if(S.tempo) para("Il tempo che avete condiviso finora, «"+S.tempo+"», è un elemento importante di questa lettura: le dinamiche descritte nei prossimi capitoli potrebbero essere già visibili nella vostra esperienza oppure manifestarsi gradualmente, man mano che il legame si approfondisce.");
+  sub("Le vostre polarità"); const pa=polOf(A), pb=polOf(B); para(pa==="mix"||pb==="mix"?YY.couple.mixed:pa===pb?YY.couple.same:YY.couple.diff);
+  box("Domande per riflettere",qs(1));
+  // 2
+  chapter(2,...CH[1]);
+  para(A.nome+", la tua energia principale è il "+A.c.Y+", "+NA.titolo+", che appartiene all'elemento "+elName(A.c.Y)+". La sua immagine simbolica è quella di "+NA.img+". In questo capitolo ti propongo un ritratto del tuo modo di vivere l'amore: leggilo come uno specchio, riconoscendo ciò che ti appartiene e lasciando andare ciò che non senti tuo."); para(T(DEEP[2]));
+  sub("La tua essenza"); para(NA.ess); sub("Il tuo modo di amare"); para(NA.amo); quote(NA.chiave); sub("Il tuo elemento in amore"); para(ELEM[EL[A.c.Y]].amo);
+  sub("La tua parte emotiva"); para("Il tuo numero emotivo è il "+A.c.M+", legato all'elemento "+elName(A.c.M)+". "+CHILD[A.c.M]+(A.c.M===A.c.Y?" Nel tuo caso il numero emotivo coincide con quello principale: la tua energia risulta così particolarmente coerente e riconoscibile, ma anche più intensa, sia nelle sue luci sia nelle sue ombre.":""));
+  sub("Come ti mostri agli altri"); para(TEND[A.c.T]+" Nel tuo caso questo numero è il "+A.c.T+", e completa il ritratto della tua energia.");
+  sub("Il tuo equilibrio interiore"); para(YY.personal[polOf(A)]); const na=nearNote(A); if(na) para(na);
+  box("Domande per riflettere",qs(2));
+  // 3
+  chapter(3,...CH[2]);
+  para("Ora spostiamo lo sguardo su "+B.nome+". La sua energia principale è il "+B.c.Y+", "+NUMS[B.c.Y].titolo+", legata all'elemento "+elName(B.c.Y)+". Quello che leggerai descrive tendenze simboliche legate alla sua data di nascita: non può dirti con certezza che cosa "+B.nome+" pensi o provi. Usalo come una lente per osservare con più consapevolezza, non come un giudizio."); para(T(DEEP[3]));
+  if(!sameMain){ sub("La sua essenza"); para(NUMS[B.c.Y].ess); sub("Il suo modo di amare"); para(NUMS[B.c.Y].amo); quote(NUMS[B.c.Y].chiave); sub("Il suo elemento in amore"); para(EL[A.c.Y]===EL[B.c.Y]?"Il suo elemento è lo stesso che hai incontrato nel capitolo precedente: l'"+elName(B.c.Y).toLowerCase()+" accomuna le vostre nature, anche se il numero di "+B.nome+" lo esprime in modo diverso.":ELEM[EL[B.c.Y]].amo); }
+  else { sub("Un'energia che conosci"); facetB("amo"); }
+  sub("La sua parte emotiva"); para("Il numero emotivo di "+B.nome+" è il "+B.c.M+", legato all'elemento "+elName(B.c.M)+". "+(B.c.M===A.c.M?"È lo stesso numero emotivo che hai tu: le vostre reazioni più istintive tendono ad assomigliarsi, e questo può farvi sentire capiti nei momenti delicati, ma anche toccare le stesse corde sensibili.":CHILD[B.c.M]));
+  sub("Come si mostra agli altri"); para(B.c.T===A.c.T?"Il suo numero di espressione è il "+B.c.T+", lo stesso che hai tu: nelle situazioni nuove tendete a presentarvi in modo simile, e chi vi osserva insieme potrebbe notare una certa sintonia di atteggiamento.":TEND[B.c.T]);
+  sub("Il suo equilibrio interiore"); para(polOf(B)===polOf(A)?"Dal punto di vista della polarità, la configurazione di "+B.nome+" è simile alla tua: questo può aiutarvi a riconoscere i rispettivi ritmi, tra momenti di azione e momenti di ascolto.":YY.personal[polOf(B)]); const nb=nearNote(B); if(nb) para(nb);
+  box("Domande per riflettere",qs(3));
+  // 4
+  chapter(4,...CH[3]);
+  para("Perché due persone si attraggono? Nel linguaggio dei numeri, l'attrazione nasce dall'incontro tra le energie: a volte da una somiglianza che fa sentire a casa, a volte da una differenza che incuriosisce e completa. Vediamo che cosa accade tra te e "+B.nome+"."); para(T(DEEP[4]));
+  para(T(R.att)); quote(firstSentence(T(R.att))); para(T(R2.att)); sub("Che cosa porti tu"); para(NA.att); para(E2(A,"att")); sub("Che cosa porta "+B.nome); facetB("att"); E2B("att");
+  sub("Gli incroci tra i vostri numeri"); para("Oltre ai numeri principali, è interessante osservare come i numeri si incrociano. Il tuo numero principale, il "+A.c.Y+", incontra il numero emotivo di "+B.nome+", il "+B.c.M+". "+tp(REL[S.rx1.t].cross,mkCtx(S,S.rx1,A.c.Y,B.c.M)));
+  para("Allo stesso modo, il tuo numero emotivo, il "+A.c.M+", incontra il numero principale di "+B.nome+", il "+B.c.Y+". "+tp(REL[S.rx2.t].cross,mkCtx(S,S.rx2,A.c.M,B.c.Y))+" Questi incroci descrivono le sfumature più sottili dell'attrazione: ciò che la parte più matura di uno risveglia nella parte più istintiva dell'altro.");
+  box("Domande per riflettere",qs(4));
+  // 5
+  chapter(5,...CH[4]);
+  para("La compatibilità emotiva riguarda il modo in cui ciascuno sente, esprime e accoglie le emozioni. Due persone possono amarsi profondamente e, allo stesso tempo, avere linguaggi emotivi molto diversi. Conoscere questi linguaggi aiuta a non scambiare una differenza per una mancanza."); para(T(DEEP[5]));
+  sub("La tua sensibilità"); para(NA.emo); para(ELEM[EL[A.c.Y]].emo); sub("La sensibilità di "+B.nome); facetB("emo"); if(EL[A.c.Y]!==EL[B.c.Y]) para(ELEM[EL[B.c.Y]].emo);
+  sub("L'incontro tra i vostri numeri emotivi"); para("Il tuo numero emotivo è il "+A.c.M+", quello di "+B.nome+" è il "+B.c.M+". "+tp(REL[S.rc.t].emo,S.ctxC)); quote(firstSentence(tp(REL[S.rc.t].emo,S.ctxC)));
+  box("Domande per riflettere",qs(5));
+  // 6
+  chapter(6,...CH[5]);
+  para("La comunicazione è spesso il luogo in cui le differenze tra due persone diventano più visibili. Non si tratta solo di che cosa ci si dice, ma di come, quando e con quali aspettative. "+A.nome+", in questo capitolo osserveremo il tuo modo di comunicare, quello di "+B.nome+" e ciò che accade quando si incontrano."); para(T(DEEP[6]));
+  sub("Il tuo modo di comunicare"); para(NA.com); para(E2(A,"com")); sub("Il modo di comunicare di "+B.nome); facetB("com"); E2B("com"); sub("Quando le vostre parole si incontrano"); para(T(R.com)); para(T(R2.com)); quote(firstSentence(T(R.com)));
+  sub("Possibili incomprensioni"); para(sameMain?"Condividendo la stessa energia, una possibile incomprensione nasce quando entrambi manifestate nello stesso momento "+NA.nodo+": nessuno dei due, in quel momento, riesce a fare un passo verso l'altro, e il dialogo rischia di fermarsi.":"Una possibile incomprensione potrebbe nascere quando, da parte tua, emerge "+NA.nodo+" e, da parte di "+B.nome+", "+NUMS[B.c.Y].nodo+". In quei momenti ciascuno potrebbe interpretare il comportamento dell'altro secondo il proprio linguaggio, attribuendogli intenzioni che forse non ha. Fermarsi a chiedere «che cosa intendevi?» prima di reagire può cambiare il corso di molte discussioni.");
+  box("Domande per riflettere",qs(6));
+  // 7
+  chapter(7,...CH[6]);
+  para("Parlare di passione e di intimità significa parlare di fiducia, di tempi e di desideri personali. Le descrizioni che seguono sono simboliche: ogni persona vive la propria intimità in modo unico, e il rispetto reciproco viene sempre prima di qualunque tendenza energetica."); para(T(DEEP[7]));
+  sub("La tua passione"); para(NA.pas); para(E2(A,"pas")); sub("La passione di "+B.nome); facetB("pas"); E2B("pas"); sub("La vostra complicità"); para(T(R.pas)); para(T(R2.pas)); quote(firstSentence(T(R.pas)));
+  box("Domande per riflettere",qs(7));
+  // 8
+  chapter(8,...CH[7]);
+  para(A.nome+", ogni relazione possiede delle risorse, anche quando attraversa momenti difficili. In questo capitolo mettiamo in luce ciò che, nella combinazione tra la tua data di nascita e quella di "+B.nome+", può favorire armonia, comprensione e crescita."); para(T(DEEP[8]));
+  para(T(R.forza)); para(T(R2.forza)); sub("La tua forza nella relazione"); para(NA.forza); para(E2(A,"forza")); sub("La forza di "+B.nome); facetB("forza"); E2B("forza"); sub("Ciò che il vostro incontro custodisce"); para(PK.t.split(". ").slice(1).join(". ")||PK.t);
+  box("In sintesi",["Dalla tua energia: "+NA.pregio+".","Dall'energia di "+B.nome+": "+NUMS[B.c.Y].pregio+".","Dalla vostra combinazione: "+firstSentence(T(R.forza))]);
+  box("Domande per riflettere",qs(8));
+  // 9
+  chapter(9,...CH[8]);
+  para("Parlare delle difficoltà non significa prevedere problemi, ma riconoscere le dinamiche che potrebbero mettere alla prova il vostro legame. Conoscerle in anticipo permette di affrontarle con maggiore serenità e di non viverle come una colpa."); para(T(DEEP[9]));
+  para(T(R.diff)); quote(firstSentence(T(R.diff))); para(T(R2.diff)); sub("Le tue fragilità"); para(NA.ombra); para(E2(A,"ombra")); sub("Le fragilità di "+B.nome); facetB("ombra"); E2B("ombra");
+  if(S.rc.t==="ctrl"||S.rc.t==="identical"){ sub("Sul piano emotivo"); para(S.rc.t==="ctrl"?tp("Anche i vostri numeri emotivi sono legati da una relazione di controllo: {sX} tende a contenere {sY}. Nei momenti di stress questo può far sì che una delle due persone si senta frenata nelle proprie reazioni, mentre l'altra percepisce le emozioni altrui come eccessive. Riconoscere questa dinamica aiuta a non trasformare le reazioni spontanee in un terreno di scontro.",S.ctxC):"Condividendo anche lo stesso numero emotivo, nei momenti di stress tendete a reagire nello stesso modo. Se la reazione è di chiusura, rischiate di allontanarvi entrambi; se è di intensità, di accendervi a vicenda. Accordarvi su un piccolo segnale per prendere una pausa può essere molto utile."); }
+  box("Domande per riflettere",qs(9));
+  // 10
+  chapter(10,...CH[9]);
+  para("Ogni persona porta nella relazione bisogni affettivi propri: alcuni dichiarati, altri silenziosi. Spesso le incomprensioni nascono proprio quando ci aspettiamo che l'altro desideri ciò che desideriamo noi. In questo capitolo osserviamo i bisogni sentimentali di entrambi."); para(T(DEEP[10]));
+  sub("I tuoi bisogni"); para(NA.bis); para(ELEM[EL[A.c.Y]].bis); sub("I bisogni di "+B.nome); facetB("bis"); if(EL[A.c.Y]!==EL[B.c.Y]) para(ELEM[EL[B.c.Y]].bis);
+  sub("Quando i bisogni si incontrano"); const ka=NEED_KW[EL[A.c.Y]], kb=NEED_KW[EL[B.c.Y]]; para(ka===kb?"Mettendo a confronto i vostri bisogni emerge una sintonia: entrambi cercate "+ka+". Questo facilita la comprensione, ma richiede attenzione a non dare per scontato che l'altro sappia sempre di che cosa avete bisogno: anche i bisogni condivisi hanno bisogno di essere detti.":"Mettendo a confronto i vostri bisogni emerge l'incontro tra "+ka+", che caratterizzano la tua energia, e "+kb+", più vicini all'energia di "+B.nome+". Si tratta di bisogni diversi, ed è naturale: ciò che per te è essenziale potrebbe non esserlo allo stesso modo per "+B.nome+", e viceversa. Riconoscerlo permette di smettere di misurare l'amore dell'altro con il proprio metro.");
+  box("Domande per riflettere",qs(10));
+  // 11
+  chapter(11,...CH[10]);
+  para("Che cosa può sostenere il vostro legame nel tempo, e che cosa potrebbe complicarlo? Rispondere a questa domanda non significa prevedere il futuro, ma riconoscere le risorse e le sfide che la vostra combinazione mette sul tavolo."); para(T(DEEP[11]));
+  para(T(R.pot)); para(T(R2.pot)); para(T(RT.pot)); quote(firstSentence(T(R.pot))); sub("Il tuo contributo"); para(NA.pot); para(E2(A,"pot")); sub("Il contributo di "+B.nome); facetB("pot"); E2B("pot");
+  box("Domande per riflettere",qs(11));
+  // 12
+  chapter(12,...CH[11]);
+  para("È nella vita di tutti i giorni che le energie si mostrano con più chiarezza: nei ritmi, nelle abitudini, nel modo di organizzare il tempo e di affrontare gli imprevisti. Vediamo come potrebbero manifestarsi le vostre differenze caratteriali nella quotidianità."); para(T(DEEP[12]));
+  para(T(R.quo)); para(T(R2.quo)); sub("I tuoi ritmi"); para(NA.quo); para(ELEM[EL[A.c.Y]].quo); sub("I ritmi di "+B.nome); facetB("quo"); if(EL[A.c.Y]!==EL[B.c.Y]) para(ELEM[EL[B.c.Y]].quo);
+  sub("Un esempio concreto"); para(T(SCEN[S.ra.t]));
+  box("Domande per riflettere",qs(12));
+  // 13
+  chapter(13,...CH[12]);
+  para("Ogni relazione è anche una scuola: le persone che incontriamo ci mostrano qualità che non sapevamo di possedere o che non avevamo ancora sviluppato. Vediamo che cosa tu e "+B.nome+" potete imparare l'uno dall'altra."); para(T(DEEP[13]));
+  para(T(R.imp)); para(T(R2.imp)); sub("Che cosa puoi imparare da "+B.nome); para(sameMain?"Condividendo lo stesso numero principale, ciò che puoi imparare da "+B.nome+" passa soprattutto attraverso lo specchio: osservando nell'altra persona le stesse qualità che porti tu, puoi riconoscerle e valorizzarle con occhi nuovi."+(NBsrc?" Il numero emotivo di "+B.nome+" aggiunge però un insegnamento diverso. "+NBsrc.dono:""):"Attraverso "+B.nome+" potresti incontrare un dono che la tua energia non esprime spontaneamente. "+NUMS[B.c.Y].dono); E2B("imp");
+  sub("Che cosa può imparare "+B.nome+" da te"); para("Allo stesso modo, la tua energia potrebbe offrire a "+B.nome+" qualcosa di prezioso. "+NA.dono); para(E2(A,"imp")); quote(NA.dono);
+  box("Domande per riflettere",qs(13));
+  // 14
+  chapter(14,...CH[13]);
+  para(A.nome+", in questo capitolo trasformiamo ciò che abbiamo osservato in indicazioni concrete. Non sono regole, ma suggerimenti coerenti con la vostra combinazione: scegli quelli che senti più vicini e adattali alla vostra realtà."); para(T(DEEP[14]));
+  para(T(R.mig)); para(T(R2.mig)); sub("Per te"); para(NA.cons); para(E2(A,"cons")); sub("Per "+B.nome); para("Per quanto riguarda "+B.nome+", se si riconoscerà nelle tendenze descritte, potrebbe trovare utile questa indicazione. "+(sameMain?(NBsrc?NBsrc.cons:"Essendo la sua energia simile alla tua, il consiglio che hai appena letto vale anche "+G(B,"per lei","per lui","per "+B.nome)+", ed è qualcosa che potreste esercitare insieme."):NUMS[B.c.Y].cons)); E2B("cons");
+  sub("Nella vostra situazione"); para(T(RT.cons));
+  if(S.capire){ sub("La tua domanda"); para("Mi hai scritto: «"+S.capire.slice(0,400)+"»."); const hits=QKW.filter(q=>q.re.test(S.capire)).slice(0,2); if(hits.length) hits.forEach(h=>para(T(h.t))); else para("Alla luce della vostra combinazione, ti suggerisco di rileggere questa domanda pensando alle dinamiche descritte nei capitoli sulle emozioni, sulla comunicazione e sui bisogni: è probabile che la risposta che cerchi passi da lì, e in particolare dal modo diverso in cui tu e "+B.nome+" vivete e mostrate ciò che provate. I numeri non possono decidere al posto tuo, ma possono aiutarti a porre la domanda nel modo giusto."); }
+  box("Piccoli esercizi per voi",[EXER[EL[A.c.Y]]].concat(EL[B.c.Y]!==EL[A.c.Y]?[EXER[EL[B.c.Y]]]:[]).concat(["Una volta alla settimana, raccontatevi un momento in cui vi siete sentiti vicini e uno in cui vi siete sentiti distanti, senza commentare, soltanto ascoltando."]));
+  box("Domande per riflettere",qs(14));
+  // 15
+  chapter(15,...CH[14]);
+  para(A.nome+", siamo arrivati alla fine di questo percorso. Abbiamo osservato la tua energia, il "+A.c.Y+", "+NA.titolo+", e quella di "+B.nome+", il "+B.c.Y+", "+NUMS[B.c.Y].titolo+". Abbiamo visto come i vostri numeri emotivi, il "+A.c.M+" e il "+B.c.M+", dialogano nei momenti più spontanei, e come gli incroci tra i vostri numeri aggiungano sfumature sottili al vostro modo di stare insieme.");
+  para(T(DEEP[15])); para(T(R.chiave)); quote(T(R2.chiave));
+  para("Se dovessi riassumere in poche parole ciò che emerge dalla combinazione tra il "+A.dob+" e il "+B.dob+", direi che il vostro legame porta con sé un'immagine: "+PK.img+". "+NA.chiave+(sameMain?"":" Allo stesso tempo, per "+B.nome+": "+NUMS[B.c.Y].chiave.charAt(0).toLowerCase()+NUMS[B.c.Y].chiave.slice(1)));
+  para(T(RT.chiave)+" Tutto ciò che hai letto non è una sentenza, ma una mappa. Le mappe sono utili perché mostrano i sentieri possibili, le salite e i punti panoramici, ma il viaggio resta vostro: sono le vostre scelte, la vostra sincerità e la vostra volontà a dare forma al legame.");
+  if(S.capire) para("All'inizio mi avevi scritto che desideravi comprendere meglio un aspetto della vostra relazione. Spero che queste pagine ti abbiano offerto qualche chiave di lettura in più, e soprattutto la possibilità di guardare a quella domanda con maggiore serenità.");
+  para("Ti invito a tornare su questo fascicolo nei momenti in cui ne sentirai il bisogno: alcune frasi che oggi ti sembrano lontane potrebbero diventare chiare più avanti, mentre altre che oggi ti colpiscono potrebbero trasformarsi. È naturale: le relazioni cambiano, e con esse il modo in cui le comprendiamo.");
+  para("Qualunque sia la strada che tu e "+B.nome+" percorrerete, ricorda che comprendere l'altro inizia sempre dal comprendere se stessi. La chiave della vostra compatibilità non è nascosta in un numero: è nella disponibilità ad ascoltarvi, a riconoscere le vostre differenze e a scegliere, ogni giorno, come stare insieme.");
+  box("Domande per riflettere",qs(15));
+
+  /* NOTA FINALE */
+  newPage(); y=TOP+60; heart(W/2,y,30); y+=60; doc.setFont("times","bold"); doc.setFontSize(22*s); doc.setTextColor(...C_I); doc.text("Una nota finale",W/2,y,{align:"center"}); y+=36;
+  para("Le interpretazioni contenute in questo fascicolo si basano su un antico metodo di numerologia giapponese e hanno un valore simbolico e di riflessione personale. Non costituiscono certezze, previsioni, diagnosi o consulenza psicologica, e non sostituiscono il dialogo diretto tra le persone coinvolte. Nessuna interpretazione può stabilire con certezza i sentimenti o le intenzioni di un'altra persona.");
+  para("Questo documento è personale e dedicato a "+A.full+" e "+B.full+".");
+  doc.setFont("times","bold"); doc.setFontSize(14); doc.setTextColor(...C_F); doc.text("LA CHIAVE DEL SUCCESSO",W/2,y+30,{align:"center",charSpace:1.8});
+
+  /* INDICE + NUMERI DI PAGINA */
+  doc.setPage(tocPage); let ty=TOP+20; doc.setFont("times","bold"); doc.setFontSize(26*s); doc.setTextColor(...C_I); doc.text("Indice",ML,ty); ty+=26*s+20;
+  const tz=Math.min(fs,12.5); CH.forEach(([t],i)=>{ doc.setFont("helvetica","bold"); doc.setFontSize(tz*0.8); doc.setTextColor(...C_F); doc.text(String(i+1).padStart(2,"0"),ML,ty); doc.setFont("times","normal"); doc.setFontSize(tz*1.05); doc.setTextColor(...C_I); const tt=clean(t.charAt(0)+t.slice(1).toLowerCase()); doc.text(tt.length>52?tt.slice(0,50)+"...":tt,ML+28,ty); doc.setFont("helvetica","normal"); doc.setTextColor(...C_S); doc.text(String(tocPages[i+1]),W-ML,ty,{align:"right"}); ty+=tz*2.55; });
+  const total=doc.getNumberOfPages();
+  for(let p=2;p<=total;p++){ doc.setPage(p); doc.setFont("times","normal"); doc.setFontSize(10); doc.setTextColor(...C_S); doc.text(String(p),W/2,H-42,{align:"center"}); }
+  const file=("Compatibilita_"+A.nome+"_"+B.nome).normalize("NFD").replace(/[^\w]+/g,"_")+".pdf";
+  return {doc,pages:total,file,scale:s};
+}
+
+/* ================= AVVIO ================= */
+(function init(){
+  $("#yr").textContent=new Date().getFullYear();
+  buildPills();
+  document.querySelectorAll("input.date").forEach(i=>i.addEventListener("input",maskDate));
+  document.querySelectorAll("input:not(.date)").forEach(i=>i.addEventListener("input",()=>{ i.classList.remove("bad"); const er=document.querySelector(`.err[data-for="${i.id}"]`); if(er) er.classList.remove("show"); }));
+  document.addEventListener("change",e=>{ if(e.target.name){ const id=e.target.name; const er=document.querySelector(`.err[data-for="${id}"]`); if(er) er.classList.remove("show"); } });
+  $("#form").addEventListener("submit",onSubmit);
+  $("#buy-btn").addEventListener("click",openPayment);
+  if("IntersectionObserver" in window){ const io=new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.remove("pre"); io.unobserve(en.target); } }),{threshold:0.1}); document.querySelectorAll(".rv").forEach(el=>{ el.classList.add("pre"); io.observe(el); }); }
+  renderSaved(); sellerPanel();
+})();
+</script>
+</body>
+</html>
